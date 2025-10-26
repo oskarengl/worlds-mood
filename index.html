@@ -247,6 +247,7 @@
                     const labels = Object.keys(countryData).map(countryName => {
                         const word = '"' + countryData[countryName].prevalent_word + '"';
                         const wordLength = word.length;
+                        const wordPercentage = countryData[countryName].word_percentage;
                         
                         let lat, lng, baseSize, size;
                         
@@ -430,12 +431,31 @@
                         size = Math.max(size, 0.25);
                         size = Math.min(size, 0.8);
                         
+                        // Calculate color opacity based on word percentage
+                        // 10% or less = light grey (20% opacity)
+                        // 50% or more = black (100% opacity)
+                        // Linear interpolation between
+                        const minPct = 10;
+                        const maxPct = 50;
+                        let opacity;
+                        
+                        if (wordPercentage <= minPct) {
+                            opacity = 0.2;
+                        } else if (wordPercentage >= maxPct) {
+                            opacity = 1.0;
+                        } else {
+                            // Linear interpolation: 10% -> 0.2, 50% -> 1.0
+                            opacity = 0.2 + ((wordPercentage - minPct) / (maxPct - minPct)) * 0.8;
+                        }
+                        
+                        const color = `rgba(0, 0, 0, ${opacity})`;
+                        
                         return {
                             lat: lat,
                             lng: lng,
                             text: word,
                             size: size,
-                            color: '#000000'
+                            color: color
                         };
                     }).filter(label => label !== null); // Remove nulls
                     
