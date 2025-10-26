@@ -432,20 +432,25 @@
                         size = Math.min(size, 0.8);
                         
                         // Calculate color opacity based on word percentage
-                        // 10% or less = light grey (20% opacity)
-                        // 50% or more = black (100% opacity)
-                        // Linear interpolation between
-                        const minPct = 10;
-                        const maxPct = 50;
+                        // Using quadratic curve for more gradual transition at low percentages
+                        // 5% or less = very light (8% opacity) - barely visible
+                        // 70% or more = black (100% opacity) - truly prevalent
+                        const minPct = 5;
+                        const maxPct = 70;
                         let opacity;
                         
                         if (wordPercentage <= minPct) {
-                            opacity = 0.2;
+                            opacity = 0.08;
                         } else if (wordPercentage >= maxPct) {
                             opacity = 1.0;
                         } else {
-                            // Linear interpolation: 10% -> 0.2, 50% -> 1.0
-                            opacity = 0.2 + ((wordPercentage - minPct) / (maxPct - minPct)) * 0.8;
+                            // Quadratic interpolation for smoother gradient
+                            // Normalize to 0-1 range
+                            const normalized = (wordPercentage - minPct) / (maxPct - minPct);
+                            // Apply quadratic curve (squared) - makes low values lighter, high values darker
+                            const curved = Math.pow(normalized, 2);
+                            // Map to opacity range: 0.08 to 1.0
+                            opacity = 0.08 + curved * 0.92;
                         }
                         
                         const color = `rgba(0, 0, 0, ${opacity})`;
