@@ -1,0 +1,116 @@
+# Improved News Sources for World's Mood
+# More diverse sources per country, including regional and local outlets
+
+# Europe
+Germany:
+- https://www.dw.com/en/top-stories/s-9097/rss
+- https://www.spiegel.de/international/index.rss
+- https://www.thelocal.de/feed/
++ Add: https://www.euronews.com/rss?level=theme&name=news
+
+France:
+- https://www.france24.com/en/rss
+- http://www.rfi.fr/en/rss
++ Add: https://www.euronews.com/rss?level=theme&name=news
+
+United Kingdom:
+- http://feeds.bbci.co.uk/news/rss.xml
+- https://www.theguardian.com/uk/rss
+- https://www.independent.co.uk/news/uk/rss
++ Add: https://www.telegraph.co.uk/rss.xml
+
+Italy:
+- https://www.ansa.it/english/news/general_news.rss
++ Add: https://www.thelocal.it/feed/
+
+Spain:
+- https://elpais.com/rss/elpais/portada.xml
++ Add: https://www.thelocal.es/feed/
+
+# Americas
+United States:
+- http://rss.cnn.com/rss/cnn_topstories.rss
+- https://feeds.nbcnews.com/nbcnews/public/news
+- http://feeds.foxnews.com/foxnews/latest
++ Add: https://www.npr.org/rss/rss.php?id=1001
++ Add: https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+
+Canada:
+- https://torontosun.com/feed/
+- https://montrealgazette.com/feed/
+- https://vancouversun.com/feed/
++ Add: https://www.cbc.ca/cmlink/rss-topstories
+
+Mexico:
+- https://www.eluniversal.com.mx/rss.xml
++ Add: https://www.jornada.com.mx/rss/edicion.xml
+
+Brazil:
+- https://rss.uol.com.br/feed/noticias.xml
++ Add: https://www.uol.com.br/rss/ultnot/
+
+Argentina:
+- https://www.batimes.com.ar/feed/rss
++ Add: https://www.clarin.com/rss/lo-ultimo/
+
+# Asia-Pacific
+Japan:
+- https://www3.nhk.or.jp/nhkworld/en/news/rss.xml
+- https://www.japantimes.co.jp/feed/
++ Add: https://mainichi.jp/english/rss/etc/rss.xml
+
+China:
+- http://www.chinadaily.com.cn/rss/china_rss.xml
++ Add: https://www.globaltimes.cn/rss/outbrain.xml
+
+India:
+- https://timesofindia.indiatimes.com/rssfeedstopstories.cms
+- https://www.hindustantimes.com/rss/topnews/rssfeed.xml
++ Add: https://www.thehindu.com/news/national/feeder/default.rss
+
+Australia:
+- https://www.abc.net.au/news/feed/2942460/rss.xml
+- https://www.smh.com.au/rss/feed.xml
++ Add: https://www.theaustralian.com.au/feed/
+
+South Korea:
+- https://world.kbs.co.kr/rss/rss_news.htm?lang=e
++ Add: https://en.yna.co.kr/RSS/news.xml
+
+# Middle East & Africa
+Turkey:
+- https://www.hurriyetdailynews.com/rss/feed
++ Add: https://www.dailysabah.com/rssFeed
+
+Saudi Arabia:
+- https://english.alarabiya.net/.sections/___/rss.xml
++ Add: https://www.arabnews.com/rss.xml
+
+Egypt:
+- https://english.ahram.org.eg/RSS/Egypt.aspx
++ Add: https://www.egypttoday.com/RSS
+
+Nigeria:
+- https://www.premiumtimesng.com/feed
++ Add: https://punchng.com/feed/
+
+South Africa:
+- https://www.news24.com/news24/SouthAfrica/rss
++ Add: https://www.timeslive.co.za/rss/
+
+# New Countries to Add:
+Poland: https://www.thefirstnews.com/feed
+Greece: https://www.ekathimerini.com/rss
+Portugal: https://www.theportugalnews.com/rss
+Netherlands: https://nltimes.nl/rss
+Belgium: https://www.brusselstimes.com/feed
+Sweden: https://www.thelocal.se/feed/
+Norway: https://www.thelocal.no/feed/
+Denmark: https://www.thelocal.dk/feed/
+Finland: https://yle.fi/news/rss
+Switzerland: https://www.swissinfo.ch/eng/rss
+Austria: https://www.thelocal.at/feed/
+Czech Republic: https://praguemorning.cz/feed/
+Hungary: https://bbj.hu/feed
+Romania: https://www.romania-insider.com/feed
+
