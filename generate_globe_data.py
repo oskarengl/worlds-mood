@@ -12,8 +12,8 @@ import os
 def generate_globe_data():
     """Generate JSON data for the interactive globe"""
     
-    # Try to load the latest CSV file
-    csv_files = [f for f in os.listdir('.') if f.startswith('prevalent_words_rss_') and f.endswith('.csv')]
+    # Try to load the latest CSV file (RSS or GDELT)
+    csv_files = [f for f in os.listdir('.') if (f.startswith('prevalent_words_rss_') or f.startswith('prevalent_words_gdelt_')) and f.endswith('.csv')]
     
     if not csv_files:
         print("No CSV data found. Please run worldsmood.py first.")
@@ -39,7 +39,8 @@ def generate_globe_data():
             'word_percentage': float(row['word_percentage']),
             'prevalence_score': float(row['prevalence_score']),
             'num_articles': int(row['num_articles']),
-            'week': row.get('week', datetime.now().strftime('%Y-W%U'))
+            'week': row.get('week', datetime.now().strftime('%Y-W%U')),
+            'timeframe': row.get('timeframe', '24h')
         }
     
     # Add metadata

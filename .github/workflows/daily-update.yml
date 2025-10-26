@@ -42,7 +42,7 @@ jobs:
     - name: Collect news and analyze
       run: |
         echo "🌍 Collecting world news..."
-        python worldsmood.py
+        python worldsmood_gdelt.py
         
     - name: Generate globe data
       run: |
@@ -53,6 +53,6 @@ jobs:
       run: |
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
-        git add country_data.json prevalent_words_rss_*.csv
+        git add country_data.json headlines_data.json prevalent_words_*.csv
         git diff --quiet && git diff --staged --quiet || (git commit -m "🌍 Daily update: $(date +'%Y-%m-%d %H:%M')" && git push)
 
