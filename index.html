@@ -229,7 +229,10 @@
                 // Update footer with last update time
                 if (jsonData.metadata && jsonData.metadata.generated_at) {
                     const date = new Date(jsonData.metadata.generated_at);
-                    document.getElementById('lastUpdate').textContent = date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+                    // Format as UTC time
+                    const utcDate = date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric' });
+                    const utcTime = date.toLocaleTimeString('en-US', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' });
+                    document.getElementById('lastUpdate').textContent = `${utcDate} ${utcTime} UTC`;
                 }
                 
                 // Load headlines data
