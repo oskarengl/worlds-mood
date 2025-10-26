@@ -640,11 +640,17 @@ else:
 print("\nSummary:")
 if len(df) > 0:
     print(f"   Countries analyzed: {len(df)}")
-    print(f"   Total articles processed: {df['num_articles'].sum()}")
-    print(f"   Most prevalent word globally: {df.loc[df['prevalence_score'].idxmax(), 'prevalent_word']} "
-          f"in {df.loc[df['prevalence_score'].idxmax(), 'country_name']}")
+    print(f"   Total articles processed: {int(df['num_articles'].sum())}")
+    try:
+        max_idx = df['prevalence_score'].idxmax()
+        print(f"   Most prevalent word globally: {df.loc[max_idx, 'prevalent_word']} "
+              f"in {df.loc[max_idx, 'country_name']}")
+    except Exception as e:
+        print(f"   (Could not determine most prevalent word: {e})")
 else:
     print("   No results to summarize.")
+
+print("\n✅ Script completed successfully!")
 
 # Exit with success code
 import sys
