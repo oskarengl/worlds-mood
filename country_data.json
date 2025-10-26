@@ -26,6 +26,41 @@
       "prevalence_score": 85.52,
       "num_articles": 50,
       "week": "2025-W43"
+    },
+    "Canada": {
+      "prevalent_word": "test-10%",
+      "word_percentage": 10.0,
+      "prevalence_score": 100.0,
+      "num_articles": 50,
+      "week": "2025-W43"
+    },
+    "United States": {
+      "prevalent_word": "test-20%",
+      "word_percentage": 20.0,
+      "prevalence_score": 100.0,
+      "num_articles": 50,
+      "week": "2025-W43"
+    },
+    "Japan": {
+      "prevalent_word": "test-30%",
+      "word_percentage": 30.0,
+      "prevalence_score": 100.0,
+      "num_articles": 50,
+      "week": "2025-W43"
+    },
+    "Australia": {
+      "prevalent_word": "test-40%",
+      "word_percentage": 40.0,
+      "prevalence_score": 100.0,
+      "num_articles": 50,
+      "week": "2025-W43"
+    },
+    "Brazil": {
+      "prevalent_word": "test-50%",
+      "word_percentage": 50.0,
+      "prevalence_score": 100.0,
+      "num_articles": 50,
+      "week": "2025-W43"
     }
   }
 }
