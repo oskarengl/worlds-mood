@@ -237,13 +237,12 @@
         <p>This interactive globe visualizes today's most prevalent words from news headlines around the world.</p>
         
         <h3>How It Works</h3>
-        <p>Every day, we analyze news headlines from over 180 countries using the GDELT Project. For each country, we identify the most distinctive word that appears frequently in their news but rarely elsewhere.</p>
+        <p>News headlines from over 180 countries are analyzed using the GDELT Project. For each country, the most distinctive word is identified - one that appears frequently in their news but rarely elsewhere.</p>
         
         <h3>What You're Seeing</h3>
         <ul>
             <li><strong>Words on countries:</strong> Each word shown is the most prevalent in that country's news today</li>
             <li><strong>Text darkness:</strong> Darker words appear in a higher percentage of articles</li>
-            <li><strong>Lighter words:</strong> May indicate low sample sizes (fewer than 5 articles)</li>
         </ul>
         
         <h3>How to Interact</h3>
@@ -251,16 +250,19 @@
             <li><strong>Click a country or word:</strong> See how many articles contain that word</li>
             <li><strong>"See Headlines" button:</strong> Read the actual news headlines</li>
             <li><strong>Click any headline:</strong> Opens a Google search for more context</li>
-            <li><strong>(i) older data:</strong> Hover to see if data is from the last 7 or 30 days (when today's news is unavailable)</li>
         </ul>
         
         <h3>Data Source</h3>
         <p>News data is collected from the <strong>GDELT Project</strong>, which monitors news media from every corner of the world in over 100 languages. The globe updates automatically every 6 hours (UTC).</p>
         
-        <h3>About the Words</h3>
-        <p>Words are selected based on their "prevalence score" - how frequently they appear locally compared to globally. This highlights what makes each country's news unique today.</p>
+        <h3>Scoring</h3>
+        <p>Words are ranked using a prevalence score that balances local frequency against global rarity:</p>
+        <p style="font-family: monospace; background: #f5f5f5; padding: 12px; border-radius: 4px; margin-top: 12px;">
+            Score = (Local % × Global Rarity) × 1000
+        </p>
+        <p style="font-size: 13px; color: #666; margin-top: 8px;">This highlights what makes each country's news unique today.</p>
         
-        <p style="margin-top: 30px; font-size: 12px; color: #999;">Note: Only headlines are analyzed, not full articles. Duplicate headlines are removed. Each word is counted once per article, regardless of how many times it appears.</p>
+        <p style="margin-top: 30px; font-size: 12px; color: #999;">Note: Only headlines are analyzed, not full articles. Duplicate headlines are removed.</p>
     </div>
 
     <script src="https://unpkg.com/globe.gl"></script>
