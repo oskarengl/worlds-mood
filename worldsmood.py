@@ -48,23 +48,28 @@ MAX_COUNTRIES = None # Process all countries (no limit)
 # Expanded list to include a wider range of countries for better map coverage
 NEWS_SOURCES = {
       'Canada': [
-          'https://torontosun.com/feed/', # Alternative Canadian source 1
-          'https://montrealgazette.com/feed/', # Alternative Canadian source 2
-          'https://vancouversun.com/feed/' # Alternative Canadian source 3
+          'https://torontosun.com/feed/',
+          'https://montrealgazette.com/feed/',
+          'https://vancouversun.com/feed/',
+          'https://www.cbc.ca/cmlink/rss-topstories',
       ],
       'United States': [
           'http://rss.cnn.com/rss/cnn_topstories.rss',
           'https://feeds.nbcnews.com/nbcnews/public/news',
           'http://feeds.foxnews.com/foxnews/latest',
+          'https://www.npr.org/rss/rss.php?id=1001',
+          'https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml',
       ],
       'United Kingdom': [
           'http://feeds.bbci.co.uk/news/rss.xml',
           'https://www.theguardian.com/uk/rss',
           'https://www.independent.co.uk/news/uk/rss',
+          'https://www.telegraph.co.uk/rss.xml',
       ],
       'Germany': [
           'https://www.dw.com/en/top-stories/s-9097/rss',
           'https://www.spiegel.de/international/index.rss',
+          'https://www.thelocal.de/feed/',
       ],
       'France': [
           'https://www.france24.com/en/rss',
@@ -73,29 +78,37 @@ NEWS_SOURCES = {
       'Japan': [
           'https://www3.nhk.or.jp/nhkworld/en/news/rss.xml',
           'https://www.japantimes.co.jp/feed/',
+          'https://mainichi.jp/english/rss/etc/rss.xml',
       ],
       'Australia': [
           'https://www.abc.net.au/news/feed/2942460/rss.xml',
           'https://www.smh.com.au/rss/feed.xml',
+          'https://www.theaustralian.com.au/feed/',
       ],
       'Brazil': [
           'https://rss.uol.com.br/feed/noticias.xml',
+          'https://www.uol.com.br/rss/ultnot/',
       ],
       'India': [
           'https://timesofindia.indiatimes.com/rssfeedstopstories.cms',
           'https://www.hindustantimes.com/rss/topnews/rssfeed.xml',
+          'https://www.thehindu.com/news/national/feeder/default.rss',
       ],
       'South Korea': [
           'https://world.kbs.co.kr/rss/rss_news.htm?lang=e',
+          'https://en.yna.co.kr/RSS/news.xml',
       ],
       'Italy': [
           'https://www.ansa.it/english/news/general_news.rss',
+          'https://www.thelocal.it/feed/',
       ],
       'Spain': [
           'https://elpais.com/rss/elpais/portada.xml',
+          'https://www.thelocal.es/feed/',
       ],
       'Mexico': [
           'https://www.eluniversal.com.mx/rss.xml',
+          'https://www.jornada.com.mx/rss/edicion.xml',
       ],
       'Russia': [
           'https://tass.com/rss/v2.xml',
@@ -106,24 +119,30 @@ NEWS_SOURCES = {
 
       'Argentina': [
           'https://www.batimes.com.ar/feed/rss',
+          'https://www.clarin.com/rss/lo-ultimo/',
       ],
       'Egypt': [
           'https://english.ahram.org.eg/RSS/Egypt.aspx',
+          'https://www.egypttoday.com/RSS',
       ],
       'Nigeria': [
           'https://www.premiumtimesng.com/feed',
+          'https://punchng.com/feed/',
       ],
       'South Africa': [
           'https://www.news24.com/news24/SouthAfrica/rss',
+          'https://www.timeslive.co.za/rss/',
       ],
       'Indonesia': [
           'https://www.thejakartapost.com/rss/headline',
       ],
       'Turkey': [
           'https://www.hurriyetdailynews.com/rss/feed',
+          'https://www.dailysabah.com/rssFeed',
       ],
       'Saudi Arabia': [
           'https://english.alarabiya.net/.sections/___/rss.xml',
+          'https://www.arabnews.com/rss.xml',
       ],
       'Iran': [
           'https://www.tehrantimes.com/rss',
@@ -173,8 +192,12 @@ NEWS_SOURCES = {
       'Belgium': [
           'https://www.brusselstimes.com/feed',
       ],
+      'Poland': [
+          'https://www.thefirstnews.com/feed',
+      ],
       'Netherlands': [
           'https://www.dutchnews.nl/feed/',
+          'https://nltimes.nl/rss',
       ],
       'Switzerland': [
           'https://www.swissinfo.ch/eng/rss/index.xml',
