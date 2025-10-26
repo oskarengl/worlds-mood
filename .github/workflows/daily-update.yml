@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install feedparser beautifulsoup4 requests pandas
+        pip install feedparser beautifulsoup4 requests pandas nltk
         
     - name: Collect news and analyze
       run: |
