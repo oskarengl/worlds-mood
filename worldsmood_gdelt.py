@@ -294,7 +294,7 @@ def fetch_news_for_country(country_name, country_code, timespan='24h'):
         return []
 
 def get_word_frequency(texts):
-    """Analyze text and return word frequencies"""
+    """Analyze text and return word frequencies (counting unique articles, not total occurrences)"""
     
     if USE_NLTK:
         stop_words = set(stopwords.words('english'))
@@ -308,7 +308,8 @@ def get_word_frequency(texts):
                          'which', 'who', 'when', 'where', 'why', 'how', 'said', 'says', 'after',
                          'over', 'up', 'down', 'out', 'off', 'into', 'than', 'their', 'them'])
     
-    word_counts = Counter()
+    # Count how many UNIQUE articles contain each word (not total occurrences)
+    word_article_count = Counter()
     
     for text in texts:
         # Clean text
@@ -329,15 +330,20 @@ def get_word_frequency(texts):
         else:
             words = text.split()
         
-        # Filter words
+        # Get unique words in this article
+        unique_words = set()
         for word in words:
             word = word.strip("'")
             if (len(word) > 3 and  # At least 4 characters
                 word not in stop_words and
                 not word.isdigit()):
-                word_counts[word] += 1
+                unique_words.add(word)
+        
+        # Count each word once per article
+        for word in unique_words:
+            word_article_count[word] += 1
     
-    return word_counts
+    return word_article_count
 
 def calculate_prevalence_score(word, country_freq, global_freq, num_articles):
     """Calculate how prevalent a word is locally vs globally"""
@@ -549,6 +555,8 @@ def main():
             })
             
             # Store headlines: separate those with prevalent word from others
+            # Use sets to track seen headlines and remove duplicates
+            seen_headlines = set()
             headlines_with_word = []
             headlines_without_word = []
             
@@ -558,13 +566,19 @@ def main():
             
             for article in articles:
                 headline = article['title']
+                
+                # Skip if we've already seen this exact headline
+                if headline in seen_headlines:
+                    continue
+                seen_headlines.add(headline)
+                
                 # Check if prevalent word appears as a whole word in headline (case-insensitive)
                 if re.search(word_pattern, headline.lower()):
                     headlines_with_word.append(headline)
                 else:
                     headlines_without_word.append(headline)
             
-            # Store all headlines (those with word on top, others below)
+            # Store all unique headlines (those with word on top, others below)
             headlines_data[country_name] = {
                 'with_word': headlines_with_word,
                 'without_word': headlines_without_word

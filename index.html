@@ -99,6 +99,100 @@
             pointer-events: none;
         }
         
+        #helpButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            font-size: 20px;
+            font-weight: 300;
+            color: #666;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        #helpButton:hover {
+            background: rgba(255, 255, 255, 1);
+            color: #000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        #helpPanel {
+            position: fixed;
+            top: 0;
+            right: -35%;
+            width: 35%;
+            height: 100vh;
+            background: #ffffff;
+            padding: 40px;
+            z-index: 999;
+            overflow-y: auto;
+            transition: right 0.4s ease;
+            filter: drop-shadow(-5px 0 20px rgba(255, 255, 255, 0.9)) drop-shadow(-10px 0 40px rgba(255, 255, 255, 0.6));
+            box-shadow: -20px 0 60px 20px rgba(255, 255, 255, 0.8);
+        }
+        
+        #helpPanel.open {
+            right: 0;
+        }
+        
+        #helpPanel h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        
+        #helpPanel h3 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        
+        #helpPanel p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #333;
+        }
+        
+        #helpPanel ul {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.6;
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+        
+        #helpPanel .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: #999;
+            cursor: pointer;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+        }
+        
+        #helpPanel .close-btn:hover {
+            color: #000;
+        }
+        
         /* Headline link styles */
         .headline-link {
             font-size: 13px;
@@ -131,6 +225,43 @@
     <div id="loading"></div>
     <div id="globeViz"></div>
     <div id="footer">Updated: <span id="lastUpdate">Loading...</span></div>
+    
+    <!-- Help Button -->
+    <div id="helpButton" onclick="toggleHelp()">?</div>
+    
+    <!-- Help Panel -->
+    <div id="helpPanel">
+        <button class="close-btn" onclick="toggleHelp()">&times;</button>
+        <h2>About World's Mood</h2>
+        
+        <p>This interactive globe visualizes today's most prevalent words from news headlines around the world.</p>
+        
+        <h3>How It Works</h3>
+        <p>Every day, we analyze news headlines from over 180 countries using the GDELT Project. For each country, we identify the most distinctive word that appears frequently in their news but rarely elsewhere.</p>
+        
+        <h3>What You're Seeing</h3>
+        <ul>
+            <li><strong>Words on countries:</strong> Each word shown is the most prevalent in that country's news today</li>
+            <li><strong>Text darkness:</strong> Darker words appear in a higher percentage of articles</li>
+            <li><strong>Lighter words:</strong> May indicate low sample sizes (fewer than 5 articles)</li>
+        </ul>
+        
+        <h3>How to Interact</h3>
+        <ul>
+            <li><strong>Click a country or word:</strong> See how many articles contain that word</li>
+            <li><strong>"See Headlines" button:</strong> Read the actual news headlines</li>
+            <li><strong>Click any headline:</strong> Opens a Google search for more context</li>
+            <li><strong>(i) older data:</strong> Hover to see if data is from the last 7 or 30 days (when today's news is unavailable)</li>
+        </ul>
+        
+        <h3>Data Source</h3>
+        <p>News data is collected from the <strong>GDELT Project</strong>, which monitors news media from every corner of the world in over 100 languages. The globe updates automatically every 6 hours (UTC).</p>
+        
+        <h3>About the Words</h3>
+        <p>Words are selected based on their "prevalence score" - how frequently they appear locally compared to globally. This highlights what makes each country's news unique today.</p>
+        
+        <p style="margin-top: 30px; font-size: 12px; color: #999;">Note: Only headlines are analyzed, not full articles. Duplicate headlines are removed. Each word is counted once per article, regardless of how many times it appears.</p>
+    </div>
 
     <script src="https://unpkg.com/globe.gl"></script>
     
@@ -266,7 +397,10 @@
                     const data = getCountryData(geoCountryName);
                     
                     if (data) {
-                        const articlesWithWord = Math.round(data.num_articles * data.word_percentage / 100);
+                        // Get actual count from headlines data (more accurate than calculating from percentage)
+                        const articlesWithWord = headlinesData[geoCountryName] ? 
+                            headlinesData[geoCountryName].with_word.length : 
+                            Math.round(data.num_articles * data.word_percentage / 100);
                         
                         // Use the mapped country name if available
                         const displayName = countryNameMap[geoCountryName] || geoCountryName;
@@ -725,7 +859,10 @@
                             const data = countryData[countryName];
                             
                             if (data) {
-                                const articlesWithWord = Math.round(data.num_articles * data.word_percentage / 100);
+                                // Get actual count from headlines data (more accurate than calculating from percentage)
+                                const articlesWithWord = headlinesData[countryName] ? 
+                                    headlinesData[countryName].with_word.length : 
+                                    Math.round(data.num_articles * data.word_percentage / 100);
                                 
                                 showTooltip(
                                     countryName,
@@ -932,6 +1069,12 @@
                     document.removeEventListener('click', closeTooltip);
                 }, 100);
             }, 100);
+        }
+        
+        // Help panel toggle
+        function toggleHelp() {
+            const helpPanel = document.getElementById('helpPanel');
+            helpPanel.classList.toggle('open');
         }
         
         // Headlines viewer function
