@@ -126,6 +126,11 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
         
+        #helpButton.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
         #helpPanel {
             position: fixed;
             top: 0;
@@ -1076,7 +1081,9 @@
         // Help panel toggle
         function toggleHelp() {
             const helpPanel = document.getElementById('helpPanel');
+            const helpButton = document.getElementById('helpButton');
             helpPanel.classList.toggle('open');
+            helpButton.classList.toggle('hidden');
         }
         
         // Headlines viewer function
