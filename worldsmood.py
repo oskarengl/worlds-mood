@@ -599,12 +599,17 @@ output_file = f'prevalent_words_rss_{datetime.now().strftime("%Y%m%d")}.csv'
 df.to_csv(output_file, index=False)
 print(f"\nResults saved to: {output_file}")
 
-# Step 11: Visualization
-import matplotlib.pyplot as plt
-import numpy as np
+# Step 11: Visualization (optional - skip if matplotlib not available)
+try:
+    import matplotlib.pyplot as plt
+    import numpy as np
+    matplotlib_available = True
+except ImportError:
+    matplotlib_available = False
+    print("\nSkipping visualization (matplotlib not installed)")
 
-# Only create visualizations if we have data
-if len(df) > 0:
+# Only create visualizations if we have data and matplotlib
+if len(df) > 0 and matplotlib_available:
     # Bar chart for prevalent words
     fig, ax = plt.subplots(figsize=(14, 8))
 
@@ -640,3 +645,7 @@ if len(df) > 0:
           f"in {df.loc[df['prevalence_score'].idxmax(), 'country_name']}")
 else:
     print("   No results to summarize.")
+
+# Exit with success code
+import sys
+sys.exit(0)
