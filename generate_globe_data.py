@@ -39,7 +39,7 @@ def generate_globe_data():
             'word_percentage': float(row['word_percentage']),
             'prevalence_score': float(row['prevalence_score']),
             'num_articles': int(row['num_articles']),
-            'week': row['week']
+            'week': row.get('week', datetime.now().strftime('%Y-W%U'))
         }
     
     # Add metadata
@@ -103,6 +103,10 @@ if __name__ == "__main__":
         for country, info in list(data['countries'].items())[:3]:
             print(f"  {country}: {info['prevalent_word']} ({info['word_percentage']}%)")
         
-        print(f"\nGlobe data ready! Open globe.html in your browser to view the interactive globe.")
+        print(f"\nGlobe data ready! Open index.html in your browser to view the interactive globe.")
+        import sys
+        sys.exit(0)  # Explicit success exit
     else:
         print("Failed to generate globe data.")
+        import sys
+        sys.exit(1)  # Explicit failure exit
