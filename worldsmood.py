@@ -501,9 +501,6 @@ if 'Canada' in countries_to_process:
     countries_to_process.remove('Canada')
 countries_to_process.insert(0, 'Canada')
 
-# DEBUG: Limit to 3 countries for testing
-countries_to_process = ['Germany', 'United Kingdom', 'France']
-
 # Apply MAX_COUNTRIES limit if set
 if MAX_COUNTRIES is not None:
     countries_to_process = countries_to_process[:MAX_COUNTRIES]
