@@ -1,0 +1,43 @@
+name: Daily World News Update
+
+on:
+  schedule:
+    # Runs every day at 6:00 AM UTC (adjust timezone as needed)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  update-globe:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install feedparser beautifulsoup4 requests
+        
+    - name: Collect news and analyze
+      run: |
+        echo "🌍 Collecting world news..."
+        python worldsmood.py
+        
+    - name: Generate globe data
+      run: |
+        echo "📊 Generating globe data..."
+        python generate_globe_data.py
+        
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'GitHub Actions Bot'
+        git config --global user.email 'actions@github.com'
+        git add country_data.json prevalent_words_rss_*.csv
+        git diff --quiet && git diff --staged --quiet || (git commit -m "🌍 Daily update: $(date +'%Y-%m-%d %H:%M')" && git push)
+

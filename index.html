@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Mood</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff;
+            overflow: hidden;
+            height: 100vh;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        #globeViz {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 50px; /* Initial margin - will animate down to 0 */
+            left: 0;
+            opacity: 0; /* Start invisible */
+            transition: opacity 4s ease-in; /* Slower cinematic fade-in - top is handled by JS */
+        }
+        
+        #globeViz canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        #loading {
+            position: fixed;
+            top: calc(50% + 25px); /* Centered + half of globe's 50px margin */
+            left: 50%;
+            width: 510px;
+            height: 510px;
+            margin: -255px 0 0 -255px;
+            border: 2px solid rgba(128, 128, 128, 0.15);
+            border-top-color: rgba(128, 128, 128, 0.6);
+            border-radius: 50%;
+            z-index: 1000;
+            animation: spin 4s linear infinite;
+            opacity: 1;
+            transition: opacity 1.5s ease-out;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #header {
+            position: fixed;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 100;
+            pointer-events: none;
+        }
+        
+        #header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: #000;
+        }
+        
+        #header p {
+            margin: 8px 0 0 0;
+            font-size: 13px;
+            color: #666;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            color: #999;
+            z-index: 100;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>WORLD'S MOOD</h1>
+        <p>Today's most prevalent words from global news</p>
+    </div>
+    <div id="loading"></div>
+    <div id="globeViz"></div>
+    <div id="footer">Updated: <span id="lastUpdate">Loading...</span></div>
+
+    <script src="https://unpkg.com/globe.gl"></script>
+    
+    <script>
+        let countryData = {};
+        let globe;
+
+        // Country name mapping - GeoJSON names to our data names
+        const countryNameMap = {
+            'Russia': 'Russia',
+            'Russian Federation': 'Russia',
+            'United States of America': 'United States',
+            'United Kingdom': 'United Kingdom',
+            'Brazil': 'Brazil',
+            'Nigeria': 'Nigeria',
+            'Germany': 'Germany',
+            'Spain': 'Spain',
+            'Canada': 'Canada',
+            'Japan': 'Japan',
+            'Australia': 'Australia',
+            'France': 'France',
+            'India': 'India',
+            'China': 'China',
+            "People's Republic of China": 'China',
+            'South Korea': 'South Korea',
+            'Republic of Korea': 'South Korea',
+            'Korea': 'South Korea',
+            'Ukraine': 'Ukraine',
+            'Sweden': 'Sweden',
+            'Norway': 'Norway',
+            'Denmark': 'Denmark',
+            'Portugal': 'Portugal',
+            'Netherlands': 'Netherlands',
+            'The Netherlands': 'Netherlands',
+            'Austria': 'Austria',
+            'Hungary': 'Hungary',
+            'Romania': 'Romania',
+            'Bulgaria': 'Bulgaria',
+            'Serbia': 'Serbia',
+            'Croatia': 'Croatia',
+            'Slovakia': 'Slovakia',
+            'Slovak Republic': 'Slovakia',
+            'Latvia': 'Latvia',
+            'Estonia': 'Estonia',
+            'Singapore': 'Singapore',
+            'Chile': 'Chile',
+            'Colombia': 'Colombia',
+            'Peru': 'Peru',
+            'Ecuador': 'Ecuador',
+            'Morocco': 'Morocco',
+            'Kazakhstan': 'Kazakhstan',
+            'Dominican Republic': 'Dominican Republic',
+            'Guatemala': 'Guatemala',
+            'El Salvador': 'El Salvador',
+            'Costa Rica': 'Costa Rica',
+            'Panama': 'Panama',
+            'Philippines': 'Philippines'
+        };
+
+        function getCountryData(geoCountryName) {
+            // Try direct lookup first
+            if (countryData[geoCountryName]) {
+                return countryData[geoCountryName];
+            }
+            // Try mapped name
+            const mappedName = countryNameMap[geoCountryName];
+            if (mappedName && countryData[mappedName]) {
+                return countryData[mappedName];
+            }
+            return null;
+        }
+
+        if (typeof Globe === 'undefined') {
+            document.getElementById('loading').innerHTML = 'Error loading globe library';
+        } else {
+            initGlobe();
+        }
+
+        async function initGlobe() {
+            // Load country data first
+            try {
+                console.log('Fetching country_data.json...');
+                const dataResponse = await fetch('country_data.json');
+                console.log('Response status:', dataResponse.status);
+                
+                if (!dataResponse.ok) {
+                    throw new Error(`HTTP error! status: ${dataResponse.status}`);
+                }
+                
+                const jsonData = await dataResponse.json();
+                console.log('JSON parsed:', jsonData);
+                countryData = jsonData.countries || jsonData;
+                console.log('Loaded data for', Object.keys(countryData).length, 'countries');
+                
+                // Update footer with last update time
+                if (jsonData.metadata && jsonData.metadata.generated_at) {
+                    const date = new Date(jsonData.metadata.generated_at);
+                    document.getElementById('lastUpdate').textContent = date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+                }
+            } catch (error) {
+                console.error('Error loading country data:', error);
+                document.getElementById('loading').innerHTML = 'Error loading country data: ' + error.message + '<br>Make sure the server is running in the correct directory!';
+                return;
+            }
+            
+            globe = Globe()
+                (document.getElementById('globeViz'))
+                .backgroundColor('#ffffff')
+                .showGlobe(false)
+                .showAtmosphere(false)
+                .polygonCapColor(() => '#ffffff')
+                .polygonSideColor(() => '#ffffff')
+                .polygonStrokeColor(() => '#000000')
+                .polygonAltitude(0.001)
+                .polygonLabel(() => '') // No hover labels
+                .onPolygonClick(({ properties: d }) => {
+                    const geoCountryName = d.ADMIN || d.NAME || d.name;
+                    const data = getCountryData(geoCountryName);
+                    
+                    if (data) {
+                        const articlesWithWord = Math.round(data.num_articles * data.word_percentage / 100);
+                        
+                        // Use the mapped country name if available
+                        const displayName = countryNameMap[geoCountryName] || geoCountryName;
+                        
+                        // Create and show custom tooltip
+                        showTooltip(
+                            displayName,
+                            data.prevalent_word,
+                            articlesWithWord,
+                            data.num_articles
+                        );
+                    }
+                    // Stop rotation on click
+                    globe.controls().autoRotate = false;
+                });
+
+            fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+                .then(res => res.json())
+                .then(countries => {
+                    const { features } = topojson.feature(countries, countries.objects.countries);
+                    globe.polygonsData(features);
+                    
+                    const labels = Object.keys(countryData).map(countryName => {
+                        const word = '"' + countryData[countryName].prevalent_word + '"';
+                        const wordLength = word.length;
+                        
+                        let lat, lng, baseSize, size;
+                        
+                        // Manual positioning for good visual placement
+                        if (countryName === 'United States') { 
+                            lat = 39.8283; lng = -98.5795; 
+                            baseSize = 0.9; 
+                        }
+                        else if (countryName === 'Canada') { 
+                            lat = 60; lng = -95;
+                            baseSize = 0.8; 
+                        }
+                        else if (countryName === 'United Kingdom') { 
+                            lat = 54; lng = -2; 
+                            baseSize = 0.35;
+                        }
+                        else if (countryName === 'Germany') { 
+                            lat = 51.1657; lng = 10.4515; 
+                            baseSize = 0.4; 
+                        }
+                        else if (countryName === 'France') { 
+                            lat = 46.2276; lng = 2.2137; 
+                            baseSize = 0.35;
+                        }
+                        else if (countryName === 'Japan') { 
+                            lat = 36.2048; lng = 138.2529; 
+                            baseSize = 0.35; 
+                        }
+                        else if (countryName === 'Australia') { 
+                            lat = -25.2744; lng = 133.7751; 
+                            baseSize = 0.6;
+                        }
+                        else if (countryName === 'Brazil') { 
+                            lat = -10; lng = -55; 
+                            baseSize = 0.5;
+                        }
+                        else if (countryName === 'India') { 
+                            lat = 20.5937; lng = 78.9629; 
+                            baseSize = 0.4; 
+                        }
+                        else if (countryName === 'South Korea') { 
+                            lat = 37; lng = 127.7669; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Russia') { 
+                            lat = 61; lng = 105; 
+                            baseSize = 1.2;
+                        }
+                        else if (countryName === 'China') { 
+                            lat = 35; lng = 105; 
+                            baseSize = 0.7;
+                        }
+                        else if (countryName === 'Spain') { 
+                            lat = 40.4637; lng = -3.7492; 
+                            baseSize = 0.4;
+                        }
+                        else if (countryName === 'Nigeria') { 
+                            lat = 9.082; lng = 8.6753; 
+                            baseSize = 0.45;
+                        }
+                        else if (countryName === 'Ukraine') { 
+                            lat = 48.3794; lng = 31.1656; 
+                            baseSize = 0.5;
+                        }
+                        else if (countryName === 'Sweden') { 
+                            lat = 60.1282; lng = 18.6435; 
+                            baseSize = 0.4;
+                        }
+                        else if (countryName === 'Norway') { 
+                            lat = 60.472; lng = 8.4689; 
+                            baseSize = 0.4;
+                        }
+                        else if (countryName === 'Denmark') { 
+                            lat = 56.2639; lng = 9.5018; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Portugal') { 
+                            lat = 39.3999; lng = -8.2245; 
+                            baseSize = 0.35;
+                        }
+                        else if (countryName === 'Netherlands') { 
+                            lat = 52.1326; lng = 5.2913; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Austria') { 
+                            lat = 47.5162; lng = 14.5501; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Hungary') { 
+                            lat = 47.1625; lng = 19.5033; 
+                            baseSize = 0.35;
+                        }
+                        else if (countryName === 'Romania') { 
+                            lat = 45.9432; lng = 24.9668; 
+                            baseSize = 0.4;
+                        }
+                        else if (countryName === 'Bulgaria') { 
+                            lat = 42.7339; lng = 25.4858; 
+                            baseSize = 0.35;
+                        }
+                        else if (countryName === 'Serbia') { 
+                            lat = 44.0165; lng = 21.0059; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Croatia') { 
+                            lat = 45.1; lng = 15.2; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Slovakia') { 
+                            lat = 48.669; lng = 19.699; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Latvia') { 
+                            lat = 56.8796; lng = 24.6032; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Estonia') { 
+                            lat = 58.5953; lng = 25.0136; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Singapore') { 
+                            lat = 1.3521; lng = 103.8198; 
+                            baseSize = 0.2;
+                        }
+                        else if (countryName === 'Chile') { 
+                            lat = -35.6751; lng = -71.543; 
+                            baseSize = 0.4;
+                        }
+                        else if (countryName === 'Colombia') { 
+                            lat = 4.5709; lng = -74.2973; 
+                            baseSize = 0.4;
+                        }
+                        else if (countryName === 'Peru') { 
+                            lat = -9.19; lng = -75.0152; 
+                            baseSize = 0.45;
+                        }
+                        else if (countryName === 'Ecuador') { 
+                            lat = -1.8312; lng = -78.1834; 
+                            baseSize = 0.35;
+                        }
+                        else if (countryName === 'Morocco') { 
+                            lat = 31.7917; lng = -7.0926; 
+                            baseSize = 0.4;
+                        }
+                        else if (countryName === 'Kazakhstan') { 
+                            lat = 48.0196; lng = 66.9237; 
+                            baseSize = 0.7;
+                        }
+                        else if (countryName === 'Dominican Republic') { 
+                            lat = 18.7357; lng = -70.1627; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Guatemala') { 
+                            lat = 15.7835; lng = -90.2308; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'El Salvador') { 
+                            lat = 13.7942; lng = -88.8965; 
+                            baseSize = 0.25;
+                        }
+                        else if (countryName === 'Costa Rica') { 
+                            lat = 9.7489; lng = -83.7534; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Panama') { 
+                            lat = 8.538; lng = -80.7821; 
+                            baseSize = 0.3;
+                        }
+                        else if (countryName === 'Philippines') { 
+                            lat = 12.8797; lng = 121.774; 
+                            baseSize = 0.4;
+                        }
+                        else {
+                            // Default: skip countries without specific positioning
+                            return null;
+                        }
+                        
+                        if (!lat || !lng || !baseSize) return null;
+                        
+                        size = baseSize * (8 / Math.max(wordLength, 4));
+                        size = Math.max(size, 0.25);
+                        size = Math.min(size, 0.8);
+                        
+                        return {
+                            lat: lat,
+                            lng: lng,
+                            text: word,
+                            size: size,
+                            color: '#000000'
+                        };
+                    }).filter(label => label !== null); // Remove nulls
+                    
+                    console.log('Showing labels for', labels.length, 'countries');
+                    
+                    globe.labelsData(labels)
+                        .labelLat('lat')
+                        .labelLng('lng')
+                        .labelText('text')
+                        .labelSize('size')
+                        .labelColor('color')
+                        .labelDotRadius(0)
+                        .labelAltitude(0.002)
+                        .labelResolution(3);
+                    
+                    // Cinematic reveal: fade out loading text, fade in globe
+                    const loadingEl = document.getElementById('loading');
+                    loadingEl.style.opacity = '0';
+                    setTimeout(() => {
+                        loadingEl.style.display = 'none';
+                    }, 1000);
+                    
+                    // Trigger cinematic fade-in animation after delay
+                    setTimeout(() => {
+                        document.getElementById('globeViz').style.opacity = '1';
+                    }, 500);
+                })
+                .catch(err => {
+                    console.error('Error loading country data:', err);
+                    document.getElementById('loading').innerHTML = 'Error loading map data';
+                });
+
+            // Standard smooth controls
+            globe.controls().enableDamping = true;
+            globe.controls().dampingFactor = 0.05; // Standard smooth damping
+            globe.controls().rotateSpeed = 1.0; // Normal speed
+            
+            // Dynamic header/footer based on zoom level
+            function updateUIBasedOnZoom() {
+                const pov = globe.pointOfView();
+                const altitude = pov.altitude;
+                
+                const header = document.getElementById('header');
+                const footer = document.getElementById('footer');
+                const globeViz = document.getElementById('globeViz');
+                
+                // Map altitude to movement - start moving immediately!
+                // altitude starts at 1.8, zooming in goes down to ~0.5 or less
+                const maxAltitude = 2.0; // Start before default position
+                const minAltitude = 1.0; // Move away even faster
+                
+                // Calculate zoom ratio (0 = zoomed in, 1 = zoomed out)
+                const zoomRatio = Math.max(0, Math.min(1, (altitude - minAltitude) / (maxAltitude - minAltitude)));
+                
+                // Header moves up quickly as you zoom in
+                // When zoomRatio = 1 (far): offset = 0
+                // When zoomRatio = 0 (close): offset = -400px (far out of view)
+                const headerOffset = -400 * Math.pow(1 - zoomRatio, 1.65); // Higher exponent = faster disappearance
+                header.style.transform = `translateX(-50%) translateY(${headerOffset}px)`;
+                header.style.opacity = 1;
+                
+                // Footer moves down and out of view
+                const footerOffset = 200 * Math.pow(1 - zoomRatio, 2);
+                footer.style.transform = `translateX(-50%) translateY(${footerOffset}px)`;
+                footer.style.opacity = 1;
+                
+                // Globe margin disappears smoothly as you zoom in
+                // Calculate how close the globe is to touching the top
+                // At altitude 2.4 (far): full 50px margin
+                // As altitude decreases: margin smoothly reduces
+                // Margin fully gone at altitude 1.3 (earlier than before to prevent visible margin when zoomed)
+                const marginStartAltitude = 2.4; // Starting altitude
+                const marginEndAltitude = 1.4;   // Altitude when margin should be fully gone (increased from 1.0)
+                
+                // Calculate margin based on current altitude
+                let marginRatio = (altitude - marginEndAltitude) / (marginStartAltitude - marginEndAltitude);
+                marginRatio = Math.max(0, Math.min(1, marginRatio)); // Clamp between 0 and 1
+                
+                // Apply sigmoid (S-curve) function for ultra-smooth blending with zoom
+                // Sigmoid smoothly eases in and out, matching the natural feel of zooming
+                const sigmoid = (x) => {
+                    // Adjust x to center the sigmoid curve
+                    const centered = (x - 0.5) * 6; // 6 = gentler curve, slower middle transition
+                    return 1 / (1 + Math.exp(-centered));
+                };
+                
+                const easedMarginRatio = sigmoid(marginRatio);
+                const topMargin = 50 * easedMarginRatio;
+                
+                globeViz.style.top = `${topMargin}px`;
+            }
+            
+            // Dynamic zoom movement - header/footer slide away when zooming in
+            globe.controls().addEventListener('change', updateUIBasedOnZoom);
+            
+            // Start with good overview - slightly zoomed in for better initial view
+            globe.pointOfView({ lat: 0, lng: 0, altitude: 2.0 });
+            
+            // Initial update - sets correct position on load
+            updateUIBasedOnZoom();
+            
+            // Auto-rotation until user interacts
+            let autoRotate = true;
+            let rotationAngle = 0;
+            
+            function animate() {
+                if (autoRotate) {
+                    rotationAngle += 0.02; // Very slow, gentle rotation
+                    globe.pointOfView({ lat: 0, lng: rotationAngle, altitude: 2.0 });
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+            
+            // Stop auto-rotation on first user interaction
+            const controls = globe.controls();
+            const stopRotation = () => {
+                autoRotate = false;
+            };
+            
+            controls.addEventListener('start', stopRotation); // Mouse/touch down
+            controls.addEventListener('wheel', stopRotation); // Scroll wheel
+        }
+
+        // Custom tooltip function
+        let tooltipDiv = null;
+        
+        function showTooltip(country, word, articlesWithWord, totalArticles) {
+            // Remove existing tooltip
+            if (tooltipDiv) {
+                tooltipDiv.remove();
+            }
+            
+            // Create new tooltip
+            tooltipDiv = document.createElement('div');
+            tooltipDiv.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #ffffff;
+                padding: 20px 28px;
+                border: none;
+                color: black;
+                font-size: 14px;
+                z-index: 1000;
+                filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));
+                box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.8);
+            `;
+            
+            tooltipDiv.innerHTML = `
+                <div style="font-weight: 400; margin-bottom: 6px; font-size: 15px;">${country}</div>
+                <div style="font-size: 18px; font-weight: 400; margin-bottom: 6px;">"${word}"</div>
+                <div style="font-size: 12px; font-weight: 300;">appears in ${articlesWithWord}/${totalArticles} articles</div>
+            `;
+            
+            document.body.appendChild(tooltipDiv);
+            
+            // Close on click anywhere
+            setTimeout(() => {
+                document.addEventListener('click', function closeTooltip() {
+                    if (tooltipDiv) {
+                        tooltipDiv.remove();
+                        tooltipDiv = null;
+                    }
+                    document.removeEventListener('click', closeTooltip);
+                }, 100);
+            }, 100);
+        }
+    </script>
+    
+    <script src="https://unpkg.com/topojson-client@3"></script>
+</body>
+</html>
