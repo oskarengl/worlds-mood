@@ -232,6 +232,54 @@ COUNTRIES = {
 # Maximum articles to fetch per country
 MAX_ARTICLES_PER_COUNTRY = 30
 
+# Load unified news blacklist
+def load_news_blacklist():
+    """Load unified blacklist of news sources and words to filter out"""
+    blacklist_file = 'news_blacklist.json'
+    try:
+        with open(blacklist_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            return {
+                'headline_sources': data.get('headline_sources', []),
+                'source_words': set(w.lower() for w in data.get('source_words', []))
+            }
+    except FileNotFoundError:
+        print(f"[WARN] Blacklist file '{blacklist_file}' not found. No filtering will be applied.")
+        return {'headline_sources': [], 'source_words': set()}
+
+def should_filter_headline(headline, blacklist):
+    """
+    Check if headline contains any blacklisted source or spam patterns.
+    Returns True if it should be filtered out.
+    """
+    if not blacklist or not blacklist.get('headline_sources'):
+        return False
+    
+    headline_lower = headline.lower()
+    
+    # Check blacklisted sources
+    for source in blacklist['headline_sources']:
+        if source.lower() in headline_lower:
+            return True
+    
+    # Additional spam patterns
+    spam_patterns = [
+        r'^\s*\d+\s*[:|]\s*\d+\s*[-–]\s*',  # Scores like "0:3 -" or "8:3 -"
+        r'sendung\s+im\s+tv\s*[-–]\s*programm',  # German TV program listings
+        r'tv\s*[-–]\s*programm',
+        r'^\s*archives?\s+des?\s+',  # Archive pages
+        r'^\s*morning\s+news\s+bulletin\s+\d+',  # Generic news bulletins
+    ]
+    
+    for pattern in spam_patterns:
+        if re.search(pattern, headline_lower):
+            return True
+    
+    return False
+
+# Load unified blacklist at startup
+NEWS_BLACKLIST = load_news_blacklist()
+
 def fetch_news_for_country(country_name, country_code, timespan='24h'):
     """Fetch news from GDELT for a specific country"""
     
@@ -261,6 +309,7 @@ def fetch_news_for_country(country_name, country_code, timespan='24h'):
             
             if 'articles' in data and data['articles']:
                 articles = []
+                filtered_count = 0
                 for article in data['articles']:
                     # Extract title and description
                     title = article.get('title', '')
@@ -269,6 +318,11 @@ def fetch_news_for_country(country_name, country_code, timespan='24h'):
                     domain = article.get('domain', '')
                     
                     if title.strip():
+                        # Filter out blacklisted sources and spam
+                        if should_filter_headline(title, NEWS_BLACKLIST):
+                            filtered_count += 1
+                            continue
+                        
                         articles.append({
                             'title': title,
                             'text': title,  # Only analyze headlines
@@ -277,7 +331,10 @@ def fetch_news_for_country(country_name, country_code, timespan='24h'):
                             'url': url
                         })
                 
-                print(f" -> {len(articles)} articles")
+                if filtered_count > 0:
+                    print(f" -> {len(articles)} articles ({filtered_count} filtered)")
+                else:
+                    print(f" -> {len(articles)} articles")
                 return articles
             else:
                 print(f" -> 0 articles")
@@ -336,6 +393,7 @@ def get_word_frequency(texts):
             word = word.strip("'")
             if (len(word) > 3 and  # At least 4 characters
                 word not in stop_words and
+                word not in NEWS_BLACKLIST['source_words'] and  # Filter out news source names
                 not word.isdigit()):
                 unique_words.add(word)
         
@@ -368,6 +426,14 @@ def main():
     print(f"Max articles per country: {MAX_ARTICLES_PER_COUNTRY}")
     print(f"Timeframe: Last 24 hours")
     print(f"No rate limits - Unlimited queries!")
+    if NEWS_BLACKLIST['headline_sources']:
+        print(f"Headline filtering: ENABLED ({len(NEWS_BLACKLIST['headline_sources'])} sources blacklisted)")
+    else:
+        print(f"Headline filtering: DISABLED")
+    if NEWS_BLACKLIST['source_words']:
+        print(f"Word filtering: ENABLED ({len(NEWS_BLACKLIST['source_words'])} news source words blacklisted)")
+    else:
+        print(f"Word filtering: DISABLED")
     print("\n" + "="*80 + "\n")
     
     # FIRST PASS: Collect articles from last 24 hours
