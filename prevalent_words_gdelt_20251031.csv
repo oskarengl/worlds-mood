@@ -1,176 +1,176 @@
 country_name,week,prevalent_word,word_frequency,word_percentage,prevalence_score,num_articles,timeframe
-Eswatini,2025-W43,seal,1,100.0,50000.0,1,24h
-Chad,2025-W43,rentr,1,100.0,50000.0,1,24h
-Central African Republic,2025-W43,appui,1,100.0,50000.0,1,24h
-Rwanda,2025-W43,therwandan,1,100.0,50000.0,1,24h
-Liechtenstein,2025-W43,wirtschaftsstandort,1,100.0,50000.0,1,24h
-Djibouti,2025-W43,arta,1,100.0,50000.0,1,24h
-Eritrea,2025-W43,sisi,1,100.0,50000.0,1,24h
+Eswatini,2025-W43,ewade,1,100.0,50000.0,1,24h
+Uzbekistan,2025-W43,khiva,1,100.0,50000.0,1,24h
+Liechtenstein,2025-W43,zukunftsstrategie,1,100.0,50000.0,1,24h
+Vanuatu,2025-W43,storian,1,100.0,50000.0,1,24h
 Dominica,2025-W43,gosl,1,100.0,50000.0,1,7d
-Vanuatu,2025-W43,baldwin,1,100.0,50000.0,1,24h
 Laos,2025-W43,trieste,2,100.0,33333.33,2,7d
-Botswana,2025-W43,teachers,1,100.0,20000.0,1,24h
-Ethiopia,2025-W43,achpr,1,33.33,16666.67,3,24h
+Nicaragua,2025-W43,superhurac,2,66.67,22222.22,3,24h
+Central African Republic,2025-W43,zangba,1,33.33,16666.67,3,7d
 Seychelles,2025-W43,nurtures,2,50.0,16666.67,4,24h
+Cabo Verde,2025-W43,missa,1,33.33,16666.67,3,24h
+Ethiopia,2025-W43,achpr,1,33.33,16666.67,3,24h
+Djibouti,2025-W43,arta,1,33.33,16666.67,3,7d
 Burundi,2025-W43,burundi,5,83.33,13888.89,6,24h
-Belize,2025-W43,serves,1,25.0,12500.0,4,24h
-Cabo Verde,2025-W43,cabo,2,50.0,12500.0,4,24h
-Sao Tome and Principe,2025-W43,criada,1,25.0,12500.0,4,24h
-Mozambique,2025-W43,compromisso,1,25.0,12500.0,4,24h
-Monaco,2025-W43,comics,1,25.0,12500.0,4,24h
+Tanzania,2025-W43,retiring,2,40.0,13333.33,5,24h
+Botswana,2025-W43,behind,1,25.0,12500.0,4,24h
 Tonga,2025-W43,urging,1,25.0,12500.0,4,24h
-Angola,2025-W43,angola,3,50.0,12500.0,6,24h
-Zambia,2025-W43,sensitization,1,25.0,12500.0,4,24h
+Monaco,2025-W43,monaco,3,50.0,12500.0,6,24h
+Zambia,2025-W43,mbula,1,25.0,12500.0,4,24h
 Solomon Islands,2025-W43,solomon,6,85.71,12244.9,7,24h
-Maldives,2025-W43,oppose,1,20.0,10000.0,5,24h
 Grenada,2025-W43,kickoff,1,20.0,10000.0,5,24h
-Nicaragua,2025-W43,superhurac,2,28.57,9523.81,7,24h
-San Marino,2025-W43,marino,2,28.57,9523.81,7,24h
+Sao Tome and Principe,2025-W43,promete,1,20.0,10000.0,5,24h
+Republic of the Congo,2025-W43,adiac,4,50.0,10000.0,8,24h
+Maldives,2025-W43,lawmakers,1,20.0,10000.0,5,24h
+Montenegro,2025-W43,estoro,1,20.0,10000.0,5,24h
+Angola,2025-W43,quadros,2,28.57,9523.81,7,24h
 Samoa,2025-W43,telecomdaily,1,16.67,8333.33,6,7d
-Antigua and Barbuda,2025-W43,perils,1,16.67,8333.33,6,24h
-Turkmenistan,2025-W43,goals,1,16.67,8333.33,6,24h
-Republic of the Congo,2025-W43,adiac,7,63.64,7954.55,11,24h
-Tanzania,2025-W43,retiring,3,27.27,6818.18,11,24h
-Sierra Leone,2025-W43,indian,1,11.11,5555.56,9,24h
-Togo,2025-W43,togo,4,33.33,5555.56,12,24h
-Cote d'Ivoire,2025-W43,divoire,5,33.33,5555.56,15,24h
-Gambia,2025-W43,jammeh,2,16.67,5555.56,12,24h
-Lesotho,2025-W43,lesotho,1,11.11,5555.56,9,7d
-Guyana,2025-W43,policewoman,2,15.38,5128.21,13,24h
-Myanmar,2025-W43,rahul,2,14.29,4761.9,14,24h
-Oman,2025-W43,oman,5,27.78,4629.63,18,24h
-Burkina Faso,2025-W43,faso,7,36.84,4605.26,19,24h
-South Sudan,2025-W43,panel,1,9.09,4545.45,11,24h
-Haiti,2025-W43,haitian,4,22.22,4444.44,18,24h
-Venezuela,2025-W43,inicio,4,21.05,4210.53,19,24h
-North Korea,2025-W43,denuclearization,1,8.33,4166.67,12,24h
-Senegal,2025-W43,lequotidien,9,40.91,4090.91,22,24h
-Bahamas,2025-W43,reviews,4,20.0,4000.0,20,24h
-Montenegro,2025-W43,azerbejd,2,11.76,3921.57,17,24h
-Benin,2025-W43,maghreb,2,11.76,3921.57,17,24h
-Somalia,2025-W43,qaranimo,9,39.13,3913.04,23,24h
-Costa Rica,2025-W43,costa,7,38.89,3888.89,18,24h
-Liberia,2025-W43,resource,11,50.0,3846.15,22,24h
-Barbados,2025-W43,barbados,5,22.73,3787.88,22,24h
-Malawi,2025-W43,malawi,9,36.0,3600.0,25,24h
+Chad,2025-W43,scolaire,2,25.0,8333.33,8,7d
+Rwanda,2025-W43,diplomatie,1,16.67,8333.33,6,24h
+San Marino,2025-W43,marino,2,22.22,7407.41,9,24h
+South Sudan,2025-W43,machar,1,14.29,7142.86,7,24h
+Georgia,2025-W43,georgia,3,27.27,6818.18,11,24h
+Gambia,2025-W43,gambia,2,20.0,6666.67,10,24h
+Lesotho,2025-W43,ophthalmologist,1,11.11,5555.56,9,7d
+Barbados,2025-W43,barbados,3,21.43,5357.14,14,24h
+Benin,2025-W43,raire,2,15.38,5128.21,13,24h
+Haiti,2025-W43,haiti,5,35.71,5102.04,14,24h
+Turkmenistan,2025-W43,society,1,20.0,5000.0,5,24h
+Cote d'Ivoire,2025-W43,divoire,7,38.89,4861.11,18,24h
+Guyana,2025-W43,policewoman,2,13.33,4444.44,15,24h
+Democratic Republic of the Congo,2025-W43,tshisekedi,4,21.05,4210.53,19,24h
+Oman,2025-W43,oman,3,16.67,4166.67,18,24h
+Sudan,2025-W43,indictment,1,8.33,4166.67,12,24h
+Somalia,2025-W43,qaranimo,9,40.91,4090.91,22,24h
+Liberia,2025-W43,resource,11,47.83,3985.51,23,24h
+Antigua and Barbuda,2025-W43,forvaringsdom,1,7.69,3846.15,13,24h
+Gabon,2025-W43,warren,5,22.73,3787.88,22,24h
+Costa Rica,2025-W43,zamora,2,11.11,3703.7,18,24h
+Senegal,2025-W43,diop,4,18.18,3636.36,22,24h
 Mongolia,2025-W43,cocaine,1,7.14,3571.43,14,24h
-Gabon,2025-W43,warren,6,24.0,3428.57,25,24h
+Burkina Faso,2025-W43,faso,9,37.5,3409.09,24,24h
+Togo,2025-W43,togo,5,23.81,3401.36,21,24h
+Mozambique,2025-W43,maputo,2,10.0,3333.33,20,7d
+Myanmar,2025-W43,gandhi,2,10.0,3333.33,20,24h
 Brunei,2025-W43,brunei,30,100.0,3225.81,30,30d
-Georgia,2025-W43,georgia,8,28.57,3174.6,28,24h
+Zimbabwe,2025-W43,zimbabwe,18,60.0,3157.89,30,24h
 Saint Lucia,2025-W43,orce,16,53.33,3137.25,30,7d
+Lebanon,2025-W43,tayyar,14,46.67,3111.11,30,7d
 Fiji,2025-W43,fiji,9,31.03,3103.45,29,24h
-Sri Lanka,2025-W43,lankadeepa,11,36.67,3055.56,30,24h
-Croatia,2025-W43,slobodna,11,36.67,3055.56,30,24h
-Lebanon,2025-W43,tayyar,10,33.33,3030.3,30,24h
-Malta,2025-W43,malta,6,24.0,3000.0,25,24h
-Panama,2025-W43,panam,9,30.0,3000.0,30,24h
-Zimbabwe,2025-W43,zimbabwe,17,56.67,2982.46,30,24h
-New Zealand,2025-W43,scoop,8,26.67,2962.96,30,24h
-Guinea,2025-W43,guin,8,26.67,2962.96,30,24h
-Cambodia,2025-W43,kampuchea,8,26.67,2962.96,30,24h
-Democratic Republic of the Congo,2025-W43,rence,6,20.69,2955.67,29,24h
-Mali,2025-W43,studio,7,23.33,2916.67,30,24h
+Nepal,2025-W43,hour,12,40.0,3076.92,30,7d
+Belize,2025-W43,belize,22,73.33,3055.56,30,30d
+Malawi,2025-W43,malawi,11,36.67,3055.56,30,24h
+Guinea,2025-W43,guin,11,36.67,3055.56,30,24h
+Venezuela,2025-W43,mpps,2,9.09,3030.3,22,24h
+Armenia,2025-W43,lurer,9,30.0,3000.0,30,24h
+Panama,2025-W43,panam,8,26.67,2962.96,30,24h
+Sri Lanka,2025-W43,lankadeepa,8,26.67,2962.96,30,24h
+Slovenia,2025-W43,preberi,8,26.67,2962.96,30,24h
+El Salvador,2025-W43,latino,8,26.67,2962.96,30,24h
+Luxembourg,2025-W43,luxembourg,7,23.33,2916.67,30,24h
 Namibia,2025-W43,namibia,7,23.33,2916.67,30,24h
-Saudi Arabia,2025-W43,meed,7,23.33,2916.67,30,24h
-Luxembourg,2025-W43,cran,7,23.33,2916.67,30,24h
-Albania,2025-W43,veliaj,7,23.33,2916.67,30,24h
-Ghana,2025-W43,ghana,7,23.33,2916.67,30,24h
-Finland,2025-W43,stara,7,23.33,2916.67,30,24h
+Dominican Republic,2025-W43,ensegundos,7,23.33,2916.67,30,24h
+Belgium,2025-W43,informaticien,7,23.33,2916.67,30,24h
+Sierra Leone,2025-W43,stunning,2,8.7,2898.55,23,24h
 Saint Vincent and the Grenadines,2025-W43,gonsalves,3,11.54,2884.62,26,24h
-Australia,2025-W43,welcomes,6,20.0,2857.14,30,24h
-Uruguay,2025-W43,salto,6,20.0,2857.14,30,24h
-Cuba,2025-W43,cuban,6,20.0,2857.14,30,24h
-Kyrgyzstan,2025-W43,kyrgyzstan,5,16.67,2777.78,30,24h
-Ukraine,2025-W43,blackseanews,5,16.67,2777.78,30,24h
-El Salvador,2025-W43,ndote,5,16.67,2777.78,30,24h
-Paraguay,2025-W43,naci,10,33.33,2777.78,30,24h
-Ireland,2025-W43,limerick,5,16.67,2777.78,30,24h
-Portugal,2025-W43,porto,4,13.79,2758.62,29,24h
+Paraguay,2025-W43,naci,5,17.24,2873.56,29,24h
+Bahamas,2025-W43,details,6,20.0,2857.14,30,24h
+Australia,2025-W43,suzuki,6,20.0,2857.14,30,24h
+Mexico,2025-W43,neas,6,20.0,2857.14,30,24h
+Algeria,2025-W43,lexpression,5,16.67,2777.78,30,24h
+Ecuador,2025-W43,grafo,5,16.67,2777.78,30,24h
+Mali,2025-W43,conomique,5,16.67,2777.78,30,24h
+Tajikistan,2025-W43,mobile,1,5.56,2777.78,18,24h
+Iceland,2025-W43,fyrir,5,16.67,2777.78,30,24h
+Latvia,2025-W43,konvencijas,5,16.67,2777.78,30,24h
+Afghanistan,2025-W43,afghan,4,13.79,2758.62,29,24h
 Niger,2025-W43,sahel,9,30.0,2727.27,30,24h
-Tunisia,2025-W43,tunis,3,10.71,2678.57,28,24h
-Indonesia,2025-W43,kalsel,4,13.33,2666.67,30,24h
-Norway,2025-W43,ukeblad,4,13.33,2666.67,30,24h
-Serbia,2025-W43,vreme,4,13.33,2666.67,30,24h
-Latvia,2025-W43,stambulas,4,13.33,2666.67,30,24h
-Honduras,2025-W43,honduras,4,13.33,2666.67,30,24h
-Peru,2025-W43,cines,4,13.33,2666.67,30,24h
-Colombia,2025-W43,petro,4,13.33,2666.67,30,24h
-Italy,2025-W43,della,4,13.33,2666.67,30,24h
-Japan,2025-W43,sponichi,4,13.33,2666.67,30,24h
-Mexico,2025-W43,veracruz,4,13.33,2666.67,30,24h
-Azerbaijan,2025-W43,rbaycan,4,13.33,2666.67,30,24h
-Belarus,2025-W43,lukashenko,4,13.33,2666.67,30,24h
-Ecuador,2025-W43,feriado,4,13.33,2666.67,30,24h
-Brazil,2025-W43,nesta,4,13.33,2666.67,30,24h
-Moldova,2025-W43,munteanu,4,13.33,2666.67,30,24h
-Andorra,2025-W43,lentry,3,10.0,2500.0,30,24h
-Cameroon,2025-W43,douala,3,10.0,2500.0,30,24h
-Canada,2025-W43,montreal,3,10.0,2500.0,30,24h
-Belgium,2025-W43,belges,3,10.0,2500.0,30,24h
-Czechia,2025-W43,bude,3,10.0,2500.0,30,24h
-Denmark,2025-W43,danske,3,10.0,2500.0,30,24h
-Dominican Republic,2025-W43,santo,3,10.0,2500.0,30,24h
+Peru,2025-W43,nicol,3,10.71,2678.57,28,24h
+Mauritius,2025-W43,ravatomanga,4,13.33,2666.67,30,24h
+Denmark,2025-W43,tidligere,4,13.33,2666.67,30,24h
+Lithuania,2025-W43,kurios,4,13.33,2666.67,30,7d
+Sweden,2025-W43,till,4,13.33,2666.67,30,24h
+Suriname,2025-W43,strijd,2,8.0,2666.67,25,24h
+Uruguay,2025-W43,diaria,4,13.33,2666.67,30,24h
+Kyrgyzstan,2025-W43,uzbekistan,4,13.33,2666.67,30,24h
+Hungary,2025-W43,egyik,4,13.33,2666.67,30,24h
+Honduras,2025-W43,centroamericana,4,13.33,2666.67,30,24h
+Malta,2025-W43,malta,4,13.33,2666.67,30,24h
+New Zealand,2025-W43,otago,4,13.33,2666.67,30,24h
+Syria,2025-W43,arabe,4,13.33,2666.67,30,24h
+Germany,2025-W43,vater,4,13.33,2666.67,30,24h
+Argentina,2025-W43,intransigente,4,13.33,2666.67,30,24h
+Moldova,2025-W43,zile,4,13.33,2666.67,30,24h
+Andorra,2025-W43,exit,3,10.34,2586.21,29,24h
+Philippines,2025-W43,westernpacificweather,2,7.69,2564.1,26,24h
+Albania,2025-W43,balluku,3,10.0,2500.0,30,24h
+Cambodia,2025-W43,kampuchea,3,10.0,2500.0,30,24h
+Austria,2025-W43,salzburg,3,10.0,2500.0,30,24h
+Ghana,2025-W43,ghana,6,20.0,2500.0,30,24h
+Chile,2025-W43,apuestas,3,10.0,2500.0,30,24h
+Bosnia and Herzegovina,2025-W43,vije,3,10.0,2500.0,30,24h
+Finland,2025-W43,euroa,3,10.0,2500.0,30,24h
 Uganda,2025-W43,centenary,3,10.0,2500.0,30,24h
-Iraq,2025-W43,surprise,3,10.0,2500.0,30,24h
-Netherlands,2025-W43,dutch,3,10.0,2500.0,30,24h
-Lithuania,2025-W43,vagyst,3,10.0,2500.0,30,24h
-Kosovo,2025-W43,rritja,3,10.0,2500.0,30,24h
-Iceland,2025-W43,eftir,3,10.0,2500.0,30,24h
-Jamaica,2025-W43,toll,3,10.0,2500.0,30,24h
-Estonia,2025-W43,vooremaa,3,10.0,2500.0,30,24h
-Romania,2025-W43,doar,3,10.0,2500.0,30,24h
+Poland,2025-W43,rozenek,3,10.0,2500.0,30,24h
+Israel,2025-W43,colonists,3,10.0,2500.0,30,24h
+Jamaica,2025-W43,melissaaftermath,3,10.0,2500.0,30,24h
+Italy,2025-W43,delle,3,10.0,2500.0,30,24h
+Ireland,2025-W43,mayo,3,10.0,2500.0,30,24h
+Cuba,2025-W43,noticias,3,10.0,2500.0,30,24h
+Kuwait,2025-W43,kuna,3,10.0,2500.0,30,24h
+Qatar,2025-W43,airways,3,10.0,2500.0,30,24h
+Mauritania,2025-W43,lectronique,3,10.0,2500.0,30,7d
+Croatia,2025-W43,koji,3,10.0,2500.0,30,24h
+Canada,2025-W43,elgin,3,10.0,2500.0,30,24h
+Turkey,2025-W43,hapis,3,10.0,2500.0,30,24h
 Papua New Guinea,2025-W43,emtv,3,10.0,2500.0,30,24h
-Poland,2025-W43,dzie,3,10.0,2500.0,30,24h
-Slovenia,2025-W43,tudi,3,10.0,2500.0,30,24h
-Singapore,2025-W43,berita,3,10.0,2500.0,30,24h
-Turkey,2025-W43,milyon,3,10.0,2500.0,30,24h
-Switzerland,2025-W43,spiel,3,10.0,2500.0,30,24h
-Sweden,2025-W43,lpbehov,3,10.0,2500.0,30,24h
-Vietnam,2025-W43,trong,3,10.0,2500.0,30,24h
-South Africa,2025-W43,analyst,3,10.0,2500.0,30,24h
-Mauritania,2025-W43,lectronique,3,10.0,2500.0,30,24h
-United Arab Emirates,2025-W43,dhabi,3,10.0,2500.0,30,24h
-Suriname,2025-W43,ware,2,7.41,2469.14,27,24h
-Qatar,2025-W43,qatar,13,43.33,2407.41,30,24h
-Trinidad and Tobago,2025-W43,critical,2,7.14,2380.95,28,24h
-Germany,2025-W43,russlands,2,6.67,2222.22,30,24h
-Afghanistan,2025-W43,afghan,2,6.67,2222.22,30,24h
-Austria,2025-W43,mehr,2,6.67,2222.22,30,24h
-Argentina,2025-W43,conducci,2,6.67,2222.22,30,24h
-Algeria,2025-W43,tebboune,2,6.67,2222.22,30,24h
-Bangladesh,2025-W43,issue,2,6.67,2222.22,30,24h
-Bosnia and Herzegovina,2025-W43,plja,2,6.67,2222.22,30,24h
-Chile,2025-W43,veda,2,6.67,2222.22,30,24h
-Bolivia,2025-W43,senado,2,6.67,2222.22,30,24h
-Morocco,2025-W43,casablanca,2,6.67,2222.22,30,24h
-Spain,2025-W43,espa,2,6.67,2222.22,30,24h
-Hungary,2025-W43,lehet,2,6.67,2222.22,30,24h
-India,2025-W43,bhubaneswar,2,6.67,2222.22,30,24h
-France,2025-W43,pompiers,2,6.67,2222.22,30,24h
-Philippines,2025-W43,manila,2,6.67,2222.22,30,24h
-Pakistan,2025-W43,lodge,2,6.67,2222.22,30,24h
-Slovakia,2025-W43,tajomn,2,6.67,2222.22,30,24h
-United Kingdom,2025-W43,attacker,2,6.67,2222.22,30,24h
-Guatemala,2025-W43,insivumeh,2,6.67,2222.22,30,24h
-Kuwait,2025-W43,kuna,2,6.67,2222.22,30,24h
-Kenya,2025-W43,abducted,2,6.67,2222.22,30,24h
-Nigeria,2025-W43,newspaper,2,6.67,2222.22,30,24h
-South Korea,2025-W43,apec,9,30.0,1875.0,30,24h
-Sudan,2025-W43,indictment,1,3.45,1724.14,29,24h
-Armenia,2025-W43,politico,1,3.33,1666.67,30,24h
-Russia,2025-W43,limp,1,3.33,1666.67,30,24h
-Egypt,2025-W43,lightness,1,3.33,1666.67,30,24h
-China,2025-W43,vast,1,3.33,1666.67,30,24h
-Cyprus,2025-W43,minion,1,3.33,1666.67,30,24h
-Malaysia,2025-W43,blemish,1,3.33,1666.67,30,24h
-Iran,2025-W43,executions,1,3.33,1666.67,30,24h
-Greece,2025-W43,iphone,1,3.33,1666.67,30,24h
-Kazakhstan,2025-W43,woosong,1,3.33,1666.67,30,24h
-United States,2025-W43,defensive,1,3.33,1666.67,30,24h
-Mauritius,2025-W43,stranger,1,3.33,1666.67,30,24h
-Madagascar,2025-W43,herintsalama,1,3.33,1666.67,30,24h
-Jordan,2025-W43,vomero,1,3.33,1666.67,30,24h
-Thailand,2025-W43,vipa,1,3.33,1666.67,30,24h
-Tajikistan,2025-W43,mobile,1,5.88,1470.59,17,24h
-Bulgaria,2025-W43,kyiv,1,3.33,1111.11,30,24h
-Israel,2025-W43,edition,1,3.33,833.33,30,24h
+Serbia,2025-W43,ulova,3,10.0,2500.0,30,24h
+Switzerland,2025-W43,aktie,3,10.0,2500.0,30,24h
+Indonesia,2025-W43,bola,3,10.0,2500.0,30,7d
+United States,2025-W43,patel,3,10.0,2500.0,30,24h
+United Kingdom,2025-W43,stripping,3,10.0,2500.0,30,24h
+Guatemala,2025-W43,guatemala,7,23.33,2333.33,30,24h
+Tunisia,2025-W43,lancement,2,6.9,2298.85,29,24h
+Trinidad and Tobago,2025-W43,trotters,1,4.55,2272.73,22,24h
+Cyprus,2025-W43,leri,2,6.67,2222.22,30,24h
+India,2025-W43,mandanna,2,6.67,2222.22,30,24h
+Bolivia,2025-W43,santos,2,6.67,2222.22,30,24h
+Azerbaijan,2025-W43,vaxt,2,6.67,2222.22,30,24h
+Iraq,2025-W43,corrected,2,6.67,2222.22,30,24h
+Brazil,2025-W43,velho,2,6.67,2222.22,30,24h
+Cameroon,2025-W43,larr,2,6.67,2222.22,30,24h
+China,2025-W43,proposal,2,6.67,2222.22,30,24h
+France,2025-W43,usine,2,6.67,2222.22,30,24h
+Estonia,2025-W43,olla,2,6.67,2222.22,30,24h
+North Korea,2025-W43,denuclearization,2,6.67,2222.22,30,7d
+Kenya,2025-W43,raila,2,6.67,2222.22,30,7d
+United Arab Emirates,2025-W43,crown,2,6.67,2222.22,30,24h
+Colombia,2025-W43,defensor,2,6.67,2222.22,30,7d
+Slovakia,2025-W43,hnonline,2,6.67,2222.22,30,24h
+Singapore,2025-W43,murasu,2,6.67,2222.22,30,24h
+Spain,2025-W43,coru,2,6.67,2222.22,30,24h
+Portugal,2025-W43,inovao,2,6.67,2222.22,30,24h
+Norway,2025-W43,etter,2,6.67,2222.22,30,24h
+Nigeria,2025-W43,nigerian,2,6.67,2222.22,30,24h
+Netherlands,2025-W43,maken,2,6.67,2222.22,30,24h
+Czechia,2025-W43,dostal,2,6.67,2222.22,30,24h
+Malaysia,2025-W43,anwar,2,6.67,2222.22,30,24h
+Kosovo,2025-W43,tyre,2,6.67,2222.22,30,24h
+Pakistan,2025-W43,compensation,2,6.67,2222.22,30,24h
+Romania,2025-W43,vrea,2,6.67,2222.22,30,24h
+South Africa,2025-W43,mashatile,2,6.67,2222.22,30,24h
+Vietnam,2025-W43,jack,2,6.67,2222.22,30,24h
+Thailand,2025-W43,thai,3,10.0,2000.0,30,24h
+Belarus,2025-W43,duty,1,3.33,1666.67,30,24h
+Greece,2025-W43,humvee,1,3.33,1666.67,30,24h
+Bangladesh,2025-W43,internatrional,1,3.33,1666.67,30,24h
+Jordan,2025-W43,nike,1,3.33,1666.67,30,24h
+Iran,2025-W43,neutral,1,3.33,1666.67,30,24h
+Russia,2025-W43,belicista,1,3.33,1666.67,30,24h
+Madagascar,2025-W43,uspace,1,3.33,1666.67,30,24h
+North Macedonia,2025-W43,dodikun,1,3.33,1666.67,30,24h
+Morocco,2025-W43,sszecsap,1,3.33,1666.67,30,24h
+Japan,2025-W43,gate,1,3.33,1666.67,30,24h
+Saudi Arabia,2025-W43,cars,1,3.33,1666.67,30,24h
+Egypt,2025-W43,every,1,3.33,1666.67,30,7d
+Kazakhstan,2025-W43,kgir,1,3.33,1666.67,30,7d
