@@ -1,179 +1,176 @@
 country_name,week,prevalent_word,word_frequency,word_percentage,prevalence_score,num_articles,timeframe
-Zambia,2025-W44,innovative,1,100.0,50000.0,1,24h
-Eswatini,2025-W44,mnwap,1,100.0,50000.0,1,7d
-Solomon Islands,2025-W44,strengthens,1,100.0,50000.0,1,24h
+Eswatini,2025-W44,ewade,1,100.0,50000.0,1,7d
+Liechtenstein,2025-W44,medienhaus,1,100.0,50000.0,1,24h
+Mozambique,2025-W44,parruque,1,100.0,50000.0,1,24h
+Saint Lucia,2025-W44,orce,2,100.0,33333.33,2,24h
 Laos,2025-W44,fiction,2,100.0,33333.33,2,7d
-Tonga,2025-W44,eliesa,1,50.0,25000.0,2,24h
-Mozambique,2025-W44,matola,1,50.0,25000.0,2,24h
-Eritrea,2025-W44,asmara,1,50.0,25000.0,2,24h
-Central African Republic,2025-W44,appui,1,50.0,25000.0,2,7d
-Cabo Verde,2025-W44,ilha,1,50.0,25000.0,2,24h
 Burundi,2025-W44,burundi,3,100.0,25000.0,3,24h
-Gambia,2025-W44,concealing,1,33.33,16666.67,3,24h
-Maldives,2025-W44,shifts,1,33.33,16666.67,3,24h
-Samoa,2025-W44,billions,1,33.33,16666.67,3,7d
-Dominica,2025-W44,related,1,33.33,16666.67,3,30d
-Djibouti,2025-W44,guelleh,2,50.0,16666.67,4,7d
+Eritrea,2025-W44,asmara,1,50.0,25000.0,2,24h
+Tonga,2025-W44,surgery,1,50.0,25000.0,2,24h
+Central African Republic,2025-W44,appui,1,50.0,25000.0,2,7d
+Maldives,2025-W44,foundations,1,33.33,16666.67,3,24h
+Cabo Verde,2025-W44,brava,2,50.0,16666.67,4,24h
+Samoa,2025-W44,digit,1,33.33,16666.67,3,7d
+Zambia,2025-W44,unspoken,1,33.33,16666.67,3,24h
+Seychelles,2025-W44,consistent,2,50.0,16666.67,4,24h
 Saint Vincent and the Grenadines,2025-W44,svgbc,1,33.33,16666.67,3,24h
-Uzbekistan,2025-W44,uzcard,1,33.33,16666.67,3,24h
-Saint Lucia,2025-W44,orce,5,83.33,13888.89,6,24h
-Liechtenstein,2025-W44,wieder,1,25.0,12500.0,4,7d
+Dominica,2025-W44,gosl,1,33.33,16666.67,3,30d
+Djibouti,2025-W44,guelleh,2,50.0,16666.67,4,7d
 Angola,2025-W44,longas,1,25.0,12500.0,4,24h
+Rwanda,2025-W44,rwanda,3,60.0,12000.0,5,24h
 Monaco,2025-W44,lucca,2,33.33,11111.11,6,24h
-Rwanda,2025-W44,kagame,1,20.0,10000.0,5,24h
-Republic of the Congo,2025-W44,adiac,6,66.67,9523.81,9,24h
-Montenegro,2025-W44,ivanje,2,28.57,9523.81,7,24h
-Tanzania,2025-W44,yatoa,3,37.5,9375.0,8,24h
-Botswana,2025-W44,sojwe,1,16.67,8333.33,6,24h
-Haiti,2025-W44,serre,1,16.67,8333.33,6,24h
-San Marino,2025-W44,rimini,3,30.0,7500.0,10,24h
-Turkmenistan,2025-W44,ciet,8,66.67,7407.41,12,24h
-Ethiopia,2025-W44,morsy,2,22.22,7407.41,9,24h
-Antigua and Barbuda,2025-W44,omfattende,2,22.22,7407.41,9,24h
-Chad,2025-W44,tchadien,1,14.29,7142.86,7,7d
-South Sudan,2025-W44,kiir,2,20.0,6666.67,10,24h
-Gabon,2025-W44,duire,1,12.5,6250.0,8,24h
+Solomon Islands,2025-W44,solomon,4,66.67,11111.11,6,24h
+Republic of the Congo,2025-W44,congo,7,77.78,9722.22,9,24h
+Haiti,2025-W44,largement,2,28.57,9523.81,7,24h
+Chad,2025-W44,scolaire,2,28.57,9523.81,7,7d
+San Marino,2025-W44,rimini,2,25.0,8333.33,8,24h
+Guyana,2025-W44,apnu,2,22.22,7407.41,9,24h
+Somalia,2025-W44,jowhar,8,66.67,7407.41,12,24h
+Botswana,2025-W44,mmegi,3,27.27,6818.18,11,24h
+Montenegro,2025-W44,saobra,2,20.0,6666.67,10,24h
+Cote d'Ivoire,2025-W44,gislatives,2,20.0,6666.67,10,24h
+Gabon,2025-W44,quatoriale,1,12.5,6250.0,8,24h
+Antigua and Barbuda,2025-W44,hosting,1,12.5,6250.0,8,24h
+Tanzania,2025-W44,yatoa,3,25.0,6250.0,12,24h
+Ethiopia,2025-W44,geospatial,2,18.18,6060.61,11,24h
 Nicaragua,2025-W44,superhurac,5,35.71,5952.38,14,7d
-Somalia,2025-W44,jowhar,5,35.71,5952.38,14,24h
 Brunei,2025-W44,brunei,16,100.0,5882.35,16,24h
-Myanmar,2025-W44,commencement,1,11.11,5555.56,9,24h
-Cote d'Ivoire,2025-W44,dalassane,2,22.22,5555.56,9,24h
+South Sudan,2025-W44,kiir,2,16.67,5555.56,12,24h
+Benin,2025-W44,voque,1,11.11,5555.56,9,24h
+Sao Tome and Principe,2025-W44,ncipe,4,26.67,5333.33,15,7d
 Lesotho,2025-W44,matekane,3,20.0,5000.0,15,7d
-Mongolia,2025-W44,cologne,1,10.0,5000.0,10,24h
-Tajikistan,2025-W44,shadow,1,10.0,5000.0,10,24h
-Grenada,2025-W44,grenadian,2,13.33,4444.44,15,7d
-Georgia,2025-W44,georgia,7,35.0,4375.0,20,24h
-Barbados,2025-W44,shooting,1,8.33,4166.67,12,24h
-Sao Tome and Principe,2025-W44,energia,3,15.79,3947.37,19,7d
-Togo,2025-W44,pare,2,11.76,3921.57,17,24h
-Andorra,2025-W44,dandorra,9,37.5,3750.0,24,24h
-Syria,2025-W44,arrogancia,3,15.0,3750.0,20,24h
-North Korea,2025-W44,korea,7,46.67,3589.74,15,24h
-Sierra Leone,2025-W44,patnaik,1,7.14,3571.43,14,24h
-Benin,2025-W44,iranien,1,7.14,3571.43,14,24h
-Liberia,2025-W44,dawn,11,42.31,3525.64,26,24h
-Uganda,2025-W44,museveni,2,10.53,3508.77,19,24h
-Suriname,2025-W44,suriname,5,20.83,3472.22,24,24h
+North Korea,2025-W44,korean,2,14.29,4761.9,14,24h
+Fiji,2025-W44,palau,3,18.75,4687.5,16,24h
+Grenada,2025-W44,grenada,2,13.33,4444.44,15,7d
+Belize,2025-W44,belize,12,60.0,4285.71,20,24h
+Myanmar,2025-W44,quetta,1,8.33,4166.67,12,24h
+Sierra Leone,2025-W44,sparking,1,8.33,4166.67,12,24h
+Georgia,2025-W44,georgia,7,31.82,3977.27,22,24h
+Trinidad and Tobago,2025-W44,tobago,3,15.0,3750.0,20,24h
+Vanuatu,2025-W44,criticises,2,11.11,3703.7,18,7d
+Mauritania,2025-W44,tahalil,3,14.29,3571.43,21,24h
+Oman,2025-W44,sultan,3,14.29,3571.43,21,24h
+Togo,2025-W44,populations,1,7.14,3571.43,14,24h
+Mongolia,2025-W44,breakthrough,1,7.14,3571.43,14,24h
+Malta,2025-W44,roderick,2,10.0,3333.33,20,24h
 Costa Rica,2025-W44,asamblea,2,10.0,3333.33,20,24h
-Fiji,2025-W44,fiji,5,19.23,3205.13,26,24h
-Afghanistan,2025-W44,ariana,4,16.0,3200.0,25,24h
-Oman,2025-W44,spain,4,16.0,3200.0,25,24h
-Nepal,2025-W44,updated,17,56.67,3148.15,30,24h
-Japan,2025-W44,sponichi,13,43.33,3095.24,30,24h
-Tunisia,2025-W44,magazine,5,18.52,3086.42,27,24h
-Malta,2025-W44,malta,5,18.52,3086.42,27,24h
-Venezuela,2025-W44,ciudadccs,4,15.38,3076.92,26,24h
-Belize,2025-W44,belize,21,70.0,3043.48,30,24h
-Senegal,2025-W44,afis,2,9.09,3030.3,22,24h
-Uruguay,2025-W44,pago,10,33.33,3030.3,30,24h
-Mexico,2025-W44,policiacas,9,30.0,3000.0,30,24h
-Slovenia,2025-W44,novica,9,30.0,3000.0,30,24h
-Seychelles,2025-W44,seychelles,5,17.86,2976.19,28,7d
-Bulgaria,2025-W44,fakti,7,23.33,2916.67,30,24h
+Burkina Faso,2025-W44,faire,3,13.04,3260.87,23,24h
+Suriname,2025-W44,suriname,3,13.04,3260.87,23,24h
+Andorra,2025-W44,tabac,2,9.52,3174.6,21,24h
+Liberia,2025-W44,resource,15,50.0,3125.0,30,24h
+Barbados,2025-W44,agree,1,6.25,3125.0,16,24h
+Malawi,2025-W44,malawi,12,40.0,3076.92,30,24h
+Turkmenistan,2025-W44,turkmenistan,12,40.0,3076.92,30,7d
+Afghanistan,2025-W44,afghanistan,5,17.86,2976.19,28,24h
+Ecuador,2025-W44,correo,7,23.33,2916.67,30,24h
+Sri Lanka,2025-W44,lankadeepa,7,23.33,2916.67,30,24h
 Namibia,2025-W44,republikein,7,23.33,2916.67,30,24h
-Nigeria,2025-W44,thisdaylive,7,23.33,2916.67,30,24h
-Luxembourg,2025-W44,cran,7,23.33,2916.67,30,24h
-Malawi,2025-W44,malawi,7,23.33,2916.67,30,24h
-Austria,2025-W44,erfasst,2,8.7,2898.55,23,24h
-Burkina Faso,2025-W44,pouse,2,8.7,2898.55,23,24h
-Philippines,2025-W44,tino,4,14.29,2857.14,28,24h
-Armenia,2025-W44,lurer,6,20.0,2857.14,30,24h
-Argentina,2025-W44,pregon,6,20.0,2857.14,30,24h
-Peru,2025-W44,betssy,6,20.0,2857.14,30,24h
+Niger,2025-W44,sahel,7,23.33,2916.67,30,24h
+Senegal,2025-W44,lequotidien,3,11.54,2884.62,26,7d
 Zimbabwe,2025-W44,zimbabwe,6,20.0,2857.14,30,24h
+Luxembourg,2025-W44,cran,6,20.0,2857.14,30,24h
 Lebanon,2025-W44,tayyar,6,20.0,2857.14,30,24h
-Slovakia,2025-W44,hnonline,5,16.67,2777.78,30,24h
-Sri Lanka,2025-W44,lanka,5,16.67,2777.78,30,24h
-Vanuatu,2025-W44,playtime,1,5.56,2777.78,18,7d
-Singapore,2025-W44,murasu,5,16.67,2777.78,30,24h
-Paraguay,2025-W44,paraguay,5,16.67,2777.78,30,24h
-Lithuania,2025-W44,portalas,5,16.67,2777.78,30,24h
-Mauritania,2025-W44,lectronique,3,11.11,2777.78,27,24h
-Bolivia,2025-W44,lara,5,16.67,2777.78,30,24h
-Bosnia and Herzegovina,2025-W44,penzionera,5,16.67,2777.78,30,24h
-Canada,2025-W44,ottawa,4,13.79,2758.62,29,24h
-Cameroon,2025-W44,cameroun,23,76.67,2738.1,30,24h
-Ecuador,2025-W44,todos,9,30.0,2727.27,30,24h
-Kuwait,2025-W44,kuna,4,13.33,2666.67,30,24h
+Slovenia,2025-W44,preberi,5,16.67,2777.78,30,24h
+Mali,2025-W44,carburant,3,11.11,2777.78,27,24h
+Latvia,2025-W44,konvencijas,5,16.67,2777.78,30,24h
+Kuwait,2025-W44,kuna,5,16.67,2777.78,30,24h
+Bosnia and Herzegovina,2025-W44,doma,5,16.67,2777.78,30,24h
+Iceland,2025-W44,icenews,5,16.67,2777.78,30,24h
+Peru,2025-W44,juliaca,4,13.79,2758.62,29,24h
+Cameroon,2025-W44,cameroun,22,73.33,2716.05,30,24h
+Moldova,2025-W44,munteanu,4,13.33,2666.67,30,24h
+Nepal,2025-W44,nepal,8,26.67,2666.67,30,24h
+India,2025-W44,bihar,4,13.33,2666.67,30,24h
+Uruguay,2025-W44,uruguay,4,13.33,2666.67,30,24h
+Gambia,2025-W44,jammeh,4,13.33,2666.67,30,7d
+Slovakia,2025-W44,schv,4,13.33,2666.67,30,24h
+North Macedonia,2025-W44,almakos,4,13.33,2666.67,30,24h
+Norway,2025-W44,digi,4,13.33,2666.67,30,24h
+Lithuania,2025-W44,kaip,4,13.33,2666.67,30,24h
+El Salvador,2025-W44,inform,4,13.33,2666.67,30,24h
+Australia,2025-W44,taiwanese,4,13.33,2666.67,30,24h
+Netherlands,2025-W44,channel,4,13.33,2666.67,30,24h
+Ireland,2025-W44,ireland,4,13.33,2666.67,30,24h
+Kyrgyzstan,2025-W44,kyrgyzstan,4,13.33,2666.67,30,24h
 Guatemala,2025-W44,valo,4,13.33,2666.67,30,24h
-Kosovo,2025-W44,osmani,4,13.33,2666.67,30,24h
-South Africa,2025-W44,recruitment,4,13.33,2666.67,30,24h
-United States,2025-W44,allison,4,13.33,2666.67,30,24h
-Belarus,2025-W44,belarus,4,13.33,2666.67,30,24h
-Australia,2025-W44,landcruiser,4,13.33,2666.67,30,24h
-Democratic Republic of the Congo,2025-W44,tshisekedi,4,13.33,2666.67,30,24h
-Denmark,2025-W44,borgmester,4,13.33,2666.67,30,24h
-Chile,2025-W44,camino,4,13.33,2666.67,30,24h
-Finland,2025-W44,yorkin,4,13.33,2666.67,30,24h
-Romania,2025-W44,prim,4,13.33,2666.67,30,24h
-United Kingdom,2025-W44,worcester,4,13.33,2666.67,30,24h
-Italy,2025-W44,nuovo,4,13.33,2666.67,30,24h
-Bahamas,2025-W44,girl,2,7.69,2564.1,26,24h
-Belgium,2025-W44,editiepajot,3,10.0,2500.0,30,24h
-Croatia,2025-W44,jutarnji,3,10.0,2500.0,30,24h
-Estonia,2025-W44,eesti,3,10.0,2500.0,30,24h
-El Salvador,2025-W44,credibilidad,3,10.0,2500.0,30,24h
-Niger,2025-W44,sahel,3,10.0,2500.0,30,24h
-Spain,2025-W44,garc,3,10.0,2500.0,30,24h
-Turkey,2025-W44,haberler,3,10.0,2500.0,30,24h
-Vietnam,2025-W44,sinh,3,10.0,2500.0,30,24h
-Qatar,2025-W44,sheikha,3,10.0,2500.0,30,24h
-Netherlands,2025-W44,moeder,3,10.0,2500.0,30,24h
-Kyrgyzstan,2025-W44,kyrgyzstan,3,10.0,2500.0,30,24h
-Indonesia,2025-W44,juta,3,10.0,2500.0,30,24h
-Hungary,2025-W44,ltoz,3,10.0,2500.0,30,24h
-Jamaica,2025-W44,holness,3,10.0,2500.0,30,24h
-Ireland,2025-W44,securing,3,10.0,2500.0,30,24h
+Kosovo,2025-W44,zvicra,4,13.33,2666.67,30,24h
+Bolivia,2025-W44,arce,4,13.33,2666.67,30,24h
+Croatia,2025-W44,samo,4,13.33,2666.67,30,24h
+Guinea,2025-W44,conakry,3,10.34,2586.21,29,24h
+Azerbaijan,2025-W44,rbaycan,3,10.0,2500.0,30,24h
 Cuba,2025-W44,cuban,3,10.0,2500.0,30,24h
-Czechia,2025-W44,politika,3,10.0,2500.0,30,24h
-Guinea,2025-W44,enews,3,10.0,2500.0,30,24h
-Germany,2025-W44,rekordl,3,10.0,2500.0,30,24h
-Portugal,2025-W44,anos,3,10.0,2500.0,30,24h
-New Zealand,2025-W44,seat,3,10.0,2500.0,30,24h
-Israel,2025-W44,forward,3,10.0,2500.0,30,24h
-Iceland,2025-W44,fundu,3,10.0,2500.0,30,24h
-Mali,2025-W44,lonu,2,7.14,2380.95,28,24h
-Trinidad and Tobago,2025-W44,kamla,2,7.14,2380.95,28,24h
-Switzerland,2025-W44,schweiz,2,7.14,2380.95,28,24h
-Kenya,2025-W44,mbadi,2,6.67,2222.22,30,24h
-Honduras,2025-W44,permanente,2,6.67,2222.22,30,24h
-Azerbaijan,2025-W44,prezidenti,2,6.67,2222.22,30,24h
-Algeria,2025-W44,dalgerie,2,6.67,2222.22,30,24h
-Albania,2025-W44,drejt,2,6.67,2222.22,30,24h
-France,2025-W44,etats,2,6.67,2222.22,30,24h
-Brazil,2025-W44,ncia,4,13.33,2222.22,30,24h
+Democratic Republic of the Congo,2025-W44,kivu,3,10.0,2500.0,30,24h
+Brazil,2025-W44,veja,3,10.0,2500.0,30,24h
+Belarus,2025-W44,belarus,3,10.0,2500.0,30,24h
+New Zealand,2025-W44,auckland,3,10.0,2500.0,30,24h
+Denmark,2025-W44,nyheder,3,10.0,2500.0,30,24h
+Syria,2025-W44,sana,3,10.0,2500.0,30,7d
+Saudi Arabia,2025-W44,arabia,3,10.0,2500.0,30,24h
+Portugal,2025-W44,aviso,3,10.0,2500.0,30,24h
+Poland,2025-W44,kurier,3,10.0,2500.0,30,24h
+Sweden,2025-W44,till,6,20.0,2500.0,30,24h
+Vietnam,2025-W44,trung,3,10.0,2500.0,30,24h
+Italy,2025-W44,notizie,3,10.0,2500.0,30,24h
+Kenya,2025-W44,nairobi,3,10.0,2500.0,30,24h
+Qatar,2025-W44,sheikha,3,10.0,2500.0,30,24h
+Indonesia,2025-W44,mobil,3,10.0,2500.0,30,24h
+Germany,2025-W44,neues,3,10.0,2500.0,30,24h
+Honduras,2025-W44,permanente,3,10.0,2500.0,30,24h
+Paraguay,2025-W44,lambar,3,10.0,2500.0,30,24h
+Philippines,2025-W44,manila,3,10.0,2500.0,30,24h
+Papua New Guinea,2025-W44,woes,1,5.0,2500.0,20,24h
+United Arab Emirates,2025-W44,driven,3,10.0,2500.0,30,24h
+Albania,2025-W44,rama,8,26.67,2424.24,30,24h
+South Africa,2025-W44,developer,2,7.14,2380.95,28,24h
+Venezuela,2025-W44,analitica,2,7.14,2380.95,28,24h
+Tajikistan,2025-W44,travel,1,16.67,2380.95,6,24h
+Austria,2025-W44,kierkegaard,2,7.14,2380.95,28,24h
+Bahamas,2025-W44,details,2,7.14,2380.95,28,24h
+Uganda,2025-W44,uganda,6,20.69,2298.85,29,24h
+China,2025-W44,robotaxi,2,6.9,2298.85,29,24h
+Estonia,2025-W44,kestis,2,6.67,2222.22,30,24h
+Dominican Republic,2025-W44,estrellas,2,6.67,2222.22,30,24h
+Chile,2025-W44,disparos,2,6.67,2222.22,30,24h
+France,2025-W44,comment,4,13.33,2222.22,30,24h
+Finland,2025-W44,vuoden,2,6.67,2222.22,30,24h
 Cambodia,2025-W44,startup,2,6.67,2222.22,30,24h
-Colombia,2025-W44,lanacion,2,6.67,2222.22,30,24h
-Dominican Republic,2025-W44,apoya,2,6.67,2222.22,30,24h
-Poland,2025-W44,przed,2,6.67,2222.22,30,24h
-Sweden,2025-W44,ekot,2,6.67,2222.22,30,24h
-Malaysia,2025-W44,temple,2,6.67,2222.22,30,24h
-Latvia,2025-W44,vald,2,6.67,2222.22,30,24h
-Iran,2025-W44,yemen,2,6.67,2222.22,30,24h
-Ghana,2025-W44,mahama,2,6.67,2222.22,30,24h
-Guyana,2025-W44,guyana,4,13.33,2222.22,30,24h
-Serbia,2025-W44,godinu,2,6.67,2222.22,30,24h
-Russia,2025-W44,folded,2,6.67,2222.22,30,24h
-Papua New Guinea,2025-W44,sepik,2,6.67,2222.22,30,24h
-Pakistan,2025-W44,makers,2,6.67,2222.22,30,24h
-Norway,2025-W44,digi,2,6.67,2222.22,30,24h
-Moldova,2025-W44,persoane,2,6.67,2222.22,30,24h
-Panama,2025-W44,subametralladora,2,6.67,2222.22,30,24h
-China,2025-W44,augmente,1,3.33,1666.67,30,24h
-Bangladesh,2025-W44,votes,1,3.33,1666.67,30,24h
-Egypt,2025-W44,whatcom,1,3.33,1666.67,30,24h
-Cyprus,2025-W44,continuity,1,3.33,1666.67,30,24h
-Iraq,2025-W44,diwaniyah,1,3.33,1666.67,30,24h
-Morocco,2025-W44,hercegre,1,3.33,1666.67,30,24h
-Madagascar,2025-W44,xdrive,1,3.33,1666.67,30,24h
-India,2025-W44,electronics,1,3.33,1666.67,30,24h
-Kazakhstan,2025-W44,kairat,1,3.33,1666.67,30,24h
-Libya,2025-W44,undp,1,3.33,1666.67,30,24h
-Thailand,2025-W44,realme,1,3.33,1666.67,30,24h
-Greece,2025-W44,aktor,1,3.33,1666.67,30,24h
-North Macedonia,2025-W44,ping,1,3.33,1666.67,30,24h
-Mauritius,2025-W44,noire,1,3.33,1666.67,30,24h
-Ukraine,2025-W44,reuters,1,3.33,1666.67,30,24h
-Saudi Arabia,2025-W44,comfort,1,3.33,1666.67,30,24h
-United Arab Emirates,2025-W44,condole,1,3.33,1666.67,30,24h
-South Korea,2025-W44,doanh,1,3.33,1111.11,30,24h
+Canada,2025-W44,listings,2,6.67,2222.22,30,24h
+Algeria,2025-W44,milliard,2,6.67,2222.22,30,24h
+Belgium,2025-W44,boven,2,6.67,2222.22,30,24h
+Armenia,2025-W44,lurer,2,6.67,2222.22,30,24h
+Argentina,2025-W44,anses,2,6.67,2222.22,30,24h
+Colombia,2025-W44,rusia,2,6.67,2222.22,30,24h
+Czechia,2025-W44,kolik,2,6.67,2222.22,30,24h
+Ghana,2025-W44,rice,2,6.67,2222.22,30,24h
+Mauritius,2025-W44,youtube,2,6.67,2222.22,30,7d
+United States,2025-W44,monkey,2,6.67,2222.22,30,24h
+Romania,2025-W44,primar,2,6.67,2222.22,30,24h
+United Kingdom,2025-W44,maldon,2,6.67,2222.22,30,24h
+Singapore,2025-W44,singapore,4,13.33,2222.22,30,24h
+Spain,2025-W44,convierte,2,6.67,2222.22,30,24h
+Nigeria,2025-W44,nigerian,4,13.33,2222.22,30,24h
+Panama,2025-W44,panam,4,13.33,2222.22,30,24h
+Israel,2025-W44,corretta,2,6.67,2222.22,30,24h
+Japan,2025-W44,agara,2,6.67,2222.22,30,24h
+Malaysia,2025-W44,macam,2,6.67,2222.22,30,24h
+Pakistan,2025-W44,goes,2,6.67,2222.22,30,24h
+Morocco,2025-W44,avion,2,6.67,2222.22,30,24h
+Mexico,2025-W44,privado,2,6.67,2222.22,30,24h
+Cyprus,2025-W44,ndaki,2,6.67,2222.22,30,24h
+Hungary,2025-W44,hogyan,2,6.67,2222.22,30,24h
+Jamaica,2025-W44,stories,2,6.67,2222.22,30,7d
+Tunisia,2025-W44,publicit,2,6.67,2222.22,30,24h
+Turkey,2025-W44,destek,2,6.67,2222.22,30,24h
+Switzerland,2025-W44,schweizer,2,6.67,2222.22,30,24h
+Serbia,2025-W44,najlep,2,6.67,2222.22,30,24h
+Bangladesh,2025-W44,bargain,1,3.33,1666.67,30,24h
+Madagascar,2025-W44,iherb,1,3.33,1666.67,30,24h
+Iraq,2025-W44,iaea,1,3.33,1666.67,30,24h
+Thailand,2025-W44,released,1,3.33,1666.67,30,24h
+Iran,2025-W44,iranpressnews,1,3.33,1666.67,30,24h
+Egypt,2025-W44,gate,1,3.33,1666.67,30,24h
+Greece,2025-W44,novartis,1,3.33,1666.67,30,24h
+Ukraine,2025-W44,rheinmetall,1,3.33,1666.67,30,24h
+Russia,2025-W44,eltex,1,3.33,1666.67,30,24h
+Bulgaria,2025-W44,epic,1,3.33,1111.11,30,24h
+Jordan,2025-W44,openai,1,3.33,833.33,30,24h
