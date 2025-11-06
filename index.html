@@ -255,6 +255,69 @@
             box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
         }
         
+        #settingsBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 80px;
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            background: white;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+            transition: transform 0.1s;
+            filter: grayscale(100%);
+            opacity: 0.7;
+        }
+        
+        #settingsBtn:hover {
+            opacity: 1;
+        }
+        
+        #settingsBtn:active {
+            transform: translateY(2px);
+            box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+        }
+        
+        #settingsPanel {
+            position: fixed;
+            bottom: 80px;
+            right: 80px;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 1001;
+            display: none;
+            min-width: 200px;
+        }
+        
+        #settingsPanel.open {
+            display: block;
+        }
+        
+        #settingsPanel label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            font-family: "Times New Roman", Times, serif;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        #settingsPanel input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        
         .headline-link {
             font-size: 13px;
             line-height: 1.5;
@@ -330,6 +393,14 @@
     </div>
 
     <button id="timeTravelBtn" title="View historical data">🕒</button>
+    <button id="settingsBtn" title="Settings" onclick="toggleSettings()">⚙️</button>
+    
+    <div id="settingsPanel">
+        <label>
+            <input type="checkbox" id="colorblindToggle" onchange="toggleColorblindMode()">
+            Colorblind Mode
+        </label>
+    </div>
 
     <script src="https://unpkg.com/globe.gl"></script>
     
@@ -337,8 +408,27 @@
         let countryData = {};
         let headlinesData = {};
         let sentimentData = {};
+        let classifiedHeadlines = {};
         let globe;
         let historicalData = [];
+        
+        // Colorblind mode setting
+        window.colorblindMode = localStorage.getItem('colorblindMode') === 'true' || false;
+        
+        function toggleSettings() {
+            const panel = document.getElementById('settingsPanel');
+            panel.classList.toggle('open');
+        }
+        
+        function toggleColorblindMode() {
+            window.colorblindMode = document.getElementById('colorblindToggle').checked;
+            localStorage.setItem('colorblindMode', window.colorblindMode);
+        }
+        
+        // Initialize colorblind toggle on load
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('colorblindToggle').checked = window.colorblindMode;
+        });
 
         // Radio Garden city mapping
         const radioGardenCities = {
@@ -558,6 +648,18 @@
                 } catch (headlinesError) {
                     console.warn('Headlines data not available:', headlinesError);
                 }
+                
+                // Load sentiment classifications
+                try {
+                    const sentimentResponse = await fetch('sentiment_analysis.json');
+                    if (sentimentResponse.ok) {
+                        const sentimentJson = await sentimentResponse.json();
+                        classifiedHeadlines = sentimentJson.classified_headlines || {};
+                        console.log('Loaded sentiment data for', Object.keys(classifiedHeadlines).length, 'countries');
+                    }
+                } catch (sentimentError) {
+                    console.warn('Sentiment data not available:', sentimentError);
+                }
             } catch (error) {
                 console.error('Error loading country data:', error);
                 document.getElementById('loading').innerHTML = 'Error loading country data: ' + error.message;
@@ -746,9 +848,9 @@
                         // High contrast text: pure black or pure white based on background
                         // If greyValue < 0.5 (light country) → use black text
                         // If greyValue >= 0.5 (dark country) → use white text
-                        // Don't reduce opacity - keep text always readable
+                        // Always use full opacity (1.0) for text - no transparency!
                         const textBrightness = greyValue < 0.5 ? 0 : 255;
-                        const color = `rgba(${textBrightness}, ${textBrightness}, ${textBrightness}, ${opacity})`;
+                        const color = `rgba(${textBrightness}, ${textBrightness}, ${textBrightness}, 1.0)`;
                         
                         return {
                             lat: lat,
@@ -862,7 +964,7 @@
             
             function animate(currentTime) {
                 if (autoRotate && (currentTime - lastFrameTime >= frameDelay)) {
-                    rotationAngle += 0.015;
+                    rotationAngle += 0.025;
                     globe.pointOfView({ lat: 0, lng: rotationAngle, altitude: 2.0 }, 0);
                     lastFrameTime = currentTime;
                 }
@@ -914,9 +1016,13 @@
                 
                 let sentimentHTML = '';
                 if (sentiment) {
+                    const goodColor = window.colorblindMode ? '#0077BB' : '#4CAF50';
+                    const badColor = window.colorblindMode ? '#EE7733' : '#F44336';
                     sentimentHTML = `
                         <div style="font-size: 12px; margin: 8px 0; color: #666;">
-                            Good: ${sentiment.good_pct.toFixed(1)}% • Bad: ${sentiment.bad_pct.toFixed(1)}% • Neutral: ${sentiment.neutral_pct.toFixed(1)}%
+                            <span style="color: ${goodColor}; font-weight: 400;">Good: ${sentiment.good_pct.toFixed(1)}%</span> • 
+                            <span style="color: ${badColor}; font-weight: 400;">Bad: ${sentiment.bad_pct.toFixed(1)}%</span> • 
+                            <span style="color: #999; font-weight: 400;">Neutral: ${sentiment.neutral_pct.toFixed(1)}%</span>
                         </div>
                     `;
                 }
@@ -954,6 +1060,26 @@
             helpButton.classList.toggle('hidden');
         }
         
+        function getHeadlineSentiment(country, headline) {
+            // Use VADER classifier results
+            if (!classifiedHeadlines[country]) return 'neutral';
+            
+            const countryClassifications = classifiedHeadlines[country];
+            
+            // Check which category this headline is in
+            if (countryClassifications.good && countryClassifications.good.includes(headline)) {
+                return 'good';
+            }
+            if (countryClassifications.bad && countryClassifications.bad.includes(headline)) {
+                return 'bad';
+            }
+            if (countryClassifications.neutral && countryClassifications.neutral.includes(headline)) {
+                return 'neutral';
+            }
+            
+            return 'neutral'; // Default fallback
+        }
+        
         function showHeadlines(country) {
             if (tooltipDiv) {
                 tooltipDiv.remove();
@@ -971,6 +1097,9 @@
             
             const data = countryData[country];
             const word = data ? data.prevalent_word : '';
+            
+            const goodColor = window.colorblindMode ? '#0077BB' : '#4CAF50';
+            const badColor = window.colorblindMode ? '#EE7733' : '#F44336';
             
             headlinesDiv = document.createElement('div');
             headlinesDiv.style.cssText = `
@@ -1008,9 +1137,15 @@
                 `;
                 headlines.with_word.forEach(headline => {
                     const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(headline)}`;
+                    const sentiment = getHeadlineSentiment(country, headline);
+                    let color = '#000';
+                    if (sentiment === 'good') color = goodColor;
+                    else if (sentiment === 'bad') color = badColor;
+                    else color = '#999';
+                    
                     headlinesHTML += `
                         <div style="padding: 8px 0; border-bottom: 1px solid #eee;">
-                            <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="headline-link">
+                            <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="headline-link" style="color: ${color};">
                                 ${headline}
                             </a>
                         </div>
@@ -1026,9 +1161,15 @@
                 `;
                 headlines.without_word.forEach(headline => {
                     const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(headline)}`;
+                    const sentiment = getHeadlineSentiment(country, headline);
+                    let color = '#000';
+                    if (sentiment === 'good') color = goodColor;
+                    else if (sentiment === 'bad') color = badColor;
+                    else color = '#999';
+                    
                     headlinesHTML += `
                         <div style="padding: 8px 0; border-bottom: 1px solid #eee;">
-                            <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="headline-link dimmed">
+                            <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="headline-link" style="color: ${color}; opacity: 0.8;">
                                 ${headline}
                             </a>
                         </div>
