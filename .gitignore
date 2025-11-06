@@ -1,0 +1,36 @@
+# Generated data files
+country_data.json
+headlines_data.json
+sentiment_analysis.json
+prevalent_words_gdelt_*.csv
+
+# Historical snapshots
+history/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# User-specific
+quick_commit.bat
+photos/
+
