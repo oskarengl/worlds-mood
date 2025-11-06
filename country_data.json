@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generated_at": "2025-11-06T22:41:53.870710",
+    "generated_at": "2025-11-06T23:02:15.474096",
     "total_countries": 181,
     "data_source": "GDELT Project",
     "min_articles_threshold": 10,
     "global_sentiment": {
       "total_headlines": 4338,
-      "good_percentage": 27.06,
-      "bad_percentage": 54.82,
-      "neutral_percentage": 18.12,
-      "avg_bad_pct_for_scaling": 54.82
+      "good_percentage": 21.67,
+      "bad_percentage": 45.76,
+      "neutral_percentage": 32.57,
+      "avg_bad_pct_for_scaling": 45.76
     }
   },
   "countries": {
@@ -111,12 +111,12 @@
       "num_articles": 2,
       "timeframe": "24h",
       "sentiment": {
-        "good": 1,
+        "good": 0,
         "bad": 1,
-        "neutral": 0,
-        "good_pct": 50.0,
+        "neutral": 1,
+        "good_pct": 0.0,
         "bad_pct": 50.0,
-        "neutral_pct": 0.0
+        "neutral_pct": 50.0
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -184,11 +184,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 3,
-        "neutral": 0,
+        "bad": 2,
+        "neutral": 1,
         "good_pct": 0.0,
-        "bad_pct": 100.0,
-        "neutral_pct": 0.0
+        "bad_pct": 66.67,
+        "neutral_pct": 33.33
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -202,11 +202,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 1,
-        "bad": 1,
-        "neutral": 1,
+        "bad": 0,
+        "neutral": 2,
         "good_pct": 33.33,
-        "bad_pct": 33.33,
-        "neutral_pct": 33.33
+        "bad_pct": 0.0,
+        "neutral_pct": 66.67
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -219,12 +219,12 @@
       "num_articles": 5,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
+        "good": 3,
         "bad": 1,
-        "neutral": 0,
-        "good_pct": 80.0,
+        "neutral": 1,
+        "good_pct": 60.0,
         "bad_pct": 20.0,
-        "neutral_pct": 0.0
+        "neutral_pct": 20.0
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -256,11 +256,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 0,
-        "bad": 5,
-        "neutral": 0,
+        "bad": 3,
+        "neutral": 2,
         "good_pct": 0.0,
-        "bad_pct": 100.0,
-        "neutral_pct": 0.0
+        "bad_pct": 60.0,
+        "neutral_pct": 40.0
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -291,12 +291,12 @@
       "num_articles": 4,
       "timeframe": "24h",
       "sentiment": {
-        "good": 2,
+        "good": 1,
         "bad": 1,
-        "neutral": 1,
-        "good_pct": 50.0,
+        "neutral": 2,
+        "good_pct": 25.0,
         "bad_pct": 25.0,
-        "neutral_pct": 25.0
+        "neutral_pct": 50.0
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -309,12 +309,12 @@
       "num_articles": 3,
       "timeframe": "24h",
       "sentiment": {
-        "good": 1,
+        "good": 0,
         "bad": 2,
-        "neutral": 0,
-        "good_pct": 33.33,
+        "neutral": 1,
+        "good_pct": 0.0,
         "bad_pct": 66.67,
-        "neutral_pct": 0.0
+        "neutral_pct": 33.33
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -345,12 +345,12 @@
       "num_articles": 8,
       "timeframe": "24h",
       "sentiment": {
-        "good": 3,
-        "bad": 5,
-        "neutral": 0,
-        "good_pct": 37.5,
-        "bad_pct": 62.5,
-        "neutral_pct": 0.0
+        "good": 0,
+        "bad": 3,
+        "neutral": 5,
+        "good_pct": 0.0,
+        "bad_pct": 37.5,
+        "neutral_pct": 62.5
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -363,12 +363,12 @@
       "num_articles": 9,
       "timeframe": "24h",
       "sentiment": {
-        "good": 1,
+        "good": 0,
         "bad": 8,
-        "neutral": 0,
-        "good_pct": 11.11,
+        "neutral": 1,
+        "good_pct": 0.0,
         "bad_pct": 88.89,
-        "neutral_pct": 0.0
+        "neutral_pct": 11.11
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -418,11 +418,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 4,
-        "bad": 4,
-        "neutral": 0,
+        "bad": 3,
+        "neutral": 1,
         "good_pct": 50.0,
-        "bad_pct": 50.0,
-        "neutral_pct": 0.0
+        "bad_pct": 37.5,
+        "neutral_pct": 12.5
       },
       "grey_value": 0.5,
       "low_confidence": true
@@ -436,13 +436,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 4,
-        "bad": 5,
-        "neutral": 1,
+        "bad": 3,
+        "neutral": 3,
         "good_pct": 40.0,
-        "bad_pct": 50.0,
-        "neutral_pct": 10.0
+        "bad_pct": 30.0,
+        "neutral_pct": 30.0
       },
-      "grey_value": 0.6,
+      "grey_value": 0.4,
       "low_confidence": false
     },
     "Lesotho": {
@@ -453,14 +453,14 @@
       "num_articles": 10,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
+        "good": 3,
         "bad": 5,
-        "neutral": 1,
-        "good_pct": 40.0,
+        "neutral": 2,
+        "good_pct": 30.0,
         "bad_pct": 50.0,
-        "neutral_pct": 10.0
+        "neutral_pct": 20.0
       },
-      "grey_value": 0.6,
+      "grey_value": 0.7,
       "low_confidence": false
     },
     "North Korea": {
@@ -507,14 +507,14 @@
       "num_articles": 15,
       "timeframe": "24h",
       "sentiment": {
-        "good": 10,
+        "good": 7,
         "bad": 0,
-        "neutral": 5,
-        "good_pct": 66.67,
+        "neutral": 8,
+        "good_pct": 46.67,
         "bad_pct": 0.0,
-        "neutral_pct": 33.33
+        "neutral_pct": 53.33
       },
-      "grey_value": 0.0,
+      "grey_value": 0.033,
       "low_confidence": false
     },
     "Gambia": {
@@ -543,12 +543,12 @@
       "num_articles": 15,
       "timeframe": "7d",
       "sentiment": {
-        "good": 1,
-        "bad": 13,
-        "neutral": 1,
-        "good_pct": 6.67,
-        "bad_pct": 86.67,
-        "neutral_pct": 6.67
+        "good": 0,
+        "bad": 12,
+        "neutral": 3,
+        "good_pct": 0.0,
+        "bad_pct": 80.0,
+        "neutral_pct": 20.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -561,14 +561,14 @@
       "num_articles": 15,
       "timeframe": "24h",
       "sentiment": {
-        "good": 5,
-        "bad": 8,
-        "neutral": 2,
-        "good_pct": 33.33,
-        "bad_pct": 53.33,
-        "neutral_pct": 13.33
+        "good": 2,
+        "bad": 6,
+        "neutral": 7,
+        "good_pct": 13.33,
+        "bad_pct": 40.0,
+        "neutral_pct": 46.67
       },
-      "grey_value": 0.7,
+      "grey_value": 0.767,
       "low_confidence": false
     },
     "Costa Rica": {
@@ -580,13 +580,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 6,
-        "bad": 7,
-        "neutral": 3,
+        "bad": 5,
+        "neutral": 5,
         "good_pct": 37.5,
-        "bad_pct": 43.75,
-        "neutral_pct": 18.75
+        "bad_pct": 31.25,
+        "neutral_pct": 31.25
       },
-      "grey_value": 0.562,
+      "grey_value": 0.438,
       "low_confidence": false
     },
     "Bahamas": {
@@ -598,13 +598,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 7,
-        "bad": 9,
-        "neutral": 1,
+        "bad": 8,
+        "neutral": 2,
         "good_pct": 41.18,
-        "bad_pct": 52.94,
-        "neutral_pct": 5.88
+        "bad_pct": 47.06,
+        "neutral_pct": 11.76
       },
-      "grey_value": 0.618,
+      "grey_value": 0.559,
       "low_confidence": false
     },
     "Austria": {
@@ -616,11 +616,11 @@
       "timeframe": "30d",
       "sentiment": {
         "good": 1,
-        "bad": 14,
-        "neutral": 0,
+        "bad": 12,
+        "neutral": 2,
         "good_pct": 6.67,
-        "bad_pct": 93.33,
-        "neutral_pct": 0.0
+        "bad_pct": 80.0,
+        "neutral_pct": 13.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -633,14 +633,14 @@
       "num_articles": 16,
       "timeframe": "24h",
       "sentiment": {
-        "good": 5,
-        "bad": 9,
-        "neutral": 2,
-        "good_pct": 31.25,
-        "bad_pct": 56.25,
-        "neutral_pct": 12.5
+        "good": 4,
+        "bad": 7,
+        "neutral": 5,
+        "good_pct": 25.0,
+        "bad_pct": 43.75,
+        "neutral_pct": 31.25
       },
-      "grey_value": 0.75,
+      "grey_value": 0.688,
       "low_confidence": false
     },
     "Maldives": {
@@ -651,14 +651,14 @@
       "num_articles": 19,
       "timeframe": "7d",
       "sentiment": {
-        "good": 4,
-        "bad": 12,
-        "neutral": 3,
-        "good_pct": 21.05,
-        "bad_pct": 63.16,
-        "neutral_pct": 15.79
+        "good": 1,
+        "bad": 11,
+        "neutral": 7,
+        "good_pct": 5.26,
+        "bad_pct": 57.89,
+        "neutral_pct": 36.84
       },
-      "grey_value": 0.921,
+      "grey_value": 1.0,
       "low_confidence": false
     },
     "Philippines": {
@@ -669,12 +669,12 @@
       "num_articles": 18,
       "timeframe": "24h",
       "sentiment": {
-        "good": 10,
-        "bad": 7,
-        "neutral": 1,
-        "good_pct": 55.56,
-        "bad_pct": 38.89,
-        "neutral_pct": 5.56
+        "good": 9,
+        "bad": 6,
+        "neutral": 3,
+        "good_pct": 50.0,
+        "bad_pct": 33.33,
+        "neutral_pct": 16.67
       },
       "grey_value": 0.333,
       "low_confidence": false
@@ -688,13 +688,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 8,
-        "bad": 13,
-        "neutral": 0,
+        "bad": 12,
+        "neutral": 1,
         "good_pct": 38.1,
-        "bad_pct": 61.9,
-        "neutral_pct": 0.0
+        "bad_pct": 57.14,
+        "neutral_pct": 4.76
       },
-      "grey_value": 0.738,
+      "grey_value": 0.69,
       "low_confidence": false
     },
     "Syria": {
@@ -705,14 +705,14 @@
       "num_articles": 21,
       "timeframe": "24h",
       "sentiment": {
-        "good": 7,
-        "bad": 10,
-        "neutral": 4,
-        "good_pct": 33.33,
-        "bad_pct": 47.62,
-        "neutral_pct": 19.05
+        "good": 6,
+        "bad": 7,
+        "neutral": 8,
+        "good_pct": 28.57,
+        "bad_pct": 33.33,
+        "neutral_pct": 38.1
       },
-      "grey_value": 0.643,
+      "grey_value": 0.548,
       "low_confidence": false
     },
     "Cote d'Ivoire": {
@@ -741,12 +741,12 @@
       "num_articles": 28,
       "timeframe": "24h",
       "sentiment": {
-        "good": 7,
-        "bad": 5,
-        "neutral": 1,
-        "good_pct": 53.85,
-        "bad_pct": 38.46,
-        "neutral_pct": 7.69
+        "good": 6,
+        "bad": 4,
+        "neutral": 3,
+        "good_pct": 46.15,
+        "bad_pct": 30.77,
+        "neutral_pct": 23.08
       },
       "grey_value": 0.346,
       "low_confidence": false
@@ -777,14 +777,14 @@
       "num_articles": 20,
       "timeframe": "30d",
       "sentiment": {
-        "good": 6,
-        "bad": 12,
-        "neutral": 2,
-        "good_pct": 30.0,
-        "bad_pct": 60.0,
-        "neutral_pct": 10.0
+        "good": 3,
+        "bad": 7,
+        "neutral": 10,
+        "good_pct": 15.0,
+        "bad_pct": 35.0,
+        "neutral_pct": 50.0
       },
-      "grey_value": 0.8,
+      "grey_value": 0.7,
       "low_confidence": false
     },
     "Republic of the Congo": {
@@ -795,14 +795,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 9,
-        "bad": 14,
-        "neutral": 7,
-        "good_pct": 30.0,
-        "bad_pct": 46.67,
-        "neutral_pct": 23.33
+        "good": 8,
+        "bad": 11,
+        "neutral": 11,
+        "good_pct": 26.67,
+        "bad_pct": 36.67,
+        "neutral_pct": 36.67
       },
-      "grey_value": 0.667,
+      "grey_value": 0.6,
       "low_confidence": false
     },
     "Monaco": {
@@ -813,12 +813,12 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 16,
-        "bad": 9,
-        "neutral": 5,
-        "good_pct": 53.33,
-        "bad_pct": 30.0,
-        "neutral_pct": 16.67
+        "good": 15,
+        "bad": 8,
+        "neutral": 7,
+        "good_pct": 50.0,
+        "bad_pct": 26.67,
+        "neutral_pct": 23.33
       },
       "grey_value": 0.267,
       "low_confidence": false
@@ -831,14 +831,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 19,
+        "good": 17,
         "bad": 8,
-        "neutral": 3,
-        "good_pct": 63.33,
+        "neutral": 5,
+        "good_pct": 56.67,
         "bad_pct": 26.67,
-        "neutral_pct": 10.0
+        "neutral_pct": 16.67
       },
-      "grey_value": 0.133,
+      "grey_value": 0.2,
       "low_confidence": false
     },
     "Albania": {
@@ -850,11 +850,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 30,
-        "neutral": 0,
+        "bad": 25,
+        "neutral": 5,
         "good_pct": 0.0,
-        "bad_pct": 100.0,
-        "neutral_pct": 0.0
+        "bad_pct": 83.33,
+        "neutral_pct": 16.67
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -868,11 +868,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 0,
-        "bad": 18,
-        "neutral": 1,
+        "bad": 17,
+        "neutral": 2,
         "good_pct": 0.0,
-        "bad_pct": 94.74,
-        "neutral_pct": 5.26
+        "bad_pct": 89.47,
+        "neutral_pct": 10.53
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -886,11 +886,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 0,
-        "bad": 30,
-        "neutral": 0,
+        "bad": 29,
+        "neutral": 1,
         "good_pct": 0.0,
-        "bad_pct": 100.0,
-        "neutral_pct": 0.0
+        "bad_pct": 96.67,
+        "neutral_pct": 3.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -903,12 +903,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 5,
+        "good": 4,
         "bad": 24,
-        "neutral": 1,
-        "good_pct": 16.67,
+        "neutral": 2,
+        "good_pct": 13.33,
         "bad_pct": 80.0,
-        "neutral_pct": 3.33
+        "neutral_pct": 6.67
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -921,12 +921,12 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 2,
-        "bad": 27,
-        "neutral": 1,
-        "good_pct": 6.67,
-        "bad_pct": 90.0,
-        "neutral_pct": 3.33
+        "good": 1,
+        "bad": 26,
+        "neutral": 3,
+        "good_pct": 3.33,
+        "bad_pct": 86.67,
+        "neutral_pct": 10.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -939,14 +939,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 7,
-        "bad": 13,
-        "neutral": 4,
-        "good_pct": 29.17,
-        "bad_pct": 54.17,
-        "neutral_pct": 16.67
+        "good": 5,
+        "bad": 10,
+        "neutral": 9,
+        "good_pct": 20.83,
+        "bad_pct": 41.67,
+        "neutral_pct": 37.5
       },
-      "grey_value": 0.75,
+      "grey_value": 0.708,
       "low_confidence": false
     },
     "Luxembourg": {
@@ -957,12 +957,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
-        "bad": 16,
-        "neutral": 1,
-        "good_pct": 19.05,
-        "bad_pct": 76.19,
-        "neutral_pct": 4.76
+        "good": 3,
+        "bad": 15,
+        "neutral": 3,
+        "good_pct": 14.29,
+        "bad_pct": 71.43,
+        "neutral_pct": 14.29
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -975,14 +975,14 @@
       "num_articles": 22,
       "timeframe": "30d",
       "sentiment": {
-        "good": 10,
-        "bad": 9,
-        "neutral": 3,
-        "good_pct": 45.45,
-        "bad_pct": 40.91,
-        "neutral_pct": 13.64
+        "good": 8,
+        "bad": 8,
+        "neutral": 6,
+        "good_pct": 36.36,
+        "bad_pct": 36.36,
+        "neutral_pct": 27.27
       },
-      "grey_value": 0.455,
+      "grey_value": 0.5,
       "low_confidence": false
     },
     "El Salvador": {
@@ -993,14 +993,14 @@
       "num_articles": 30,
       "timeframe": "30d",
       "sentiment": {
-        "good": 8,
-        "bad": 13,
-        "neutral": 0,
-        "good_pct": 38.1,
-        "bad_pct": 61.9,
-        "neutral_pct": 0.0
+        "good": 7,
+        "bad": 10,
+        "neutral": 4,
+        "good_pct": 33.33,
+        "bad_pct": 47.62,
+        "neutral_pct": 19.05
       },
-      "grey_value": 0.738,
+      "grey_value": 0.643,
       "low_confidence": false
     },
     "Malta": {
@@ -1011,12 +1011,12 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 15,
-        "bad": 15,
-        "neutral": 0,
-        "good_pct": 50.0,
-        "bad_pct": 50.0,
-        "neutral_pct": 0.0
+        "good": 14,
+        "bad": 14,
+        "neutral": 2,
+        "good_pct": 46.67,
+        "bad_pct": 46.67,
+        "neutral_pct": 6.67
       },
       "grey_value": 0.5,
       "low_confidence": false
@@ -1029,14 +1029,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 2,
-        "bad": 12,
-        "neutral": 16,
-        "good_pct": 6.67,
-        "bad_pct": 40.0,
-        "neutral_pct": 53.33
+        "good": 0,
+        "bad": 1,
+        "neutral": 29,
+        "good_pct": 0.0,
+        "bad_pct": 3.33,
+        "neutral_pct": 96.67
       },
-      "grey_value": 0.833,
+      "grey_value": 0.533,
       "low_confidence": false
     },
     "Bangladesh": {
@@ -1047,14 +1047,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 7,
-        "bad": 10,
-        "neutral": 13,
-        "good_pct": 23.33,
-        "bad_pct": 33.33,
-        "neutral_pct": 43.33
+        "good": 3,
+        "bad": 3,
+        "neutral": 24,
+        "good_pct": 10.0,
+        "bad_pct": 10.0,
+        "neutral_pct": 80.0
       },
-      "grey_value": 0.6,
+      "grey_value": 0.5,
       "low_confidence": false
     },
     "Singapore": {
@@ -1065,14 +1065,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 12,
-        "bad": 13,
-        "neutral": 5,
-        "good_pct": 40.0,
-        "bad_pct": 43.33,
-        "neutral_pct": 16.67
+        "good": 9,
+        "bad": 11,
+        "neutral": 10,
+        "good_pct": 30.0,
+        "bad_pct": 36.67,
+        "neutral_pct": 33.33
       },
-      "grey_value": 0.533,
+      "grey_value": 0.567,
       "low_confidence": false
     },
     "Nepal": {
@@ -1084,13 +1084,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 13,
-        "bad": 8,
-        "neutral": 8,
+        "bad": 1,
+        "neutral": 15,
         "good_pct": 44.83,
-        "bad_pct": 27.59,
-        "neutral_pct": 27.59
+        "bad_pct": 3.45,
+        "neutral_pct": 51.72
       },
-      "grey_value": 0.328,
+      "grey_value": 0.086,
       "low_confidence": false
     },
     "Botswana": {
@@ -1101,14 +1101,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 10,
-        "bad": 20,
-        "neutral": 0,
-        "good_pct": 33.33,
-        "bad_pct": 66.67,
-        "neutral_pct": 0.0
+        "good": 9,
+        "bad": 18,
+        "neutral": 3,
+        "good_pct": 30.0,
+        "bad_pct": 60.0,
+        "neutral_pct": 10.0
       },
-      "grey_value": 0.833,
+      "grey_value": 0.8,
       "low_confidence": false
     },
     "Moldova": {
@@ -1119,14 +1119,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 2,
-        "bad": 18,
-        "neutral": 9,
-        "good_pct": 6.9,
-        "bad_pct": 62.07,
-        "neutral_pct": 31.03
+        "good": 0,
+        "bad": 14,
+        "neutral": 15,
+        "good_pct": 0.0,
+        "bad_pct": 48.28,
+        "neutral_pct": 51.72
       },
-      "grey_value": 1.0,
+      "grey_value": 0.983,
       "low_confidence": false
     },
     "Georgia": {
@@ -1137,14 +1137,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 17,
+        "good": 12,
         "bad": 7,
-        "neutral": 6,
-        "good_pct": 56.67,
+        "neutral": 11,
+        "good_pct": 40.0,
         "bad_pct": 23.33,
-        "neutral_pct": 20.0
+        "neutral_pct": 36.67
       },
-      "grey_value": 0.167,
+      "grey_value": 0.333,
       "low_confidence": false
     },
     "Liberia": {
@@ -1155,14 +1155,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 20,
-        "bad": 8,
-        "neutral": 2,
-        "good_pct": 66.67,
-        "bad_pct": 26.67,
-        "neutral_pct": 6.67
+        "good": 18,
+        "bad": 7,
+        "neutral": 5,
+        "good_pct": 60.0,
+        "bad_pct": 23.33,
+        "neutral_pct": 16.67
       },
-      "grey_value": 0.1,
+      "grey_value": 0.133,
       "low_confidence": false
     },
     "Kosovo": {
@@ -1173,12 +1173,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 1,
+        "good": 0,
         "bad": 28,
-        "neutral": 0,
-        "good_pct": 3.45,
+        "neutral": 1,
+        "good_pct": 0.0,
         "bad_pct": 96.55,
-        "neutral_pct": 0.0
+        "neutral_pct": 3.45
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1191,14 +1191,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 7,
-        "bad": 22,
-        "neutral": 1,
-        "good_pct": 23.33,
-        "bad_pct": 73.33,
-        "neutral_pct": 3.33
+        "good": 4,
+        "bad": 18,
+        "neutral": 8,
+        "good_pct": 13.33,
+        "bad_pct": 60.0,
+        "neutral_pct": 26.67
       },
-      "grey_value": 1.0,
+      "grey_value": 0.967,
       "low_confidence": false
     },
     "Malawi": {
@@ -1228,13 +1228,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 14,
-        "neutral": 16,
+        "bad": 3,
+        "neutral": 27,
         "good_pct": 0.0,
-        "bad_pct": 46.67,
-        "neutral_pct": 53.33
+        "bad_pct": 10.0,
+        "neutral_pct": 90.0
       },
-      "grey_value": 0.967,
+      "grey_value": 0.6,
       "low_confidence": false
     },
     "Suriname": {
@@ -1246,11 +1246,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 3,
-        "bad": 17,
-        "neutral": 3,
+        "bad": 16,
+        "neutral": 4,
         "good_pct": 13.04,
-        "bad_pct": 73.91,
-        "neutral_pct": 13.04
+        "bad_pct": 69.57,
+        "neutral_pct": 17.39
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1263,14 +1263,14 @@
       "num_articles": 23,
       "timeframe": "24h",
       "sentiment": {
-        "good": 8,
-        "bad": 13,
-        "neutral": 2,
-        "good_pct": 34.78,
-        "bad_pct": 56.52,
-        "neutral_pct": 8.7
+        "good": 5,
+        "bad": 11,
+        "neutral": 7,
+        "good_pct": 21.74,
+        "bad_pct": 47.83,
+        "neutral_pct": 30.43
       },
-      "grey_value": 0.717,
+      "grey_value": 0.761,
       "low_confidence": false
     },
     "Niger": {
@@ -1282,13 +1282,13 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 9,
-        "bad": 18,
-        "neutral": 3,
+        "bad": 15,
+        "neutral": 6,
         "good_pct": 30.0,
-        "bad_pct": 60.0,
-        "neutral_pct": 10.0
+        "bad_pct": 50.0,
+        "neutral_pct": 20.0
       },
-      "grey_value": 0.8,
+      "grey_value": 0.7,
       "low_confidence": false
     },
     "Tunisia": {
@@ -1299,14 +1299,14 @@
       "num_articles": 26,
       "timeframe": "7d",
       "sentiment": {
-        "good": 6,
-        "bad": 12,
-        "neutral": 8,
-        "good_pct": 23.08,
-        "bad_pct": 46.15,
-        "neutral_pct": 30.77
+        "good": 4,
+        "bad": 8,
+        "neutral": 14,
+        "good_pct": 15.38,
+        "bad_pct": 30.77,
+        "neutral_pct": 53.85
       },
-      "grey_value": 0.731,
+      "grey_value": 0.654,
       "low_confidence": false
     },
     "Ireland": {
@@ -1335,14 +1335,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
-        "bad": 10,
-        "neutral": 10,
-        "good_pct": 16.67,
-        "bad_pct": 41.67,
-        "neutral_pct": 41.67
+        "good": 1,
+        "bad": 8,
+        "neutral": 15,
+        "good_pct": 4.17,
+        "bad_pct": 33.33,
+        "neutral_pct": 62.5
       },
-      "grey_value": 0.75,
+      "grey_value": 0.792,
       "low_confidence": false
     },
     "Cyprus": {
@@ -1353,14 +1353,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 7,
-        "bad": 9,
-        "neutral": 14,
-        "good_pct": 23.33,
-        "bad_pct": 30.0,
-        "neutral_pct": 46.67
+        "good": 1,
+        "bad": 7,
+        "neutral": 22,
+        "good_pct": 3.33,
+        "bad_pct": 23.33,
+        "neutral_pct": 73.33
       },
-      "grey_value": 0.567,
+      "grey_value": 0.7,
       "low_confidence": false
     },
     "Vanuatu": {
@@ -1372,13 +1372,13 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 14,
-        "bad": 8,
-        "neutral": 2,
+        "bad": 7,
+        "neutral": 3,
         "good_pct": 58.33,
-        "bad_pct": 33.33,
-        "neutral_pct": 8.33
+        "bad_pct": 29.17,
+        "neutral_pct": 12.5
       },
-      "grey_value": 0.25,
+      "grey_value": 0.208,
       "low_confidence": false
     },
     "Uruguay": {
@@ -1390,11 +1390,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 3,
-        "bad": 20,
-        "neutral": 7,
+        "bad": 18,
+        "neutral": 9,
         "good_pct": 10.0,
-        "bad_pct": 66.67,
-        "neutral_pct": 23.33
+        "bad_pct": 60.0,
+        "neutral_pct": 30.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1407,14 +1407,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 11,
-        "bad": 15,
-        "neutral": 4,
-        "good_pct": 36.67,
-        "bad_pct": 50.0,
-        "neutral_pct": 13.33
+        "good": 10,
+        "bad": 11,
+        "neutral": 9,
+        "good_pct": 33.33,
+        "bad_pct": 36.67,
+        "neutral_pct": 30.0
       },
-      "grey_value": 0.633,
+      "grey_value": 0.533,
       "low_confidence": false
     },
     "Vietnam": {
@@ -1425,12 +1425,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 2,
-        "bad": 27,
-        "neutral": 1,
-        "good_pct": 6.67,
-        "bad_pct": 90.0,
-        "neutral_pct": 3.33
+        "good": 0,
+        "bad": 19,
+        "neutral": 11,
+        "good_pct": 0.0,
+        "bad_pct": 63.33,
+        "neutral_pct": 36.67
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1443,14 +1443,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 6,
-        "bad": 7,
-        "neutral": 12,
-        "good_pct": 24.0,
-        "bad_pct": 28.0,
-        "neutral_pct": 48.0
+        "good": 4,
+        "bad": 4,
+        "neutral": 17,
+        "good_pct": 16.0,
+        "bad_pct": 16.0,
+        "neutral_pct": 68.0
       },
-      "grey_value": 0.54,
+      "grey_value": 0.5,
       "low_confidence": false
     },
     "Kyrgyzstan": {
@@ -1461,14 +1461,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 14,
+        "good": 13,
         "bad": 11,
-        "neutral": 5,
-        "good_pct": 46.67,
+        "neutral": 6,
+        "good_pct": 43.33,
         "bad_pct": 36.67,
-        "neutral_pct": 16.67
+        "neutral_pct": 20.0
       },
-      "grey_value": 0.4,
+      "grey_value": 0.433,
       "low_confidence": false
     },
     "Canada": {
@@ -1480,13 +1480,13 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 14,
-        "bad": 10,
-        "neutral": 3,
+        "bad": 9,
+        "neutral": 4,
         "good_pct": 51.85,
-        "bad_pct": 37.04,
-        "neutral_pct": 11.11
+        "bad_pct": 33.33,
+        "neutral_pct": 14.81
       },
-      "grey_value": 0.352,
+      "grey_value": 0.315,
       "low_confidence": false
     },
     "Cameroon": {
@@ -1497,14 +1497,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 8,
-        "bad": 17,
-        "neutral": 3,
-        "good_pct": 28.57,
-        "bad_pct": 60.71,
-        "neutral_pct": 10.71
+        "good": 5,
+        "bad": 13,
+        "neutral": 10,
+        "good_pct": 17.86,
+        "bad_pct": 46.43,
+        "neutral_pct": 35.71
       },
-      "grey_value": 0.821,
+      "grey_value": 0.786,
       "low_confidence": false
     },
     "Guatemala": {
@@ -1515,14 +1515,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 5,
-        "bad": 19,
-        "neutral": 6,
-        "good_pct": 16.67,
-        "bad_pct": 63.33,
-        "neutral_pct": 20.0
+        "good": 2,
+        "bad": 14,
+        "neutral": 14,
+        "good_pct": 6.67,
+        "bad_pct": 46.67,
+        "neutral_pct": 46.67
       },
-      "grey_value": 0.967,
+      "grey_value": 0.9,
       "low_confidence": false
     },
     "Indonesia": {
@@ -1533,12 +1533,12 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 2,
-        "bad": 28,
-        "neutral": 0,
-        "good_pct": 6.67,
-        "bad_pct": 93.33,
-        "neutral_pct": 0.0
+        "good": 0,
+        "bad": 26,
+        "neutral": 4,
+        "good_pct": 0.0,
+        "bad_pct": 86.67,
+        "neutral_pct": 13.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1551,14 +1551,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 5,
-        "bad": 20,
-        "neutral": 5,
-        "good_pct": 16.67,
-        "bad_pct": 66.67,
-        "neutral_pct": 16.67
+        "good": 4,
+        "bad": 18,
+        "neutral": 8,
+        "good_pct": 13.33,
+        "bad_pct": 60.0,
+        "neutral_pct": 26.67
       },
-      "grey_value": 1.0,
+      "grey_value": 0.967,
       "low_confidence": false
     },
     "Ecuador": {
@@ -1570,13 +1570,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 3,
-        "bad": 12,
-        "neutral": 3,
+        "bad": 11,
+        "neutral": 4,
         "good_pct": 16.67,
-        "bad_pct": 66.67,
-        "neutral_pct": 16.67
+        "bad_pct": 61.11,
+        "neutral_pct": 22.22
       },
-      "grey_value": 1.0,
+      "grey_value": 0.944,
       "low_confidence": false
     },
     "Haiti": {
@@ -1587,14 +1587,14 @@
       "num_articles": 28,
       "timeframe": "7d",
       "sentiment": {
-        "good": 6,
-        "bad": 17,
-        "neutral": 3,
-        "good_pct": 23.08,
-        "bad_pct": 65.38,
-        "neutral_pct": 11.54
+        "good": 5,
+        "bad": 15,
+        "neutral": 6,
+        "good_pct": 19.23,
+        "bad_pct": 57.69,
+        "neutral_pct": 23.08
       },
-      "grey_value": 0.923,
+      "grey_value": 0.885,
       "low_confidence": false
     },
     "Senegal": {
@@ -1605,14 +1605,14 @@
       "num_articles": 28,
       "timeframe": "24h",
       "sentiment": {
-        "good": 8,
-        "bad": 13,
-        "neutral": 7,
-        "good_pct": 28.57,
-        "bad_pct": 46.43,
-        "neutral_pct": 25.0
+        "good": 6,
+        "bad": 10,
+        "neutral": 12,
+        "good_pct": 21.43,
+        "bad_pct": 35.71,
+        "neutral_pct": 42.86
       },
-      "grey_value": 0.679,
+      "grey_value": 0.643,
       "low_confidence": false
     },
     "Democratic Republic of the Congo": {
@@ -1623,12 +1623,12 @@
       "num_articles": 30,
       "timeframe": "30d",
       "sentiment": {
-        "good": 9,
-        "bad": 19,
-        "neutral": 2,
-        "good_pct": 30.0,
-        "bad_pct": 63.33,
-        "neutral_pct": 6.67
+        "good": 7,
+        "bad": 17,
+        "neutral": 6,
+        "good_pct": 23.33,
+        "bad_pct": 56.67,
+        "neutral_pct": 20.0
       },
       "grey_value": 0.833,
       "low_confidence": false
@@ -1641,14 +1641,14 @@
       "num_articles": 30,
       "timeframe": "30d",
       "sentiment": {
-        "good": 5,
-        "bad": 1,
-        "neutral": 24,
-        "good_pct": 16.67,
-        "bad_pct": 3.33,
-        "neutral_pct": 80.0
+        "good": 0,
+        "bad": 0,
+        "neutral": 30,
+        "good_pct": 0.0,
+        "bad_pct": 0.0,
+        "neutral_pct": 100.0
       },
-      "grey_value": 0.367,
+      "grey_value": 0.5,
       "low_confidence": false
     },
     "Jamaica": {
@@ -1659,14 +1659,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 10,
+        "good": 9,
         "bad": 14,
-        "neutral": 3,
-        "good_pct": 37.04,
+        "neutral": 4,
+        "good_pct": 33.33,
         "bad_pct": 51.85,
-        "neutral_pct": 11.11
+        "neutral_pct": 14.81
       },
-      "grey_value": 0.648,
+      "grey_value": 0.685,
       "low_confidence": false
     },
     "Afghanistan": {
@@ -1677,12 +1677,12 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 9,
-        "bad": 12,
-        "neutral": 8,
-        "good_pct": 31.03,
-        "bad_pct": 41.38,
-        "neutral_pct": 27.59
+        "good": 8,
+        "bad": 11,
+        "neutral": 10,
+        "good_pct": 27.59,
+        "bad_pct": 37.93,
+        "neutral_pct": 34.48
       },
       "grey_value": 0.603,
       "low_confidence": false
@@ -1695,14 +1695,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 8,
-        "bad": 19,
-        "neutral": 3,
-        "good_pct": 26.67,
-        "bad_pct": 63.33,
-        "neutral_pct": 10.0
+        "good": 7,
+        "bad": 16,
+        "neutral": 7,
+        "good_pct": 23.33,
+        "bad_pct": 53.33,
+        "neutral_pct": 23.33
       },
-      "grey_value": 0.867,
+      "grey_value": 0.8,
       "low_confidence": false
     },
     "Guinea": {
@@ -1713,14 +1713,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 8,
-        "bad": 15,
-        "neutral": 4,
-        "good_pct": 29.63,
-        "bad_pct": 55.56,
-        "neutral_pct": 14.81
+        "good": 3,
+        "bad": 14,
+        "neutral": 10,
+        "good_pct": 11.11,
+        "bad_pct": 51.85,
+        "neutral_pct": 37.04
       },
-      "grey_value": 0.759,
+      "grey_value": 0.907,
       "low_confidence": false
     },
     "Zimbabwe": {
@@ -1731,12 +1731,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 8,
-        "bad": 21,
-        "neutral": 0,
-        "good_pct": 27.59,
-        "bad_pct": 72.41,
-        "neutral_pct": 0.0
+        "good": 7,
+        "bad": 20,
+        "neutral": 2,
+        "good_pct": 24.14,
+        "bad_pct": 68.97,
+        "neutral_pct": 6.9
       },
       "grey_value": 0.948,
       "low_confidence": false
@@ -1750,11 +1750,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 30,
-        "neutral": 0,
+        "bad": 28,
+        "neutral": 2,
         "good_pct": 0.0,
-        "bad_pct": 100.0,
-        "neutral_pct": 0.0
+        "bad_pct": 93.33,
+        "neutral_pct": 6.67
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1768,11 +1768,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 26,
-        "neutral": 4,
+        "bad": 23,
+        "neutral": 7,
         "good_pct": 0.0,
-        "bad_pct": 86.67,
-        "neutral_pct": 13.33
+        "bad_pct": 76.67,
+        "neutral_pct": 23.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1803,12 +1803,12 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 5,
-        "bad": 23,
-        "neutral": 2,
-        "good_pct": 16.67,
-        "bad_pct": 76.67,
-        "neutral_pct": 6.67
+        "good": 3,
+        "bad": 22,
+        "neutral": 5,
+        "good_pct": 10.0,
+        "bad_pct": 73.33,
+        "neutral_pct": 16.67
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1822,11 +1822,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 0,
-        "bad": 30,
-        "neutral": 0,
+        "bad": 28,
+        "neutral": 2,
         "good_pct": 0.0,
-        "bad_pct": 100.0,
-        "neutral_pct": 0.0
+        "bad_pct": 93.33,
+        "neutral_pct": 6.67
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1839,12 +1839,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 2,
-        "bad": 15,
-        "neutral": 0,
-        "good_pct": 11.76,
-        "bad_pct": 88.24,
-        "neutral_pct": 0.0
+        "good": 1,
+        "bad": 13,
+        "neutral": 3,
+        "good_pct": 5.88,
+        "bad_pct": 76.47,
+        "neutral_pct": 17.65
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1857,12 +1857,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
-        "bad": 22,
-        "neutral": 4,
-        "good_pct": 13.33,
-        "bad_pct": 73.33,
-        "neutral_pct": 13.33
+        "good": 3,
+        "bad": 18,
+        "neutral": 9,
+        "good_pct": 10.0,
+        "bad_pct": 60.0,
+        "neutral_pct": 30.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1875,14 +1875,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 6,
-        "bad": 13,
-        "neutral": 5,
-        "good_pct": 25.0,
-        "bad_pct": 54.17,
-        "neutral_pct": 20.83
+        "good": 4,
+        "bad": 12,
+        "neutral": 8,
+        "good_pct": 16.67,
+        "bad_pct": 50.0,
+        "neutral_pct": 33.33
       },
-      "grey_value": 0.792,
+      "grey_value": 0.833,
       "low_confidence": false
     },
     "Honduras": {
@@ -1893,12 +1893,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
-        "bad": 20,
-        "neutral": 5,
-        "good_pct": 13.79,
-        "bad_pct": 68.97,
-        "neutral_pct": 17.24
+        "good": 3,
+        "bad": 18,
+        "neutral": 8,
+        "good_pct": 10.34,
+        "bad_pct": 62.07,
+        "neutral_pct": 27.59
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1911,12 +1911,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 5,
-        "bad": 19,
-        "neutral": 6,
-        "good_pct": 16.67,
-        "bad_pct": 63.33,
-        "neutral_pct": 20.0
+        "good": 3,
+        "bad": 17,
+        "neutral": 10,
+        "good_pct": 10.0,
+        "bad_pct": 56.67,
+        "neutral_pct": 33.33
       },
       "grey_value": 0.967,
       "low_confidence": false
@@ -1930,13 +1930,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 4,
-        "bad": 15,
-        "neutral": 9,
+        "bad": 6,
+        "neutral": 18,
         "good_pct": 14.29,
-        "bad_pct": 53.57,
-        "neutral_pct": 32.14
+        "bad_pct": 21.43,
+        "neutral_pct": 64.29
       },
-      "grey_value": 0.893,
+      "grey_value": 0.571,
       "low_confidence": false
     },
     "Fiji": {
@@ -1947,12 +1947,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 17,
-        "bad": 12,
-        "neutral": 0,
-        "good_pct": 58.62,
-        "bad_pct": 41.38,
-        "neutral_pct": 0.0
+        "good": 15,
+        "bad": 10,
+        "neutral": 4,
+        "good_pct": 51.72,
+        "bad_pct": 34.48,
+        "neutral_pct": 13.79
       },
       "grey_value": 0.328,
       "low_confidence": false
@@ -1966,11 +1966,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 1,
-        "bad": 24,
-        "neutral": 2,
+        "bad": 22,
+        "neutral": 4,
         "good_pct": 3.7,
-        "bad_pct": 88.89,
-        "neutral_pct": 7.41
+        "bad_pct": 81.48,
+        "neutral_pct": 14.81
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -1983,14 +1983,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 9,
-        "bad": 19,
-        "neutral": 2,
-        "good_pct": 30.0,
-        "bad_pct": 63.33,
-        "neutral_pct": 6.67
+        "good": 6,
+        "bad": 15,
+        "neutral": 9,
+        "good_pct": 20.0,
+        "bad_pct": 50.0,
+        "neutral_pct": 30.0
       },
-      "grey_value": 0.833,
+      "grey_value": 0.8,
       "low_confidence": false
     },
     "Colombia": {
@@ -2001,12 +2001,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 2,
-        "bad": 22,
-        "neutral": 5,
-        "good_pct": 6.9,
-        "bad_pct": 75.86,
-        "neutral_pct": 17.24
+        "good": 1,
+        "bad": 20,
+        "neutral": 8,
+        "good_pct": 3.45,
+        "bad_pct": 68.97,
+        "neutral_pct": 27.59
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2019,14 +2019,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 6,
-        "bad": 15,
-        "neutral": 8,
-        "good_pct": 20.69,
-        "bad_pct": 51.72,
-        "neutral_pct": 27.59
+        "good": 4,
+        "bad": 14,
+        "neutral": 11,
+        "good_pct": 13.79,
+        "bad_pct": 48.28,
+        "neutral_pct": 37.93
       },
-      "grey_value": 0.81,
+      "grey_value": 0.845,
       "low_confidence": false
     },
     "Algeria": {
@@ -2038,13 +2038,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 7,
-        "bad": 5,
-        "neutral": 18,
+        "bad": 1,
+        "neutral": 22,
         "good_pct": 23.33,
-        "bad_pct": 16.67,
-        "neutral_pct": 60.0
+        "bad_pct": 3.33,
+        "neutral_pct": 73.33
       },
-      "grey_value": 0.433,
+      "grey_value": 0.3,
       "low_confidence": false
     },
     "Belarus": {
@@ -2055,14 +2055,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 6,
-        "bad": 12,
-        "neutral": 8,
-        "good_pct": 23.08,
-        "bad_pct": 46.15,
-        "neutral_pct": 30.77
+        "good": 3,
+        "bad": 10,
+        "neutral": 13,
+        "good_pct": 11.54,
+        "bad_pct": 38.46,
+        "neutral_pct": 50.0
       },
-      "grey_value": 0.731,
+      "grey_value": 0.769,
       "low_confidence": false
     },
     "Oman": {
@@ -2073,14 +2073,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 18,
+        "good": 17,
         "bad": 10,
-        "neutral": 2,
-        "good_pct": 60.0,
+        "neutral": 3,
+        "good_pct": 56.67,
         "bad_pct": 33.33,
-        "neutral_pct": 6.67
+        "neutral_pct": 10.0
       },
-      "grey_value": 0.233,
+      "grey_value": 0.267,
       "low_confidence": false
     },
     "Argentina": {
@@ -2091,14 +2091,14 @@
       "num_articles": 30,
       "timeframe": "30d",
       "sentiment": {
-        "good": 9,
-        "bad": 15,
-        "neutral": 6,
-        "good_pct": 30.0,
-        "bad_pct": 50.0,
-        "neutral_pct": 20.0
+        "good": 7,
+        "bad": 14,
+        "neutral": 9,
+        "good_pct": 23.33,
+        "bad_pct": 46.67,
+        "neutral_pct": 30.0
       },
-      "grey_value": 0.7,
+      "grey_value": 0.733,
       "low_confidence": false
     },
     "Estonia": {
@@ -2109,12 +2109,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 3,
-        "bad": 24,
-        "neutral": 3,
-        "good_pct": 10.0,
-        "bad_pct": 80.0,
-        "neutral_pct": 10.0
+        "good": 2,
+        "bad": 22,
+        "neutral": 6,
+        "good_pct": 6.67,
+        "bad_pct": 73.33,
+        "neutral_pct": 20.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2128,11 +2128,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 0,
-        "bad": 30,
-        "neutral": 0,
+        "bad": 29,
+        "neutral": 1,
         "good_pct": 0.0,
-        "bad_pct": 100.0,
-        "neutral_pct": 0.0
+        "bad_pct": 96.67,
+        "neutral_pct": 3.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2145,14 +2145,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 9,
-        "bad": 13,
-        "neutral": 8,
-        "good_pct": 30.0,
-        "bad_pct": 43.33,
-        "neutral_pct": 26.67
+        "good": 8,
+        "bad": 10,
+        "neutral": 12,
+        "good_pct": 26.67,
+        "bad_pct": 33.33,
+        "neutral_pct": 40.0
       },
-      "grey_value": 0.633,
+      "grey_value": 0.567,
       "low_confidence": false
     },
     "Thailand": {
@@ -2164,11 +2164,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 4,
-        "bad": 25,
-        "neutral": 1,
+        "bad": 23,
+        "neutral": 3,
         "good_pct": 13.33,
-        "bad_pct": 83.33,
-        "neutral_pct": 3.33
+        "bad_pct": 76.67,
+        "neutral_pct": 10.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2182,11 +2182,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 29,
-        "neutral": 1,
+        "bad": 26,
+        "neutral": 4,
         "good_pct": 0.0,
-        "bad_pct": 96.67,
-        "neutral_pct": 3.33
+        "bad_pct": 86.67,
+        "neutral_pct": 13.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2200,11 +2200,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 1,
-        "bad": 28,
-        "neutral": 1,
+        "bad": 25,
+        "neutral": 4,
         "good_pct": 3.33,
-        "bad_pct": 93.33,
-        "neutral_pct": 3.33
+        "bad_pct": 83.33,
+        "neutral_pct": 13.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2217,14 +2217,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 8,
-        "bad": 5,
-        "neutral": 17,
-        "good_pct": 26.67,
-        "bad_pct": 16.67,
-        "neutral_pct": 56.67
+        "good": 3,
+        "bad": 4,
+        "neutral": 23,
+        "good_pct": 10.0,
+        "bad_pct": 13.33,
+        "neutral_pct": 76.67
       },
-      "grey_value": 0.4,
+      "grey_value": 0.533,
       "low_confidence": false
     },
     "Nigeria": {
@@ -2235,14 +2235,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 10,
-        "bad": 16,
-        "neutral": 4,
-        "good_pct": 33.33,
-        "bad_pct": 53.33,
-        "neutral_pct": 13.33
+        "good": 9,
+        "bad": 14,
+        "neutral": 7,
+        "good_pct": 30.0,
+        "bad_pct": 46.67,
+        "neutral_pct": 23.33
       },
-      "grey_value": 0.7,
+      "grey_value": 0.667,
       "low_confidence": false
     },
     "Morocco": {
@@ -2253,14 +2253,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 9,
-        "bad": 12,
-        "neutral": 9,
-        "good_pct": 30.0,
-        "bad_pct": 40.0,
-        "neutral_pct": 30.0
+        "good": 8,
+        "bad": 9,
+        "neutral": 13,
+        "good_pct": 26.67,
+        "bad_pct": 30.0,
+        "neutral_pct": 43.33
       },
-      "grey_value": 0.6,
+      "grey_value": 0.533,
       "low_confidence": false
     },
     "Namibia": {
@@ -2272,13 +2272,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 7,
-        "bad": 20,
-        "neutral": 1,
+        "bad": 19,
+        "neutral": 2,
         "good_pct": 25.0,
-        "bad_pct": 71.43,
-        "neutral_pct": 3.57
+        "bad_pct": 67.86,
+        "neutral_pct": 7.14
       },
-      "grey_value": 0.964,
+      "grey_value": 0.929,
       "low_confidence": false
     },
     "Uganda": {
@@ -2286,240 +2286,6 @@
       "word_percentage": 10.0,
       "word_frequency": 3,
       "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "timeframe": "24h",
-      "sentiment": {
-        "good": 14,
-        "bad": 16,
-        "neutral": 0,
-        "good_pct": 46.67,
-        "bad_pct": 53.33,
-        "neutral_pct": 0.0
-      },
-      "grey_value": 0.567,
-      "low_confidence": false
-    },
-    "Yemen": {
-      "prevalent_word": "abyan",
-      "word_percentage": 10.0,
-      "word_frequency": 3,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "timeframe": "24h",
-      "sentiment": {
-        "good": 2,
-        "bad": 8,
-        "neutral": 19,
-        "good_pct": 6.9,
-        "bad_pct": 27.59,
-        "neutral_pct": 65.52
-      },
-      "grey_value": 0.707,
-      "low_confidence": false
-    },
-    "Mali": {
-      "prevalent_word": "carburant",
-      "word_percentage": 10.0,
-      "word_frequency": 3,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "timeframe": "7d",
-      "sentiment": {
-        "good": 8,
-        "bad": 16,
-        "neutral": 6,
-        "good_pct": 26.67,
-        "bad_pct": 53.33,
-        "neutral_pct": 20.0
-      },
-      "grey_value": 0.767,
-      "low_confidence": false
-    },
-    "Mexico": {
-      "prevalent_word": "manzo",
-      "word_percentage": 10.0,
-      "word_frequency": 3,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "timeframe": "24h",
-      "sentiment": {
-        "good": 3,
-        "bad": 23,
-        "neutral": 4,
-        "good_pct": 10.0,
-        "bad_pct": 76.67,
-        "neutral_pct": 13.33
-      },
-      "grey_value": 1.0,
-      "low_confidence": false
-    },
-    "Italy": {
-      "prevalent_word": "manovra",
-      "word_percentage": 10.0,
-      "word_frequency": 3,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "timeframe": "7d",
-      "sentiment": {
-        "good": 5,
-        "bad": 23,
-        "neutral": 2,
-        "good_pct": 16.67,
-        "bad_pct": 76.67,
-        "neutral_pct": 6.67
-      },
-      "grey_value": 1.0,
-      "low_confidence": false
-    },
-    "Benin": {
-      "prevalent_word": "poutine",
-      "word_percentage": 10.0,
-      "word_frequency": 3,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "timeframe": "7d",
-      "sentiment": {
-        "good": 10,
-        "bad": 16,
-        "neutral": 4,
-        "good_pct": 33.33,
-        "bad_pct": 53.33,
-        "neutral_pct": 13.33
-      },
-      "grey_value": 0.7,
-      "low_confidence": false
-    },
-    "Bahrain": {
-      "prevalent_word": "mitel",
-      "word_percentage": 5.0,
-      "word_frequency": 1,
-      "prevalence_score": 2500.0,
-      "num_articles": 20,
-      "timeframe": "30d",
-      "sentiment": {
-        "good": 0,
-        "bad": 10,
-        "neutral": 10,
-        "good_pct": 0.0,
-        "bad_pct": 50.0,
-        "neutral_pct": 50.0
-      },
-      "grey_value": 1.0,
-      "low_confidence": false
-    },
-    "Venezuela": {
-      "prevalent_word": "saime",
-      "word_percentage": 7.14,
-      "word_frequency": 2,
-      "prevalence_score": 2380.95,
-      "num_articles": 28,
-      "timeframe": "24h",
-      "sentiment": {
-        "good": 9,
-        "bad": 14,
-        "neutral": 5,
-        "good_pct": 32.14,
-        "bad_pct": 50.0,
-        "neutral_pct": 17.86
-      },
-      "grey_value": 0.679,
-      "low_confidence": false
-    },
-    "Mauritania": {
-      "prevalent_word": "pilote",
-      "word_percentage": 7.14,
-      "word_frequency": 2,
-      "prevalence_score": 2380.95,
-      "num_articles": 28,
-      "timeframe": "24h",
-      "sentiment": {
-        "good": 3,
-        "bad": 11,
-        "neutral": 12,
-        "good_pct": 11.54,
-        "bad_pct": 42.31,
-        "neutral_pct": 46.15
-      },
-      "grey_value": 0.808,
-      "low_confidence": false
-    },
-    "Chile": {
-      "prevalent_word": "chile",
-      "word_percentage": 16.67,
-      "word_frequency": 5,
-      "prevalence_score": 2380.95,
-      "num_articles": 30,
-      "timeframe": "24h",
-      "sentiment": {
-        "good": 2,
-        "bad": 20,
-        "neutral": 6,
-        "good_pct": 7.14,
-        "bad_pct": 71.43,
-        "neutral_pct": 21.43
-      },
-      "grey_value": 1.0,
-      "low_confidence": false
-    },
-    "Saudi Arabia": {
-      "prevalent_word": "jeddah",
-      "word_percentage": 6.9,
-      "word_frequency": 2,
-      "prevalence_score": 2298.85,
-      "num_articles": 29,
-      "timeframe": "24h",
-      "sentiment": {
-        "good": 6,
-        "bad": 12,
-        "neutral": 11,
-        "good_pct": 20.69,
-        "bad_pct": 41.38,
-        "neutral_pct": 37.93
-      },
-      "grey_value": 0.707,
-      "low_confidence": false
-    },
-    "Gabon": {
-      "prevalent_word": "libreville",
-      "word_percentage": 6.67,
-      "word_frequency": 2,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "timeframe": "7d",
-      "sentiment": {
-        "good": 12,
-        "bad": 13,
-        "neutral": 2,
-        "good_pct": 44.44,
-        "bad_pct": 48.15,
-        "neutral_pct": 7.41
-      },
-      "grey_value": 0.537,
-      "low_confidence": false
-    },
-    "Armenia": {
-      "prevalent_word": "arminfo",
-      "word_percentage": 6.67,
-      "word_frequency": 2,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "timeframe": "7d",
-      "sentiment": {
-        "good": 19,
-        "bad": 6,
-        "neutral": 5,
-        "good_pct": 63.33,
-        "bad_pct": 20.0,
-        "neutral_pct": 16.67
-      },
-      "grey_value": 0.067,
-      "low_confidence": false
-    },
-    "Malaysia": {
-      "prevalent_word": "selangor",
-      "word_percentage": 6.67,
-      "word_frequency": 2,
-      "prevalence_score": 2222.22,
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
@@ -2533,6 +2299,240 @@
       "grey_value": 0.667,
       "low_confidence": false
     },
+    "Yemen": {
+      "prevalent_word": "abyan",
+      "word_percentage": 10.0,
+      "word_frequency": 3,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "timeframe": "24h",
+      "sentiment": {
+        "good": 2,
+        "bad": 2,
+        "neutral": 25,
+        "good_pct": 6.9,
+        "bad_pct": 6.9,
+        "neutral_pct": 86.21
+      },
+      "grey_value": 0.5,
+      "low_confidence": false
+    },
+    "Mali": {
+      "prevalent_word": "carburant",
+      "word_percentage": 10.0,
+      "word_frequency": 3,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "timeframe": "7d",
+      "sentiment": {
+        "good": 8,
+        "bad": 12,
+        "neutral": 10,
+        "good_pct": 26.67,
+        "bad_pct": 40.0,
+        "neutral_pct": 33.33
+      },
+      "grey_value": 0.633,
+      "low_confidence": false
+    },
+    "Mexico": {
+      "prevalent_word": "manzo",
+      "word_percentage": 10.0,
+      "word_frequency": 3,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "timeframe": "24h",
+      "sentiment": {
+        "good": 1,
+        "bad": 21,
+        "neutral": 8,
+        "good_pct": 3.33,
+        "bad_pct": 70.0,
+        "neutral_pct": 26.67
+      },
+      "grey_value": 1.0,
+      "low_confidence": false
+    },
+    "Italy": {
+      "prevalent_word": "manovra",
+      "word_percentage": 10.0,
+      "word_frequency": 3,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "timeframe": "7d",
+      "sentiment": {
+        "good": 3,
+        "bad": 20,
+        "neutral": 7,
+        "good_pct": 10.0,
+        "bad_pct": 66.67,
+        "neutral_pct": 23.33
+      },
+      "grey_value": 1.0,
+      "low_confidence": false
+    },
+    "Benin": {
+      "prevalent_word": "poutine",
+      "word_percentage": 10.0,
+      "word_frequency": 3,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "timeframe": "7d",
+      "sentiment": {
+        "good": 7,
+        "bad": 13,
+        "neutral": 10,
+        "good_pct": 23.33,
+        "bad_pct": 43.33,
+        "neutral_pct": 33.33
+      },
+      "grey_value": 0.7,
+      "low_confidence": false
+    },
+    "Bahrain": {
+      "prevalent_word": "mitel",
+      "word_percentage": 5.0,
+      "word_frequency": 1,
+      "prevalence_score": 2500.0,
+      "num_articles": 20,
+      "timeframe": "30d",
+      "sentiment": {
+        "good": 0,
+        "bad": 0,
+        "neutral": 20,
+        "good_pct": 0.0,
+        "bad_pct": 0.0,
+        "neutral_pct": 100.0
+      },
+      "grey_value": 0.5,
+      "low_confidence": false
+    },
+    "Venezuela": {
+      "prevalent_word": "saime",
+      "word_percentage": 7.14,
+      "word_frequency": 2,
+      "prevalence_score": 2380.95,
+      "num_articles": 28,
+      "timeframe": "24h",
+      "sentiment": {
+        "good": 7,
+        "bad": 13,
+        "neutral": 8,
+        "good_pct": 25.0,
+        "bad_pct": 46.43,
+        "neutral_pct": 28.57
+      },
+      "grey_value": 0.714,
+      "low_confidence": false
+    },
+    "Mauritania": {
+      "prevalent_word": "pilote",
+      "word_percentage": 7.14,
+      "word_frequency": 2,
+      "prevalence_score": 2380.95,
+      "num_articles": 28,
+      "timeframe": "24h",
+      "sentiment": {
+        "good": 3,
+        "bad": 5,
+        "neutral": 18,
+        "good_pct": 11.54,
+        "bad_pct": 19.23,
+        "neutral_pct": 69.23
+      },
+      "grey_value": 0.577,
+      "low_confidence": false
+    },
+    "Chile": {
+      "prevalent_word": "chile",
+      "word_percentage": 16.67,
+      "word_frequency": 5,
+      "prevalence_score": 2380.95,
+      "num_articles": 30,
+      "timeframe": "24h",
+      "sentiment": {
+        "good": 1,
+        "bad": 17,
+        "neutral": 10,
+        "good_pct": 3.57,
+        "bad_pct": 60.71,
+        "neutral_pct": 35.71
+      },
+      "grey_value": 1.0,
+      "low_confidence": false
+    },
+    "Saudi Arabia": {
+      "prevalent_word": "jeddah",
+      "word_percentage": 6.9,
+      "word_frequency": 2,
+      "prevalence_score": 2298.85,
+      "num_articles": 29,
+      "timeframe": "24h",
+      "sentiment": {
+        "good": 6,
+        "bad": 3,
+        "neutral": 20,
+        "good_pct": 20.69,
+        "bad_pct": 10.34,
+        "neutral_pct": 68.97
+      },
+      "grey_value": 0.397,
+      "low_confidence": false
+    },
+    "Gabon": {
+      "prevalent_word": "libreville",
+      "word_percentage": 6.67,
+      "word_frequency": 2,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "timeframe": "7d",
+      "sentiment": {
+        "good": 10,
+        "bad": 10,
+        "neutral": 7,
+        "good_pct": 37.04,
+        "bad_pct": 37.04,
+        "neutral_pct": 25.93
+      },
+      "grey_value": 0.5,
+      "low_confidence": false
+    },
+    "Armenia": {
+      "prevalent_word": "arminfo",
+      "word_percentage": 6.67,
+      "word_frequency": 2,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "timeframe": "7d",
+      "sentiment": {
+        "good": 17,
+        "bad": 4,
+        "neutral": 9,
+        "good_pct": 56.67,
+        "bad_pct": 13.33,
+        "neutral_pct": 30.0
+      },
+      "grey_value": 0.067,
+      "low_confidence": false
+    },
+    "Malaysia": {
+      "prevalent_word": "selangor",
+      "word_percentage": 6.67,
+      "word_frequency": 2,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "timeframe": "24h",
+      "sentiment": {
+        "good": 10,
+        "bad": 11,
+        "neutral": 9,
+        "good_pct": 33.33,
+        "bad_pct": 36.67,
+        "neutral_pct": 30.0
+      },
+      "grey_value": 0.533,
+      "low_confidence": false
+    },
     "Belgium": {
       "prevalent_word": "krijgt",
       "word_percentage": 6.67,
@@ -2541,12 +2541,12 @@
       "num_articles": 30,
       "timeframe": "30d",
       "sentiment": {
-        "good": 4,
-        "bad": 23,
-        "neutral": 3,
-        "good_pct": 13.33,
-        "bad_pct": 76.67,
-        "neutral_pct": 10.0
+        "good": 3,
+        "bad": 20,
+        "neutral": 7,
+        "good_pct": 10.0,
+        "bad_pct": 66.67,
+        "neutral_pct": 23.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2559,12 +2559,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 2,
+        "good": 1,
         "bad": 25,
-        "neutral": 3,
-        "good_pct": 6.67,
+        "neutral": 4,
+        "good_pct": 3.33,
         "bad_pct": 83.33,
-        "neutral_pct": 10.0
+        "neutral_pct": 13.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2578,11 +2578,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 3,
-        "bad": 21,
-        "neutral": 5,
+        "bad": 20,
+        "neutral": 6,
         "good_pct": 10.34,
-        "bad_pct": 72.41,
-        "neutral_pct": 17.24
+        "bad_pct": 68.97,
+        "neutral_pct": 20.69
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2595,14 +2595,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 15,
+        "good": 12,
         "bad": 13,
-        "neutral": 1,
-        "good_pct": 51.72,
+        "neutral": 4,
+        "good_pct": 41.38,
         "bad_pct": 44.83,
-        "neutral_pct": 3.45
+        "neutral_pct": 13.79
       },
-      "grey_value": 0.431,
+      "grey_value": 0.534,
       "low_confidence": false
     },
     "France": {
@@ -2613,14 +2613,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 13,
-        "bad": 10,
-        "neutral": 7,
-        "good_pct": 43.33,
-        "bad_pct": 33.33,
-        "neutral_pct": 23.33
+        "good": 9,
+        "bad": 8,
+        "neutral": 13,
+        "good_pct": 30.0,
+        "bad_pct": 26.67,
+        "neutral_pct": 43.33
       },
-      "grey_value": 0.4,
+      "grey_value": 0.467,
       "low_confidence": false
     },
     "Bosnia and Herzegovina": {
@@ -2632,11 +2632,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 30,
-        "neutral": 0,
+        "bad": 29,
+        "neutral": 1,
         "good_pct": 0.0,
-        "bad_pct": 100.0,
-        "neutral_pct": 0.0
+        "bad_pct": 96.67,
+        "neutral_pct": 3.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2650,13 +2650,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 9,
-        "bad": 18,
-        "neutral": 3,
+        "bad": 13,
+        "neutral": 8,
         "good_pct": 30.0,
-        "bad_pct": 60.0,
-        "neutral_pct": 10.0
+        "bad_pct": 43.33,
+        "neutral_pct": 26.67
       },
-      "grey_value": 0.8,
+      "grey_value": 0.633,
       "low_confidence": false
     },
     "Guyana": {
@@ -2668,13 +2668,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 14,
-        "bad": 14,
-        "neutral": 2,
+        "bad": 13,
+        "neutral": 3,
         "good_pct": 46.67,
-        "bad_pct": 46.67,
-        "neutral_pct": 6.67
+        "bad_pct": 43.33,
+        "neutral_pct": 10.0
       },
-      "grey_value": 0.5,
+      "grey_value": 0.467,
       "low_confidence": false
     },
     "Kenya": {
@@ -2685,14 +2685,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 16,
+        "good": 15,
         "bad": 10,
-        "neutral": 4,
-        "good_pct": 53.33,
+        "neutral": 5,
+        "good_pct": 50.0,
         "bad_pct": 33.33,
-        "neutral_pct": 13.33
+        "neutral_pct": 16.67
       },
-      "grey_value": 0.3,
+      "grey_value": 0.333,
       "low_confidence": false
     },
     "Papua New Guinea": {
@@ -2703,14 +2703,14 @@
       "num_articles": 30,
       "timeframe": "30d",
       "sentiment": {
-        "good": 17,
+        "good": 16,
         "bad": 11,
-        "neutral": 2,
-        "good_pct": 56.67,
+        "neutral": 3,
+        "good_pct": 53.33,
         "bad_pct": 36.67,
-        "neutral_pct": 6.67
+        "neutral_pct": 10.0
       },
-      "grey_value": 0.3,
+      "grey_value": 0.333,
       "low_confidence": false
     },
     "United Arab Emirates": {
@@ -2722,13 +2722,13 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 16,
-        "bad": 6,
-        "neutral": 6,
+        "bad": 4,
+        "neutral": 8,
         "good_pct": 57.14,
-        "bad_pct": 21.43,
-        "neutral_pct": 21.43
+        "bad_pct": 14.29,
+        "neutral_pct": 28.57
       },
-      "grey_value": 0.143,
+      "grey_value": 0.071,
       "low_confidence": false
     },
     "Panama": {
@@ -2739,14 +2739,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 15,
+        "good": 12,
         "bad": 9,
-        "neutral": 6,
-        "good_pct": 50.0,
+        "neutral": 9,
+        "good_pct": 40.0,
         "bad_pct": 30.0,
-        "neutral_pct": 20.0
+        "neutral_pct": 30.0
       },
-      "grey_value": 0.3,
+      "grey_value": 0.4,
       "low_confidence": false
     },
     "South Africa": {
@@ -2775,14 +2775,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 8,
-        "bad": 17,
-        "neutral": 5,
-        "good_pct": 26.67,
-        "bad_pct": 56.67,
-        "neutral_pct": 16.67
+        "good": 7,
+        "bad": 15,
+        "neutral": 8,
+        "good_pct": 23.33,
+        "bad_pct": 50.0,
+        "neutral_pct": 26.67
       },
-      "grey_value": 0.8,
+      "grey_value": 0.767,
       "low_confidence": false
     },
     "Serbia": {
@@ -2793,12 +2793,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
-        "bad": 22,
-        "neutral": 4,
-        "good_pct": 13.33,
-        "bad_pct": 73.33,
-        "neutral_pct": 13.33
+        "good": 1,
+        "bad": 20,
+        "neutral": 9,
+        "good_pct": 3.33,
+        "bad_pct": 66.67,
+        "neutral_pct": 30.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2811,14 +2811,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 6,
-        "bad": 17,
-        "neutral": 6,
-        "good_pct": 20.69,
-        "bad_pct": 58.62,
-        "neutral_pct": 20.69
+        "good": 2,
+        "bad": 14,
+        "neutral": 13,
+        "good_pct": 6.9,
+        "bad_pct": 48.28,
+        "neutral_pct": 44.83
       },
-      "grey_value": 0.879,
+      "grey_value": 0.914,
       "low_confidence": false
     },
     "Mauritius": {
@@ -2830,11 +2830,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 2,
-        "bad": 25,
-        "neutral": 3,
+        "bad": 20,
+        "neutral": 8,
         "good_pct": 6.67,
-        "bad_pct": 83.33,
-        "neutral_pct": 10.0
+        "bad_pct": 66.67,
+        "neutral_pct": 26.67
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2847,12 +2847,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 3,
-        "bad": 20,
-        "neutral": 6,
-        "good_pct": 10.34,
-        "bad_pct": 68.97,
-        "neutral_pct": 20.69
+        "good": 2,
+        "bad": 19,
+        "neutral": 8,
+        "good_pct": 6.9,
+        "bad_pct": 65.52,
+        "neutral_pct": 27.59
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -2865,14 +2865,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 5,
-        "bad": 19,
-        "neutral": 6,
-        "good_pct": 16.67,
-        "bad_pct": 63.33,
-        "neutral_pct": 20.0
+        "good": 3,
+        "bad": 15,
+        "neutral": 12,
+        "good_pct": 10.0,
+        "bad_pct": 50.0,
+        "neutral_pct": 40.0
       },
-      "grey_value": 0.967,
+      "grey_value": 0.9,
       "low_confidence": false
     },
     "New Zealand": {
@@ -2883,14 +2883,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 16,
+        "good": 15,
         "bad": 13,
-        "neutral": 1,
-        "good_pct": 53.33,
+        "neutral": 2,
+        "good_pct": 50.0,
         "bad_pct": 43.33,
-        "neutral_pct": 3.33
+        "neutral_pct": 6.67
       },
-      "grey_value": 0.4,
+      "grey_value": 0.433,
       "low_confidence": false
     },
     "United Kingdom": {
@@ -2901,12 +2901,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 12,
-        "bad": 13,
-        "neutral": 3,
-        "good_pct": 42.86,
-        "bad_pct": 46.43,
-        "neutral_pct": 10.71
+        "good": 11,
+        "bad": 12,
+        "neutral": 5,
+        "good_pct": 39.29,
+        "bad_pct": 42.86,
+        "neutral_pct": 17.86
       },
       "grey_value": 0.536,
       "low_confidence": false
@@ -2919,14 +2919,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 8,
-        "bad": 19,
-        "neutral": 3,
-        "good_pct": 26.67,
-        "bad_pct": 63.33,
-        "neutral_pct": 10.0
+        "good": 7,
+        "bad": 17,
+        "neutral": 6,
+        "good_pct": 23.33,
+        "bad_pct": 56.67,
+        "neutral_pct": 20.0
       },
-      "grey_value": 0.867,
+      "grey_value": 0.833,
       "low_confidence": false
     },
     "United States": {
@@ -2937,14 +2937,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 10,
+        "good": 9,
         "bad": 18,
-        "neutral": 2,
-        "good_pct": 33.33,
+        "neutral": 3,
+        "good_pct": 30.0,
         "bad_pct": 60.0,
-        "neutral_pct": 6.67
+        "neutral_pct": 10.0
       },
-      "grey_value": 0.767,
+      "grey_value": 0.8,
       "low_confidence": false
     },
     "Trinidad and Tobago": {
@@ -2956,13 +2956,13 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 12,
-        "bad": 13,
-        "neutral": 1,
+        "bad": 12,
+        "neutral": 2,
         "good_pct": 46.15,
-        "bad_pct": 50.0,
-        "neutral_pct": 3.85
+        "bad_pct": 46.15,
+        "neutral_pct": 7.69
       },
-      "grey_value": 0.538,
+      "grey_value": 0.5,
       "low_confidence": false
     },
     "Cambodia": {
@@ -2973,12 +2973,12 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 22,
-        "bad": 8,
-        "neutral": 0,
-        "good_pct": 73.33,
-        "bad_pct": 26.67,
-        "neutral_pct": 0.0
+        "good": 20,
+        "bad": 6,
+        "neutral": 4,
+        "good_pct": 66.67,
+        "bad_pct": 20.0,
+        "neutral_pct": 13.33
       },
       "grey_value": 0.033,
       "low_confidence": false
@@ -2991,14 +2991,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 19,
+        "good": 6,
         "bad": 4,
-        "neutral": 7,
-        "good_pct": 63.33,
+        "neutral": 20,
+        "good_pct": 20.0,
         "bad_pct": 13.33,
-        "neutral_pct": 23.33
+        "neutral_pct": 66.67
       },
-      "grey_value": 0.0,
+      "grey_value": 0.433,
       "low_confidence": false
     },
     "Jordan": {
@@ -3010,13 +3010,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 13,
-        "neutral": 17,
+        "bad": 0,
+        "neutral": 30,
         "good_pct": 0.0,
-        "bad_pct": 43.33,
-        "neutral_pct": 56.67
+        "bad_pct": 0.0,
+        "neutral_pct": 100.0
       },
-      "grey_value": 0.933,
+      "grey_value": 0.5,
       "low_confidence": false
     },
     "Kazakhstan": {
@@ -3027,14 +3027,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 12,
-        "bad": 3,
-        "neutral": 14,
-        "good_pct": 41.38,
-        "bad_pct": 10.34,
-        "neutral_pct": 48.28
+        "good": 4,
+        "bad": 0,
+        "neutral": 25,
+        "good_pct": 13.79,
+        "bad_pct": 0.0,
+        "neutral_pct": 86.21
       },
-      "grey_value": 0.19,
+      "grey_value": 0.362,
       "low_confidence": false
     },
     "Israel": {
@@ -3045,14 +3045,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 12,
-        "bad": 8,
-        "neutral": 10,
-        "good_pct": 40.0,
-        "bad_pct": 26.67,
-        "neutral_pct": 33.33
+        "good": 9,
+        "bad": 6,
+        "neutral": 15,
+        "good_pct": 30.0,
+        "bad_pct": 20.0,
+        "neutral_pct": 50.0
       },
-      "grey_value": 0.367,
+      "grey_value": 0.4,
       "low_confidence": false
     },
     "Egypt": {
@@ -3063,14 +3063,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
-        "bad": 8,
-        "neutral": 18,
-        "good_pct": 13.33,
-        "bad_pct": 26.67,
-        "neutral_pct": 60.0
+        "good": 2,
+        "bad": 3,
+        "neutral": 25,
+        "good_pct": 6.67,
+        "bad_pct": 10.0,
+        "neutral_pct": 83.33
       },
-      "grey_value": 0.633,
+      "grey_value": 0.533,
       "low_confidence": false
     },
     "Madagascar": {
@@ -3082,11 +3082,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 4,
-        "bad": 25,
-        "neutral": 1,
+        "bad": 23,
+        "neutral": 3,
         "good_pct": 13.33,
-        "bad_pct": 83.33,
-        "neutral_pct": 3.33
+        "bad_pct": 76.67,
+        "neutral_pct": 10.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -3099,14 +3099,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 13,
-        "bad": 11,
-        "neutral": 6,
-        "good_pct": 43.33,
-        "bad_pct": 36.67,
-        "neutral_pct": 20.0
+        "good": 10,
+        "bad": 10,
+        "neutral": 10,
+        "good_pct": 33.33,
+        "bad_pct": 33.33,
+        "neutral_pct": 33.33
       },
-      "grey_value": 0.433,
+      "grey_value": 0.5,
       "low_confidence": false
     },
     "North Macedonia": {
@@ -3117,14 +3117,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 1,
-        "bad": 16,
-        "neutral": 13,
-        "good_pct": 3.33,
-        "bad_pct": 53.33,
-        "neutral_pct": 43.33
+        "good": 0,
+        "bad": 6,
+        "neutral": 24,
+        "good_pct": 0.0,
+        "bad_pct": 20.0,
+        "neutral_pct": 80.0
       },
-      "grey_value": 1.0,
+      "grey_value": 0.7,
       "low_confidence": false
     },
     "Mongolia": {
@@ -3135,14 +3135,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 2,
-        "bad": 6,
-        "neutral": 12,
-        "good_pct": 10.0,
-        "bad_pct": 30.0,
-        "neutral_pct": 60.0
+        "good": 1,
+        "bad": 3,
+        "neutral": 16,
+        "good_pct": 5.0,
+        "bad_pct": 15.0,
+        "neutral_pct": 80.0
       },
-      "grey_value": 0.7,
+      "grey_value": 0.6,
       "low_confidence": false
     },
     "Sri Lanka": {
@@ -3154,11 +3154,11 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 6,
-        "bad": 24,
-        "neutral": 0,
+        "bad": 23,
+        "neutral": 1,
         "good_pct": 20.0,
-        "bad_pct": 80.0,
-        "neutral_pct": 0.0
+        "bad_pct": 76.67,
+        "neutral_pct": 3.33
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -3171,14 +3171,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 4,
-        "bad": 7,
-        "neutral": 19,
-        "good_pct": 13.33,
-        "bad_pct": 23.33,
-        "neutral_pct": 63.33
+        "good": 2,
+        "bad": 2,
+        "neutral": 26,
+        "good_pct": 6.67,
+        "bad_pct": 6.67,
+        "neutral_pct": 86.67
       },
-      "grey_value": 0.6,
+      "grey_value": 0.5,
       "low_confidence": false
     },
     "Libya": {
@@ -3190,13 +3190,13 @@
       "timeframe": "24h",
       "sentiment": {
         "good": 0,
-        "bad": 7,
-        "neutral": 23,
+        "bad": 1,
+        "neutral": 29,
         "good_pct": 0.0,
-        "bad_pct": 23.33,
-        "neutral_pct": 76.67
+        "bad_pct": 3.33,
+        "neutral_pct": 96.67
       },
-      "grey_value": 0.733,
+      "grey_value": 0.533,
       "low_confidence": false
     },
     "Iraq": {
@@ -3208,13 +3208,13 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 6,
-        "bad": 16,
-        "neutral": 8,
+        "bad": 8,
+        "neutral": 16,
         "good_pct": 20.0,
-        "bad_pct": 53.33,
-        "neutral_pct": 26.67
+        "bad_pct": 26.67,
+        "neutral_pct": 53.33
       },
-      "grey_value": 0.833,
+      "grey_value": 0.567,
       "low_confidence": false
     },
     "China": {
@@ -3226,11 +3226,11 @@
       "timeframe": "7d",
       "sentiment": {
         "good": 0,
-        "bad": 29,
-        "neutral": 1,
+        "bad": 24,
+        "neutral": 6,
         "good_pct": 0.0,
-        "bad_pct": 96.67,
-        "neutral_pct": 3.33
+        "bad_pct": 80.0,
+        "neutral_pct": 20.0
       },
       "grey_value": 1.0,
       "low_confidence": false
@@ -3243,14 +3243,14 @@
       "num_articles": 30,
       "timeframe": "7d",
       "sentiment": {
-        "good": 12,
+        "good": 3,
         "bad": 1,
-        "neutral": 17,
-        "good_pct": 40.0,
+        "neutral": 26,
+        "good_pct": 10.0,
         "bad_pct": 3.33,
-        "neutral_pct": 56.67
+        "neutral_pct": 86.67
       },
-      "grey_value": 0.133,
+      "grey_value": 0.433,
       "low_confidence": false
     },
     "Sudan": {
@@ -3261,14 +3261,14 @@
       "num_articles": 30,
       "timeframe": "24h",
       "sentiment": {
-        "good": 1,
-        "bad": 5,
-        "neutral": 24,
-        "good_pct": 3.33,
-        "bad_pct": 16.67,
-        "neutral_pct": 80.0
+        "good": 0,
+        "bad": 0,
+        "neutral": 30,
+        "good_pct": 0.0,
+        "bad_pct": 0.0,
+        "neutral_pct": 100.0
       },
-      "grey_value": 0.633,
+      "grey_value": 0.5,
       "low_confidence": false
     }
   }

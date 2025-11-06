@@ -38,6 +38,11 @@ def classify_sentiment(text, model=None):
     """
     Classify a headline as good, bad, or neutral news using DistilBERT
     Returns: 'good', 'bad', or 'neutral'
+    
+    Conservative threshold: 85% confidence required for both good and bad
+    - Only very clear positive sentiment → good
+    - Only very clear negative sentiment → bad
+    - Everything else (borderline, ambiguous, moderate) → neutral
     """
     try:
         # Get prediction from transformer model
@@ -45,14 +50,15 @@ def classify_sentiment(text, model=None):
         label = result['label']  # 'POSITIVE' or 'NEGATIVE'
         score = result['score']  # Confidence score 0-1
         
-        # Map transformer output to our categories
-        # High confidence threshold for good/bad, otherwise neutral
-        if label == 'POSITIVE' and score >= 0.7:
+        # High confidence threshold (85%) for both good and bad
+        # This ensures only clear-cut cases get labeled
+        if label == 'POSITIVE' and score >= 0.85:
             return 'good'
-        elif label == 'NEGATIVE' and score >= 0.7:
+        elif label == 'NEGATIVE' and score >= 0.85:
             return 'bad'
         else:
-            # Low confidence or borderline = neutral
+            # Medium/low confidence = neutral
+            # Includes borderline cases and ambiguous headlines
             return 'neutral'
     except Exception as e:
         print(f"Error classifying '{text[:50]}...': {e}")
