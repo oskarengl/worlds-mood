@@ -1,21 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2025-11-06T06:25:58.982723",
-    "total_countries": 175,
-    "total_articles": 4040,
+    "generated_at": "2025-11-06T12:34:09.702415",
+    "total_countries": 176,
+    "total_articles": 4111,
     "data_source": "prevalent_words_gdelt_20251106.csv"
   },
   "countries": {
     "Burundi": {
-      "prevalent_word": "midi",
-      "word_percentage": 100.0,
-      "prevalence_score": 50000.0,
-      "num_articles": 1,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Liechtenstein": {
-      "prevalent_word": "leitung",
+      "prevalent_word": "soir",
       "word_percentage": 100.0,
       "prevalence_score": 50000.0,
       "num_articles": 1,
@@ -23,12 +15,28 @@
       "timeframe": "24h"
     },
     "Eswatini": {
-      "prevalent_word": "ewade",
+      "prevalent_word": "mnwap",
       "word_percentage": 100.0,
       "prevalence_score": 50000.0,
       "num_articles": 1,
       "week": "2025-W44",
       "timeframe": "7d"
+    },
+    "Central African Republic": {
+      "prevalent_word": "appui",
+      "word_percentage": 100.0,
+      "prevalence_score": 50000.0,
+      "num_articles": 1,
+      "week": "2025-W44",
+      "timeframe": "7d"
+    },
+    "Laos": {
+      "prevalent_word": "andro",
+      "word_percentage": 100.0,
+      "prevalence_score": 50000.0,
+      "num_articles": 1,
+      "week": "2025-W44",
+      "timeframe": "24h"
     },
     "Sao Tome and Principe": {
       "prevalent_word": "alemanha",
@@ -38,29 +46,13 @@
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Central African Republic": {
-      "prevalent_word": "soutenir",
+    "Tonga": {
+      "prevalent_word": "registration",
       "word_percentage": 100.0,
-      "prevalence_score": 50000.0,
-      "num_articles": 1,
-      "week": "2025-W44",
-      "timeframe": "7d"
-    },
-    "Gambia": {
-      "prevalent_word": "ailing",
-      "word_percentage": 100.0,
-      "prevalence_score": 50000.0,
+      "prevalence_score": 33333.33,
       "num_articles": 1,
       "week": "2025-W44",
       "timeframe": "24h"
-    },
-    "Laos": {
-      "prevalent_word": "fiction",
-      "word_percentage": 100.0,
-      "prevalence_score": 33333.33,
-      "num_articles": 2,
-      "week": "2025-W44",
-      "timeframe": "7d"
     },
     "Maldives": {
       "prevalent_word": "repression",
@@ -70,8 +62,24 @@
       "week": "2025-W44",
       "timeframe": "24h"
     },
+    "Republic of the Congo": {
+      "prevalent_word": "brazzaville",
+      "word_percentage": 66.67,
+      "prevalence_score": 22222.22,
+      "num_articles": 3,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Gambia": {
+      "prevalent_word": "kanifing",
+      "word_percentage": 33.33,
+      "prevalence_score": 16666.67,
+      "num_articles": 3,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
     "Mozambique": {
-      "prevalent_word": "quinhentos",
+      "prevalent_word": "escolar",
       "word_percentage": 33.33,
       "prevalence_score": 16666.67,
       "num_articles": 3,
@@ -79,7 +87,7 @@
       "timeframe": "24h"
     },
     "Cabo Verde": {
-      "prevalent_word": "roque",
+      "prevalent_word": "transformao",
       "word_percentage": 33.33,
       "prevalence_score": 16666.67,
       "num_articles": 3,
@@ -87,7 +95,15 @@
       "timeframe": "24h"
     },
     "Nicaragua": {
-      "prevalent_word": "sido",
+      "prevalent_word": "sexualmente",
+      "word_percentage": 33.33,
+      "prevalence_score": 16666.67,
+      "num_articles": 3,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Zambia": {
+      "prevalent_word": "assures",
       "word_percentage": 33.33,
       "prevalence_score": 16666.67,
       "num_articles": 3,
@@ -103,33 +119,17 @@
       "timeframe": "7d"
     },
     "Dominica": {
-      "prevalent_word": "upgrade",
+      "prevalent_word": "gosl",
       "word_percentage": 33.33,
       "prevalence_score": 16666.67,
       "num_articles": 3,
       "week": "2025-W44",
       "timeframe": "30d"
     },
-    "Seychelles": {
-      "prevalent_word": "consistent",
+    "Rwanda": {
+      "prevalent_word": "rwanda",
       "word_percentage": 60.0,
       "prevalence_score": 15000.0,
-      "num_articles": 5,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Republic of the Congo": {
-      "prevalent_word": "congo",
-      "word_percentage": 83.33,
-      "prevalence_score": 13888.89,
-      "num_articles": 6,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Monaco": {
-      "prevalent_word": "monaco",
-      "word_percentage": 40.0,
-      "prevalence_score": 13333.33,
       "num_articles": 5,
       "week": "2025-W44",
       "timeframe": "24h"
@@ -142,13 +142,13 @@
       "week": "2025-W44",
       "timeframe": "7d"
     },
-    "Zambia": {
-      "prevalent_word": "sichone",
-      "word_percentage": 25.0,
-      "prevalence_score": 12500.0,
-      "num_articles": 4,
+    "Liechtenstein": {
+      "prevalent_word": "vaterland",
+      "word_percentage": 40.0,
+      "prevalence_score": 13333.33,
+      "num_articles": 5,
       "week": "2025-W44",
-      "timeframe": "24h"
+      "timeframe": "7d"
     },
     "Saint Vincent and the Grenadines": {
       "prevalent_word": "lewis",
@@ -159,58 +159,58 @@
       "timeframe": "24h"
     },
     "Chad": {
-      "prevalent_word": "rien",
+      "prevalent_word": "tchadien",
       "word_percentage": 25.0,
       "prevalence_score": 12500.0,
       "num_articles": 4,
       "week": "2025-W44",
       "timeframe": "7d"
     },
-    "Turkmenistan": {
-      "prevalent_word": "turkmenistan",
-      "word_percentage": 71.43,
-      "prevalence_score": 11904.76,
-      "num_articles": 7,
+    "Gabon": {
+      "prevalent_word": "gabon",
+      "word_percentage": 60.0,
+      "prevalence_score": 12000.0,
+      "num_articles": 5,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Bahamas": {
-      "prevalent_word": "reviews",
-      "word_percentage": 33.33,
-      "prevalence_score": 11111.11,
-      "num_articles": 6,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "San Marino": {
-      "prevalent_word": "marino",
+      "prevalent_word": "profile",
       "word_percentage": 42.86,
       "prevalence_score": 10714.29,
       "num_articles": 7,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Rwanda": {
-      "prevalent_word": "emerges",
-      "word_percentage": 20.0,
+    "Ethiopia": {
+      "prevalent_word": "trusted",
+      "word_percentage": 42.86,
+      "prevalence_score": 10714.29,
+      "num_articles": 7,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Solomon Islands": {
+      "prevalent_word": "solomon",
+      "word_percentage": 50.0,
       "prevalence_score": 10000.0,
-      "num_articles": 5,
+      "num_articles": 6,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Angola": {
-      "prevalent_word": "monitor",
-      "word_percentage": 37.5,
-      "prevalence_score": 9375.0,
-      "num_articles": 8,
+    "Monaco": {
+      "prevalent_word": "capannori",
+      "word_percentage": 28.57,
+      "prevalence_score": 9523.81,
+      "num_articles": 7,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Tanzania": {
-      "prevalent_word": "hapa",
-      "word_percentage": 25.0,
-      "prevalence_score": 8333.33,
-      "num_articles": 8,
+    "Antigua and Barbuda": {
+      "prevalent_word": "commonwealth",
+      "word_percentage": 28.57,
+      "prevalence_score": 9523.81,
+      "num_articles": 7,
       "week": "2025-W44",
       "timeframe": "24h"
     },
@@ -222,11 +222,35 @@
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Ethiopia": {
-      "prevalent_word": "ethiopian",
-      "word_percentage": 33.33,
+    "Liberia": {
+      "prevalent_word": "boakai",
+      "word_percentage": 25.0,
       "prevalence_score": 8333.33,
-      "num_articles": 9,
+      "num_articles": 8,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Botswana": {
+      "prevalent_word": "botswana",
+      "word_percentage": 16.67,
+      "prevalence_score": 8333.33,
+      "num_articles": 6,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Sierra Leone": {
+      "prevalent_word": "interests",
+      "word_percentage": 16.67,
+      "prevalence_score": 8333.33,
+      "num_articles": 6,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Angola": {
+      "prevalent_word": "intelligence",
+      "word_percentage": 30.0,
+      "prevalence_score": 7500.0,
+      "num_articles": 10,
       "week": "2025-W44",
       "timeframe": "24h"
     },
@@ -240,71 +264,39 @@
     },
     "Burkina Faso": {
       "prevalent_word": "remerciements",
-      "word_percentage": 36.36,
-      "prevalence_score": 7272.73,
-      "num_articles": 11,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Sierra Leone": {
-      "prevalent_word": "batter",
-      "word_percentage": 14.29,
-      "prevalence_score": 7142.86,
-      "num_articles": 7,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Solomon Islands": {
-      "prevalent_word": "solomon",
-      "word_percentage": 54.55,
+      "word_percentage": 27.27,
       "prevalence_score": 6818.18,
       "num_articles": 11,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Cote d'Ivoire": {
-      "prevalent_word": "damana",
-      "word_percentage": 20.0,
+    "Seychelles": {
+      "prevalent_word": "herminie",
+      "word_percentage": 27.27,
+      "prevalence_score": 6818.18,
+      "num_articles": 11,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "San Marino": {
+      "prevalent_word": "marino",
+      "word_percentage": 33.33,
       "prevalence_score": 6666.67,
-      "num_articles": 10,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Guyana": {
-      "prevalent_word": "entered",
-      "word_percentage": 12.5,
-      "prevalence_score": 6250.0,
-      "num_articles": 8,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Botswana": {
-      "prevalent_word": "mmegi",
-      "word_percentage": 25.0,
-      "prevalence_score": 6250.0,
       "num_articles": 12,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Saint Lucia": {
-      "prevalent_word": "voice",
-      "word_percentage": 30.77,
-      "prevalence_score": 6153.85,
-      "num_articles": 13,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Gabon": {
-      "prevalent_word": "groupe",
+    "Democratic Republic of the Congo": {
+      "prevalent_word": "congolais",
       "word_percentage": 18.18,
       "prevalence_score": 6060.61,
       "num_articles": 11,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Antigua and Barbuda": {
-      "prevalent_word": "commonwealth",
-      "word_percentage": 18.18,
+    "North Korea": {
+      "prevalent_word": "north",
+      "word_percentage": 36.36,
       "prevalence_score": 6060.61,
       "num_articles": 11,
       "week": "2025-W44",
@@ -318,24 +310,32 @@
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Brunei": {
-      "prevalent_word": "brunei",
-      "word_percentage": 100.0,
-      "prevalence_score": 5882.35,
-      "num_articles": 16,
-      "week": "2025-W44",
-      "timeframe": "7d"
-    },
-    "Togo": {
-      "prevalent_word": "togo",
-      "word_percentage": 33.33,
-      "prevalence_score": 5555.56,
+    "Turkmenistan": {
+      "prevalent_word": "turkmenistan",
+      "word_percentage": 46.67,
+      "prevalence_score": 5833.33,
       "num_articles": 15,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "North Korea": {
-      "prevalent_word": "stark",
+    "Brunei": {
+      "prevalent_word": "brunei",
+      "word_percentage": 100.0,
+      "prevalence_score": 5555.56,
+      "num_articles": 16,
+      "week": "2025-W44",
+      "timeframe": "7d"
+    },
+    "Tanzania": {
+      "prevalent_word": "hapa",
+      "word_percentage": 16.67,
+      "prevalence_score": 5555.56,
+      "num_articles": 12,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Cote d'Ivoire": {
+      "prevalent_word": "seiko",
       "word_percentage": 11.11,
       "prevalence_score": 5555.56,
       "num_articles": 9,
@@ -343,210 +343,202 @@
       "timeframe": "24h"
     },
     "Montenegro": {
-      "prevalent_word": "znaka",
-      "word_percentage": 16.67,
-      "prevalence_score": 5555.56,
-      "num_articles": 12,
+      "prevalent_word": "prekr",
+      "word_percentage": 20.0,
+      "prevalence_score": 5000.0,
+      "num_articles": 15,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Lesotho": {
-      "prevalent_word": "epidemic",
+      "prevalent_word": "miners",
       "word_percentage": 10.0,
       "prevalence_score": 5000.0,
       "num_articles": 10,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Saint Lucia": {
+      "prevalent_word": "voice",
+      "word_percentage": 44.44,
+      "prevalence_score": 4938.27,
+      "num_articles": 18,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Georgia": {
+      "prevalent_word": "georgia",
+      "word_percentage": 29.41,
+      "prevalence_score": 4901.96,
+      "num_articles": 17,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "South Sudan": {
-      "prevalent_word": "presence",
-      "word_percentage": 10.0,
-      "prevalence_score": 5000.0,
-      "num_articles": 10,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Myanmar": {
-      "prevalent_word": "township",
+      "prevalent_word": "lakes",
       "word_percentage": 14.29,
       "prevalence_score": 4761.9,
       "num_articles": 14,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Tonga": {
-      "prevalent_word": "kiwis",
-      "word_percentage": 9.09,
-      "prevalence_score": 4545.45,
-      "num_articles": 11,
+    "Togo": {
+      "prevalent_word": "togo",
+      "word_percentage": 29.41,
+      "prevalence_score": 4201.68,
+      "num_articles": 17,
       "week": "2025-W44",
-      "timeframe": "7d"
+      "timeframe": "24h"
     },
     "Oman": {
       "prevalent_word": "muscat",
-      "word_percentage": 17.65,
-      "prevalence_score": 4411.76,
-      "num_articles": 17,
+      "word_percentage": 14.29,
+      "prevalence_score": 3571.43,
+      "num_articles": 21,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Barbados": {
       "prevalent_word": "shooting",
       "word_percentage": 17.65,
-      "prevalence_score": 4411.76,
+      "prevalence_score": 3529.41,
       "num_articles": 17,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Haiti": {
-      "prevalent_word": "etats",
-      "word_percentage": 20.0,
-      "prevalence_score": 4000.0,
-      "num_articles": 20,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Georgia": {
-      "prevalent_word": "georgia",
-      "word_percentage": 23.81,
-      "prevalence_score": 3968.25,
-      "num_articles": 21,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Belize": {
       "prevalent_word": "belize",
-      "word_percentage": 58.33,
-      "prevalence_score": 3888.89,
-      "num_articles": 24,
+      "word_percentage": 71.43,
+      "prevalence_score": 3401.36,
+      "num_articles": 28,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Malawi": {
-      "prevalent_word": "malawi",
-      "word_percentage": 37.5,
-      "prevalence_score": 3750.0,
-      "num_articles": 24,
+    "Haiti": {
+      "prevalent_word": "cayes",
+      "word_percentage": 10.0,
+      "prevalence_score": 3333.33,
+      "num_articles": 20,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Suriname": {
       "prevalent_word": "ware",
-      "word_percentage": 18.18,
-      "prevalence_score": 3636.36,
-      "num_articles": 22,
+      "word_percentage": 16.0,
+      "prevalence_score": 3200.0,
+      "num_articles": 25,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Tunisia": {
-      "prevalent_word": "alit",
-      "word_percentage": 13.04,
-      "prevalence_score": 3260.87,
-      "num_articles": 23,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Democratic Republic of the Congo": {
-      "prevalent_word": "tshisekedi",
-      "word_percentage": 9.52,
-      "prevalence_score": 3174.6,
-      "num_articles": 21,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Somalia": {
-      "prevalent_word": "qaranimo",
-      "word_percentage": 37.93,
-      "prevalence_score": 3160.92,
-      "num_articles": 29,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Liberia": {
-      "prevalent_word": "dawn",
+    "Zimbabwe": {
+      "prevalent_word": "zimbabwe",
       "word_percentage": 50.0,
       "prevalence_score": 3125.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Senegal": {
-      "prevalent_word": "sonko",
-      "word_percentage": 25.0,
-      "prevalence_score": 3125.0,
+    "Niger": {
+      "prevalent_word": "sahel",
+      "word_percentage": 42.86,
+      "prevalence_score": 3061.22,
       "num_articles": 28,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Uruguay": {
-      "prevalent_word": "diaria",
-      "word_percentage": 46.67,
-      "prevalence_score": 3111.11,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Italy": {
-      "prevalent_word": "raggiungibile",
-      "word_percentage": 46.67,
-      "prevalence_score": 3111.11,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
     "Armenia": {
-      "prevalent_word": "aztag",
-      "word_percentage": 46.67,
-      "prevalence_score": 3111.11,
+      "prevalent_word": "lurer",
+      "word_percentage": 36.67,
+      "prevalence_score": 3055.56,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Malta": {
-      "prevalent_word": "borg",
-      "word_percentage": 9.09,
-      "prevalence_score": 3030.3,
-      "num_articles": 22,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Japan": {
-      "prevalent_word": "ascii",
-      "word_percentage": 33.33,
-      "prevalence_score": 3030.3,
+    "Serbia": {
+      "prevalent_word": "srna",
+      "word_percentage": 36.67,
+      "prevalence_score": 3055.56,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Luxembourg": {
-      "prevalent_word": "cran",
-      "word_percentage": 33.33,
-      "prevalence_score": 3030.3,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Argentina": {
-      "prevalent_word": "provincia",
-      "word_percentage": 30.0,
-      "prevalence_score": 3000.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Jordan": {
-      "prevalent_word": "merrell",
-      "word_percentage": 30.0,
-      "prevalence_score": 3000.0,
+    "Somalia": {
+      "prevalent_word": "qaranimo",
+      "word_percentage": 36.67,
+      "prevalence_score": 3055.56,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "New Zealand": {
       "prevalent_word": "scoop",
+      "word_percentage": 36.67,
+      "prevalence_score": 3055.56,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Peru": {
+      "prevalent_word": "horarios",
+      "word_percentage": 36.67,
+      "prevalence_score": 3055.56,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Uruguay": {
+      "prevalent_word": "muro",
+      "word_percentage": 36.67,
+      "prevalence_score": 3055.56,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Guinea": {
+      "prevalent_word": "guin",
+      "word_percentage": 36.67,
+      "prevalence_score": 3055.56,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Sweden": {
+      "prevalent_word": "posten",
+      "word_percentage": 33.33,
+      "prevalence_score": 3030.3,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Malawi": {
+      "prevalent_word": "nation",
+      "word_percentage": 30.0,
+      "prevalence_score": 3000.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Nepal": {
+      "prevalent_word": "updated",
+      "word_percentage": 56.67,
+      "prevalence_score": 2982.46,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Ecuador": {
+      "prevalent_word": "correo",
       "word_percentage": 26.67,
       "prevalence_score": 2962.96,
       "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Senegal": {
+      "prevalent_word": "lequotidien",
+      "word_percentage": 14.81,
+      "prevalence_score": 2962.96,
+      "num_articles": 27,
       "week": "2025-W44",
       "timeframe": "24h"
     },
@@ -558,24 +550,8 @@
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Slovakia": {
-      "prevalent_word": "hnonline",
-      "word_percentage": 26.67,
-      "prevalence_score": 2962.96,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Venezuela": {
-      "prevalent_word": "correo",
-      "word_percentage": 26.67,
-      "prevalence_score": 2962.96,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Albania": {
-      "prevalent_word": "spak",
+    "Japan": {
+      "prevalent_word": "asahi",
       "word_percentage": 26.67,
       "prevalence_score": 2962.96,
       "num_articles": 30,
@@ -583,151 +559,119 @@
       "timeframe": "24h"
     },
     "Bahrain": {
-      "prevalent_word": "ucaas",
+      "prevalent_word": "mitel",
       "word_percentage": 5.88,
       "prevalence_score": 2941.18,
       "num_articles": 17,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Thailand": {
-      "prevalent_word": "bangkok",
-      "word_percentage": 23.33,
-      "prevalence_score": 2916.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
     "Croatia": {
-      "prevalent_word": "jutarnji",
+      "prevalent_word": "dalmacija",
       "word_percentage": 23.33,
       "prevalence_score": 2916.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Guinea": {
-      "prevalent_word": "guin",
-      "word_percentage": 40.0,
-      "prevalence_score": 2857.14,
-      "num_articles": 30,
+    "Myanmar": {
+      "prevalent_word": "myanmar",
+      "word_percentage": 8.7,
+      "prevalence_score": 2898.55,
+      "num_articles": 23,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Madagascar": {
-      "prevalent_word": "newsmada",
+    "Lebanon": {
+      "prevalent_word": "tayyar",
       "word_percentage": 20.0,
       "prevalence_score": 2857.14,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Namibia": {
-      "prevalent_word": "namibia",
+    "Malta": {
+      "prevalent_word": "malta",
       "word_percentage": 20.0,
       "prevalence_score": 2857.14,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Nepal": {
-      "prevalent_word": "nepal",
+    "Sri Lanka": {
+      "prevalent_word": "lankadeepa",
       "word_percentage": 20.0,
       "prevalence_score": 2857.14,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Slovenia": {
-      "prevalent_word": "preberi",
-      "word_percentage": 16.67,
-      "prevalence_score": 2777.78,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Spain": {
-      "prevalent_word": "palma",
-      "word_percentage": 16.67,
-      "prevalence_score": 2777.78,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Belgium": {
-      "prevalent_word": "informaticien",
-      "word_percentage": 16.67,
-      "prevalence_score": 2777.78,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Finland": {
-      "prevalent_word": "mutta",
-      "word_percentage": 16.67,
-      "prevalence_score": 2777.78,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Romania": {
-      "prevalent_word": "pentru",
-      "word_percentage": 16.67,
-      "prevalence_score": 2777.78,
+    "Portugal": {
+      "prevalent_word": "observador",
+      "word_percentage": 20.0,
+      "prevalence_score": 2857.14,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Kuwait": {
       "prevalent_word": "kuna",
-      "word_percentage": 30.0,
-      "prevalence_score": 2727.27,
+      "word_percentage": 40.0,
+      "prevalence_score": 2857.14,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Niger": {
-      "prevalent_word": "sahel",
-      "word_percentage": 24.14,
-      "prevalence_score": 2681.99,
-      "num_articles": 29,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Portugal": {
-      "prevalent_word": "porto",
-      "word_percentage": 13.33,
-      "prevalence_score": 2666.67,
+    "Cuba": {
+      "prevalent_word": "cuba",
+      "word_percentage": 20.0,
+      "prevalence_score": 2857.14,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Australia": {
-      "prevalent_word": "australia",
-      "word_percentage": 13.33,
-      "prevalence_score": 2666.67,
+    "Mexico": {
+      "prevalent_word": "columna",
+      "word_percentage": 20.0,
+      "prevalence_score": 2857.14,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Austria": {
+      "prevalent_word": "nachrichten",
+      "word_percentage": 16.67,
+      "prevalence_score": 2777.78,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "South Africa": {
+      "prevalent_word": "newsroom",
+      "word_percentage": 16.67,
+      "prevalence_score": 2777.78,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Andorra": {
-      "prevalent_word": "dels",
+      "prevalent_word": "andorra",
+      "word_percentage": 10.71,
+      "prevalence_score": 2678.57,
+      "num_articles": 28,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Namibia": {
+      "prevalent_word": "short",
       "word_percentage": 13.33,
       "prevalence_score": 2666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Mali": {
-      "prevalent_word": "bamako",
-      "word_percentage": 13.33,
-      "prevalence_score": 2666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Lebanon": {
-      "prevalent_word": "tayyar",
+    "Norway": {
+      "prevalent_word": "norges",
       "word_percentage": 13.33,
       "prevalence_score": 2666.67,
       "num_articles": 30,
@@ -742,64 +686,40 @@
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Qatar": {
-      "prevalent_word": "meets",
+    "Mali": {
+      "prevalent_word": "bamako",
       "word_percentage": 13.33,
       "prevalence_score": 2666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "United Kingdom": {
-      "prevalent_word": "worcester",
+    "Jordan": {
+      "prevalent_word": "wmns",
       "word_percentage": 13.33,
       "prevalence_score": 2666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Sri Lanka": {
-      "prevalent_word": "lankadeepa",
+    "Guyana": {
+      "prevalent_word": "guyana",
       "word_percentage": 13.33,
       "prevalence_score": 2666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "China": {
-      "prevalent_word": "itbear",
+    "Australia": {
+      "prevalent_word": "stephens",
       "word_percentage": 13.33,
       "prevalence_score": 2666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Ecuador": {
-      "prevalent_word": "guayaquil",
-      "word_percentage": 13.33,
-      "prevalence_score": 2666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Denmark": {
-      "prevalent_word": "landbrugsavisen",
-      "word_percentage": 13.33,
-      "prevalence_score": 2666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Benin": {
-      "prevalent_word": "ronaldo",
-      "word_percentage": 8.0,
-      "prevalence_score": 2666.67,
-      "num_articles": 25,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Chile": {
-      "prevalent_word": "opuestos",
+    "Bosnia and Herzegovina": {
+      "prevalent_word": "snsd",
       "word_percentage": 13.33,
       "prevalence_score": 2666.67,
       "num_articles": 30,
@@ -807,207 +727,135 @@
       "timeframe": "24h"
     },
     "Cyprus": {
-      "prevalent_word": "cyprus",
+      "prevalent_word": "davas",
       "word_percentage": 13.33,
       "prevalence_score": 2666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Fiji": {
-      "prevalent_word": "pacific",
-      "word_percentage": 36.67,
-      "prevalence_score": 2619.05,
+    "Ukraine": {
+      "prevalent_word": "dsnews",
+      "word_percentage": 13.33,
+      "prevalence_score": 2666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Iran": {
-      "prevalent_word": "iran",
+    "Uganda": {
+      "prevalent_word": "uganda",
+      "word_percentage": 18.52,
+      "prevalence_score": 2645.5,
+      "num_articles": 27,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Qatar": {
+      "prevalent_word": "qatar",
+      "word_percentage": 46.67,
+      "prevalence_score": 2592.59,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Albania": {
+      "prevalent_word": "rama",
       "word_percentage": 23.33,
       "prevalence_score": 2592.59,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Austria": {
-      "prevalent_word": "macht",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
+    "Kenya": {
+      "prevalent_word": "kenya",
+      "word_percentage": 33.33,
+      "prevalence_score": 2564.1,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Algeria": {
-      "prevalent_word": "communes",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Brazil": {
-      "prevalent_word": "fundo",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Bosnia and Herzegovina": {
-      "prevalent_word": "puta",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Cuba": {
-      "prevalent_word": "cuba",
-      "word_percentage": 20.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Canada": {
-      "prevalent_word": "bertuzzi",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Czechia": {
-      "prevalent_word": "babi",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
+    "Benin": {
+      "prevalent_word": "ronaldo",
+      "word_percentage": 7.69,
+      "prevalence_score": 2564.1,
+      "num_articles": 26,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Estonia": {
-      "prevalent_word": "leht",
+      "prevalent_word": "eesti",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "India": {
-      "prevalent_word": "hindi",
+    "Chile": {
+      "prevalent_word": "homicidio",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Ireland": {
-      "prevalent_word": "bins",
+    "Argentina": {
+      "prevalent_word": "lomas",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Ghana": {
-      "prevalent_word": "ghanaian",
+    "Afghanistan": {
+      "prevalent_word": "afghans",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Mauritius": {
-      "prevalent_word": "maurice",
+    "Denmark": {
+      "prevalent_word": "gange",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Kenya": {
-      "prevalent_word": "murkomen",
+    "Finland": {
+      "prevalent_word": "kuollut",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Egypt": {
-      "prevalent_word": "nuggets",
+    "Iceland": {
+      "prevalent_word": "fyrir",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Guatemala": {
-      "prevalent_word": "junta",
+    "Romania": {
+      "prevalent_word": "tramvai",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Indonesia": {
-      "prevalent_word": "minta",
+    "Switzerland": {
+      "prevalent_word": "suisse",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Netherlands": {
-      "prevalent_word": "dicht",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Cameroon": {
-      "prevalent_word": "biya",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Nigeria": {
-      "prevalent_word": "limited",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Serbia": {
-      "prevalent_word": "dalje",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "South Africa": {
-      "prevalent_word": "francis",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Turkey": {
-      "prevalent_word": "fiyatlar",
-      "word_percentage": 10.0,
-      "prevalence_score": 2500.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Sweden": {
-      "prevalent_word": "presidenten",
+    "Paraguay": {
+      "prevalent_word": "paraguay",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
@@ -1015,15 +863,63 @@
       "timeframe": "24h"
     },
     "Poland": {
-      "prevalent_word": "rzesz",
+      "prevalent_word": "cicieli",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Hungary": {
-      "prevalent_word": "lalt",
+    "Dominican Republic": {
+      "prevalent_word": "merengue",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Colombia": {
+      "prevalent_word": "holocausto",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Azerbaijan": {
+      "prevalent_word": "rinin",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Belgium": {
+      "prevalent_word": "jaar",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Netherlands": {
+      "prevalent_word": "dutch",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Guatemala": {
+      "prevalent_word": "congreso",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Iraq": {
+      "prevalent_word": "submarine",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
@@ -1031,79 +927,79 @@
       "timeframe": "24h"
     },
     "Moldova": {
-      "prevalent_word": "ultim",
+      "prevalent_word": "renun",
       "word_percentage": 10.0,
       "prevalence_score": 2500.0,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Mauritania": {
-      "prevalent_word": "ghazouani",
+    "Yemen": {
+      "prevalent_word": "abyan",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Kosovo": {
+      "prevalent_word": "kosova",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Indonesia": {
+      "prevalent_word": "lewat",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "France": {
+      "prevalent_word": "renforce",
+      "word_percentage": 10.0,
+      "prevalence_score": 2500.0,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Cameroon": {
+      "prevalent_word": "fcfa",
       "word_percentage": 7.14,
       "prevalence_score": 2380.95,
       "num_articles": 28,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Trinidad and Tobago": {
-      "prevalent_word": "letters",
+    "Venezuela": {
+      "prevalent_word": "hern",
       "word_percentage": 6.9,
       "prevalence_score": 2298.85,
       "num_articles": 29,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Iraq": {
-      "prevalent_word": "baghdad",
+    "Brazil": {
+      "prevalent_word": "secreto",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Bolivia": {
-      "prevalent_word": "oriente",
+    "Algeria": {
+      "prevalent_word": "naliser",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Afghanistan": {
-      "prevalent_word": "upsets",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Dominican Republic": {
-      "prevalent_word": "merengue",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Azerbaijan": {
-      "prevalent_word": "azerbaijan",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Zimbabwe": {
-      "prevalent_word": "form",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Uganda": {
-      "prevalent_word": "aids",
+    "Bulgaria": {
+      "prevalent_word": "eurochicago",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
@@ -1118,48 +1014,64 @@
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Colombia": {
-      "prevalent_word": "columna",
+    "Bolivia": {
+      "prevalent_word": "rabia",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Kosovo": {
-      "prevalent_word": "participating",
+    "Czechia": {
+      "prevalent_word": "rozd",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Iceland": {
-      "prevalent_word": "texta",
+    "Slovakia": {
+      "prevalent_word": "ovciach",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "France": {
-      "prevalent_word": "viter",
+    "Fiji": {
+      "prevalent_word": "passed",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "United States": {
-      "prevalent_word": "texas",
+    "Canada": {
+      "prevalent_word": "voir",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Vietnam": {
-      "prevalent_word": "trung",
+    "China": {
+      "prevalent_word": "connecting",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Bangladesh": {
+      "prevalent_word": "enforced",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Hungary": {
+      "prevalent_word": "szerepl",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
@@ -1167,71 +1079,7 @@
       "timeframe": "24h"
     },
     "Germany": {
-      "prevalent_word": "parteien",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Switzerland": {
-      "prevalent_word": "warum",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Peru": {
-      "prevalent_word": "institusi",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Paraguay": {
-      "prevalent_word": "paraguaya",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Singapore": {
-      "prevalent_word": "singapore",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "North Macedonia": {
-      "prevalent_word": "strugalajm",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "South Korea": {
-      "prevalent_word": "kinh",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Latvia": {
-      "prevalent_word": "ceturtdien",
-      "word_percentage": 6.67,
-      "prevalence_score": 2222.22,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Mexico": {
-      "prevalent_word": "sombrero",
+      "prevalent_word": "aktie",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
@@ -1239,23 +1087,159 @@
       "timeframe": "24h"
     },
     "Jamaica": {
-      "prevalent_word": "reopening",
+      "prevalent_word": "pregnant",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Morocco": {
-      "prevalent_word": "maroc",
-      "word_percentage": 13.33,
+    "Madagascar": {
+      "prevalent_word": "nominations",
+      "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Norway": {
-      "prevalent_word": "fikk",
+    "Ghana": {
+      "prevalent_word": "roots",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Ireland": {
+      "prevalent_word": "joey",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "India": {
+      "prevalent_word": "also",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "El Salvador": {
+      "prevalent_word": "latino",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Italy": {
+      "prevalent_word": "rischio",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Mauritius": {
+      "prevalent_word": "tarako",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Luxembourg": {
+      "prevalent_word": "esch",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Vietnam": {
+      "prevalent_word": "treo",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Turkey": {
+      "prevalent_word": "milyon",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "United Arab Emirates": {
+      "prevalent_word": "mohammed",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Singapore": {
+      "prevalent_word": "oxley",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Slovenia": {
+      "prevalent_word": "sodi",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Nigeria": {
+      "prevalent_word": "terrorism",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "United Kingdom": {
+      "prevalent_word": "surprise",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "United States": {
+      "prevalent_word": "corp",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Latvia": {
+      "prevalent_word": "cilv",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "North Macedonia": {
+      "prevalent_word": "thes",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Philippines": {
+      "prevalent_word": "tino",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
@@ -1263,95 +1247,47 @@
       "timeframe": "24h"
     },
     "Lithuania": {
-      "prevalent_word": "apie",
+      "prevalent_word": "nauj",
       "word_percentage": 6.67,
       "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Malaysia": {
-      "prevalent_word": "thursday",
-      "word_percentage": 10.0,
-      "prevalence_score": 2000.0,
+    "Papua New Guinea": {
+      "prevalent_word": "peaceful",
+      "word_percentage": 6.67,
+      "prevalence_score": 2222.22,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Philippines": {
-      "prevalent_word": "dual",
-      "word_percentage": 10.0,
-      "prevalence_score": 2000.0,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "El Salvador": {
-      "prevalent_word": "pickup",
-      "word_percentage": 3.33,
-      "prevalence_score": 1666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Bangladesh": {
-      "prevalent_word": "cosplayers",
-      "word_percentage": 3.33,
-      "prevalence_score": 1666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Belarus": {
-      "prevalent_word": "laughed",
-      "word_percentage": 3.33,
-      "prevalence_score": 1666.67,
-      "num_articles": 30,
+    "Trinidad and Tobago": {
+      "prevalent_word": "stand",
+      "word_percentage": 4.17,
+      "prevalence_score": 2083.33,
+      "num_articles": 24,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Honduras": {
-      "prevalent_word": "atacada",
-      "word_percentage": 3.33,
-      "prevalence_score": 1666.67,
+      "prevalent_word": "democracia",
+      "word_percentage": 10.0,
+      "prevalence_score": 2000.0,
       "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Mauritania": {
+      "prevalent_word": "occidental",
+      "word_percentage": 7.14,
+      "prevalence_score": 1785.71,
+      "num_articles": 28,
       "week": "2025-W44",
       "timeframe": "24h"
     },
     "Greece": {
-      "prevalent_word": "elevator",
-      "word_percentage": 3.33,
-      "prevalence_score": 1666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Israel": {
-      "prevalent_word": "antisemitic",
-      "word_percentage": 3.33,
-      "prevalence_score": 1666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Kazakhstan": {
-      "prevalent_word": "indrive",
-      "word_percentage": 3.33,
-      "prevalence_score": 1666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Mongolia": {
-      "prevalent_word": "already",
-      "word_percentage": 3.33,
-      "prevalence_score": 1666.67,
-      "num_articles": 30,
-      "week": "2025-W44",
-      "timeframe": "24h"
-    },
-    "Papua New Guinea": {
-      "prevalent_word": "identity",
+      "prevalent_word": "elta",
       "word_percentage": 3.33,
       "prevalence_score": 1666.67,
       "num_articles": 30,
@@ -1359,7 +1295,79 @@
       "timeframe": "24h"
     },
     "Pakistan": {
-      "prevalent_word": "brevis",
+      "prevalent_word": "residency",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Morocco": {
+      "prevalent_word": "limite",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Malaysia": {
+      "prevalent_word": "ringgit",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Iran": {
+      "prevalent_word": "artistic",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Kazakhstan": {
+      "prevalent_word": "kazakh",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Israel": {
+      "prevalent_word": "musulmano",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "South Korea": {
+      "prevalent_word": "seoul",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Spain": {
+      "prevalent_word": "gallardo",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Mongolia": {
+      "prevalent_word": "dobrindt",
+      "word_percentage": 3.33,
+      "prevalence_score": 1666.67,
+      "num_articles": 30,
+      "week": "2025-W44",
+      "timeframe": "24h"
+    },
+    "Russia": {
+      "prevalent_word": "lada",
       "word_percentage": 3.33,
       "prevalence_score": 1666.67,
       "num_articles": 30,
@@ -1367,42 +1375,42 @@
       "timeframe": "24h"
     },
     "Saudi Arabia": {
-      "prevalent_word": "islamabad",
+      "prevalent_word": "contaminated",
       "word_percentage": 3.33,
       "prevalence_score": 1666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Syria": {
-      "prevalent_word": "assessment",
+    "Sudan": {
+      "prevalent_word": "author",
       "word_percentage": 3.33,
       "prevalence_score": 1666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "United Arab Emirates": {
-      "prevalent_word": "vaccine",
+    "Thailand": {
+      "prevalent_word": "sentiment",
       "word_percentage": 3.33,
       "prevalence_score": 1666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Ukraine": {
-      "prevalent_word": "ajax",
+    "Tunisia": {
+      "prevalent_word": "propulsent",
       "word_percentage": 3.33,
       "prevalence_score": 1666.67,
       "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     },
-    "Tajikistan": {
-      "prevalent_word": "mobile",
-      "word_percentage": 7.69,
-      "prevalence_score": 1538.46,
-      "num_articles": 13,
+    "Belarus": {
+      "prevalent_word": "telegraph",
+      "word_percentage": 3.33,
+      "prevalence_score": 1111.11,
+      "num_articles": 30,
       "week": "2025-W44",
       "timeframe": "24h"
     }
