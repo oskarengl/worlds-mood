@@ -2,38 +2,60 @@
 """
 Sentiment Analysis for News Headlines
 Classifies headlines as Good News, Bad News, or Neutral
+Uses DistilBERT transformer model for context-aware sentiment
 """
 
 import json
 from collections import defaultdict
-import nltk
-from nltk.sentiment import SentimentIntensityAnalyzer
+import warnings
+warnings.filterwarnings('ignore')
 
-# Download VADER lexicon if not already present
+# Initialize transformer model
+print("Initializing sentiment analysis model...")
+print("First run will download DistilBERT (~250MB) - please wait...")
+
 try:
-    nltk.download('vader_lexicon', quiet=True)
-except:
-    pass
+    from transformers import pipeline
+    
+    # Load pre-trained sentiment analysis pipeline
+    sentiment_pipeline = pipeline(
+        "sentiment-analysis",
+        model="distilbert-base-uncased-finetuned-sst-2-english",
+        device=-1,  # Use CPU
+        truncation=True,
+        max_length=512
+    )
+    print("[OK] Model loaded successfully!\n")
+except ImportError:
+    print("\n[ERROR] transformers library not installed!")
+    print("Please run: pip install transformers torch\n")
+    exit(1)
+except Exception as e:
+    print(f"\n[ERROR] Failed to load model: {e}\n")
+    exit(1)
 
-def classify_sentiment(text, sia):
+def classify_sentiment(text, model=None):
     """
-    Classify a headline as good, bad, or neutral news
+    Classify a headline as good, bad, or neutral news using DistilBERT
     Returns: 'good', 'bad', or 'neutral'
     """
-    scores = sia.polarity_scores(text)
-    compound = scores['compound']
-    
-    # VADER compound score ranges from -1 (most negative) to +1 (most positive)
-    # Thresholds:
-    # >= 0.05 = positive/good news
-    # <= -0.05 = negative/bad news
-    # between -0.05 and 0.05 = neutral
-    
-    if compound >= 0.05:
-        return 'good'
-    elif compound <= -0.05:
-        return 'bad'
-    else:
+    try:
+        # Get prediction from transformer model
+        result = sentiment_pipeline(text[:512])[0]  # Truncate long texts
+        label = result['label']  # 'POSITIVE' or 'NEGATIVE'
+        score = result['score']  # Confidence score 0-1
+        
+        # Map transformer output to our categories
+        # High confidence threshold for good/bad, otherwise neutral
+        if label == 'POSITIVE' and score >= 0.7:
+            return 'good'
+        elif label == 'NEGATIVE' and score >= 0.7:
+            return 'bad'
+        else:
+            # Low confidence or borderline = neutral
+            return 'neutral'
+    except Exception as e:
+        print(f"Error classifying '{text[:50]}...': {e}")
         return 'neutral'
 
 def main():
@@ -49,17 +71,13 @@ def main():
     
     print(f"Loaded headlines for {len(headlines_data)} countries\n")
     
-    # Initialize VADER sentiment analyzer
-    print("Initializing sentiment analyzer...")
-    sia = SentimentIntensityAnalyzer()
-    print()
-    
     # Process all headlines
     sentiment_results = {}
     global_stats = {'good': 0, 'bad': 0, 'neutral': 0, 'total': 0}
     country_stats = {}
     
-    print("Analyzing sentiment for each headline...")
+    print("Analyzing sentiment for each headline using DistilBERT...")
+    print("(This may take a few minutes for the first run)")
     print()
     
     for country, data in headlines_data.items():
@@ -76,7 +94,7 @@ def main():
         }
         
         for headline in all_headlines:
-            sentiment = classify_sentiment(headline, sia)
+            sentiment = classify_sentiment(headline)
             country_sentiments[sentiment] += 1
             global_stats[sentiment] += 1
             global_stats['total'] += 1
