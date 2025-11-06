@@ -155,7 +155,7 @@
             background: transparent;
             border: none;
             font-size: 40px;
-            color: #666;
+            color: #ffffff;
             cursor: pointer;
             padding: 0;
             width: 40px;
@@ -165,6 +165,7 @@
             pointer-events: none;
             transition: opacity 0.4s ease, right 0.4s ease;
             z-index: 1000;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5), 0 0 6px rgba(0,0,0,0.3);
         }
         
         #helpPanel.open .close-arrow {
@@ -742,10 +743,10 @@
                             }
                         }
                         
-                        // Text color based on background - high contrast but never pure white
-                        // greyValue 0 = white country → need dark text (50)
-                        // greyValue 1 = black country → need light grey text (180, not 255)
-                        const textBrightness = Math.round(greyValue * 130 + 50); // Range: 50-180
+                        // Text color: either black or white based on background contrast
+                        // If greyValue < 0.5 (light country) → use black text
+                        // If greyValue >= 0.5 (dark country) → use white text
+                        const textBrightness = greyValue < 0.5 ? 40 : 200;
                         const color = `rgba(${textBrightness}, ${textBrightness}, ${textBrightness}, ${opacity})`;
                         
                         return {
@@ -902,6 +903,7 @@
             
             if (totalArticles === 0 && word === 'No news data yet') {
                 tooltipDiv.innerHTML = `
+                    <button onclick="if(tooltipDiv){tooltipDiv.remove();tooltipDiv=null;}" style="position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 20px; color: #999; cursor: pointer; padding: 0; width: 24px; height: 24px; line-height: 20px; transition: color 0.2s;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#999'">&times;</button>
                     <div style="font-weight: 400; margin-bottom: 6px; font-size: 15px;">${country}</div>
                     <div style="font-size: 14px; font-weight: 300; color: #666;">No news data available</div>
                 `;
@@ -919,8 +921,9 @@
                 }
                 
                 tooltipDiv.innerHTML = `
+                    <button onclick="if(tooltipDiv){tooltipDiv.remove();tooltipDiv=null;}" style="position: absolute; top: 12px; left: 12px; background: none; border: none; font-size: 20px; color: #999; cursor: pointer; padding: 0; width: 24px; height: 24px; line-height: 20px; transition: color 0.2s;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#999'">&times;</button>
                     <a href="${radioUrl}" target="_blank" style="position: absolute; top: 16px; right: 16px; text-decoration: none; font-size: 18px; filter: grayscale(100%); opacity: 0.7; transition: opacity 0.2s;" title="Listen to local radio" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">📻</a>
-                    <div style="font-weight: 400; margin-bottom: 6px; font-size: 15px; padding-right: 30px;">
+                    <div style="font-weight: 400; margin-bottom: 6px; font-size: 15px; padding-left: 30px; padding-right: 30px;">
                         ${country}
                     </div>
                     <div style="font-size: 18px; font-weight: 400; margin-bottom: 6px;">"${word}"</div>
