@@ -10,7 +10,7 @@ Analyzes news headlines from 180+ countries daily using AI-powered sentiment ana
 
 ## Features
 
-- **AI Sentiment Analysis** - DistilBERT transformer model analyzes headline sentiment with 97% confidence threshold
+- **AI Sentiment Analysis** - DistilBERT transformer model analyzes headline sentiment with 98% confidence threshold
 - **Color-Coded Globe** - Countries shaded by news sentiment (white = positive, grey = neutral, black = negative)
 - **Interactive 3D Globe** - Spin and explore the world
 - **Clickable Headlines** - See actual news headlines color-coded by sentiment
@@ -33,10 +33,10 @@ Analyzes news headlines from 180+ countries daily using AI-powered sentiment ana
 
 Headlines are classified using **DistilBERT**, a state-of-the-art transformer model that understands context and meaning:
 
-- **97% confidence threshold** for both positive and negative classifications
+- **98% confidence threshold** for both positive and negative classifications
 - Headlines below this threshold are marked as neutral
-- Conservative approach prevents misclassification
-- Results in ~60-70% neutral, ~15-20% positive, ~15-25% negative
+- Ultra-conservative approach prevents misclassification
+- Results in ~69% neutral, ~13% positive, ~18% negative
 
 ## Color Coding
 
