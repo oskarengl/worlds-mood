@@ -91,18 +91,24 @@ def main():
                 # This ranges from -100 (all bad) to +100 (all good)
                 # Neutral news naturally balances out
                 # 
-                # Grey value mapping:
+                # Grey value mapping with exponential curve for more contrast:
                 # -100 (all bad, no good) → 1.0 (black)
                 # 0 (balanced or all neutral) → 0.5 (grey)
                 # +100 (all good, no bad) → 0.0 (white)
-                # 
-                # Formula: grey_value = 0.5 - (net_sentiment / 200)
                 
                 good_pct = stats['good_pct']
                 bad_pct = stats['bad_pct']
                 net_sentiment = good_pct - bad_pct  # Range: -100 to +100
                 
-                grey_value = 0.5 - (net_sentiment / 200)
+                # Apply aggressive scaling for visible contrast
+                # Most countries have small net sentiments (5-25%)
+                # Multiply by 3 to expand the range, then clamp
+                # This makes even small differences very visible
+                scaled_sentiment = net_sentiment * 3
+                
+                # Convert to grey value (0=white, 1=black)
+                # Map: +150 -> 0.0 (white), 0 -> 0.5 (grey), -150 -> 1.0 (black)
+                grey_value = 0.5 - (scaled_sentiment / 300)
                 
                 # Clamp to valid range [0, 1]
                 grey_value = max(0.0, min(1.0, grey_value))
