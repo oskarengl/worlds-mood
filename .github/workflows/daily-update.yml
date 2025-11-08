@@ -59,6 +59,14 @@ jobs:
       run: |
         git config --global user.name 'GitHub Actions Bot'
         git config --global user.email 'actions@github.com'
-        git add country_data.json headlines_data.json prevalent_words_*.csv
-        git diff --quiet && git diff --staged --quiet || (git commit -m "🌍 Daily update: $(date +'%Y-%m-%d %H:%M')" && git push)
+        # Force add files even if they're in .gitignore (needed for GitHub Pages)
+        git add -f country_data.json headlines_data.json sentiment_analysis.json 2>/dev/null || true
+        git add -f prevalent_words_*.csv 2>/dev/null || true
+        # Only commit and push if there are changes
+        if ! git diff --quiet && ! git diff --staged --quiet; then
+          git commit -m "🌍 Daily update: $(date +'%Y-%m-%d %H:%M')"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
