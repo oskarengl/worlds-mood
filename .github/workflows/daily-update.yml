@@ -44,10 +44,15 @@ jobs:
         echo "🌍 Collecting world news..."
         python worldsmood_gdelt.py
         
+    - name: Analyze sentiment
+      run: |
+        echo "🤖 Analyzing sentiment..."
+        python sentiment_analysis.py
+        
     - name: Generate globe data
       run: |
         echo "📊 Generating globe data..."
-        python generate_globe_data.py
+        python generate_country_data.py
         
     - name: Commit and push if changed
       run: |
