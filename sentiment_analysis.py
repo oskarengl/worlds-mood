@@ -39,7 +39,7 @@ def classify_sentiment(text, model=None):
     Classify a headline as good, bad, or neutral news using DistilBERT
     Returns: 'good', 'bad', or 'neutral'
     
-    Ultra-conservative threshold: 98% confidence required for both good and bad
+    Ultra-conservative threshold: 99% confidence required for both good and bad
     - Only extremely clear positive sentiment → good
     - Only extremely clear negative sentiment → bad
     - Everything else → neutral (vast majority will be neutral)
@@ -50,11 +50,11 @@ def classify_sentiment(text, model=None):
         label = result['label']  # 'POSITIVE' or 'NEGATIVE'
         score = result['score']  # Confidence score 0-1
         
-        # Ultra-high confidence threshold (98%) for both good and bad
+        # Ultra-high confidence threshold (99%) for both good and bad
         # Vast majority of headlines will be neutral with this threshold
-        if label == 'POSITIVE' and score >= 0.98:
+        if label == 'POSITIVE' and score >= 0.99:
             return 'good'
-        elif label == 'NEGATIVE' and score >= 0.98:
+        elif label == 'NEGATIVE' and score >= 0.99:
             return 'bad'
         else:
             # Everything else = neutral

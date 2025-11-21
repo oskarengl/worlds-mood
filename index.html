@@ -22,7 +22,7 @@
             width: 100vw;
             height: 100vh;
             position: fixed;
-            top: 50px;
+            top: 0;
             left: 0;
             opacity: 0;
             transition: opacity 4s ease-in;
@@ -43,21 +43,76 @@
             position: fixed;
             top: calc(50% + 25px);
             left: 50%;
-            width: 510px;
-            height: 510px;
-            margin: -255px 0 0 -255px;
-            border: 2px solid rgba(128, 128, 128, 0.15);
-            border-top-color: rgba(128, 128, 128, 0.6);
-            border-radius: 50%;
+            width: 106vh;
+            height: 106vh;
+            max-width: 1200px;
+            max-height: 1200px;
+            transform: translate(-50%, -50%);
             z-index: 1000;
-            animation: spin 4s linear infinite;
             opacity: 1;
             transition: opacity 1.5s ease-out;
         }
         
-        @keyframes spin {
+        .loading-ring {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        
+        .loading-ring::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            /* Conic gradient for length-wise fade (around the circle) */
+            background: conic-gradient(
+                from 0deg,
+                transparent 0deg,
+                transparent 15deg,
+                var(--ring-color) 40deg,
+                var(--ring-color) 140deg,
+                transparent 165deg,
+                transparent 180deg,
+                transparent 195deg,
+                var(--ring-color) 220deg,
+                var(--ring-color) 320deg,
+                transparent 345deg,
+                transparent 360deg
+            );
+            /* Mask to create 2px ring shape */
+            mask: radial-gradient(circle, transparent calc(50% - 1px), black calc(50% - 1px), black calc(50% + 1px), transparent calc(50% + 1px));
+            -webkit-mask: radial-gradient(circle, transparent calc(50% - 1px), black calc(50% - 1px), black calc(50% + 1px), transparent calc(50% + 1px));
+        }
+        
+        .loading-ring-1 {
+            --ring-color: rgba(200, 200, 200, 0.5);
+            animation: spin-forward 3s linear infinite;
+        }
+        
+        .loading-ring-2 {
+            --ring-color: rgba(200, 200, 200, 0.5);
+            animation: spin-backward 4s linear infinite;
+        }
+        
+        .loading-ring-3 {
+            --ring-color: rgba(200, 200, 200, 0.4);
+            animation: spin-forward 5s linear infinite;
+        }
+        
+        @keyframes spin-forward {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes spin-backward {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
         }
 
         #header {
@@ -104,7 +159,7 @@
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.9);
+            background: #ffffff;
             border: 1px solid #ddd;
             font-size: 20px;
             font-weight: 300;
@@ -243,7 +298,7 @@
             box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
             transition: transform 0.1s;
             filter: grayscale(100%);
-            opacity: 0.7;
+            opacity: 1;
         }
         
         #timeTravelBtn:hover {
@@ -273,7 +328,7 @@
             box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
             transition: transform 0.1s;
             filter: grayscale(100%);
-            opacity: 0.7;
+            opacity: 1;
         }
         
         #settingsBtn:hover {
@@ -355,7 +410,11 @@
         <h1>WORLD'S MOOD</h1>
         <p>Sentiment from today's global news</p>
     </div>
-    <div id="loading"></div>
+    <div id="loading">
+        <div class="loading-ring loading-ring-1"></div>
+        <div class="loading-ring loading-ring-2"></div>
+        <div class="loading-ring loading-ring-3"></div>
+    </div>
     <div id="globeViz"></div>
     <div id="footer">Updated: <span id="lastUpdate">Loading...</span></div>
     
@@ -403,6 +462,7 @@
     </div>
 
     <script src="https://unpkg.com/globe.gl"></script>
+    <script src="country_coordinates.js"></script>
     
     <script>
         let countryData = {};
@@ -489,7 +549,30 @@
             'Colombia': 'Colombia', 'Peru': 'Peru', 'Ecuador': 'Ecuador', 'Morocco': 'Morocco',
             'Kazakhstan': 'Kazakhstan', 'Dominican Republic': 'Dominican Republic', 'Guatemala': 'Guatemala',
             'El Salvador': 'El Salvador', 'Costa Rica': 'Costa Rica', 'Panama': 'Panama',
-            'Philippines': 'Philippines'
+            'Philippines': 'Philippines',
+            // Congo variants (CRITICAL - GeoJSON uses different names!)
+            'Dem. Rep. Congo': 'Democratic Republic of the Congo',
+            'Democratic Republic of Congo': 'Democratic Republic of the Congo',
+            'Congo (Kinshasa)': 'Democratic Republic of the Congo',
+            'Congo-Kinshasa': 'Democratic Republic of the Congo',
+            'Congo': 'Republic of the Congo',
+            'Congo (Brazzaville)': 'Republic of the Congo',
+            'Congo-Brazzaville': 'Republic of the Congo',
+            'Rep. of the Congo': 'Republic of the Congo',
+            'Republic of Congo': 'Republic of the Congo',
+            // Other abbreviated names
+            'Central African Rep.': 'Central African Republic',
+            'S. Sudan': 'South Sudan',
+            'Czech Republic': 'Czechia',
+            'Czech Rep.': 'Czechia',
+            'Bosnia and Herz.': 'Bosnia and Herzegovina',
+            'Dominican Rep.': 'Dominican Republic',
+            'Eq. Guinea': 'Equatorial Guinea',
+            'Solomon Is.': 'Solomon Islands',
+            'Timor-Leste': 'Timor-Leste',
+            'East Timor': 'Timor-Leste',
+            'Côte d\'Ivoire': 'Cote d\'Ivoire',
+            'Ivory Coast': 'Cote d\'Ivoire'
         };
 
         function getCountryData(geoCountryName) {
@@ -599,7 +682,8 @@
         }
 
         if (typeof Globe === 'undefined') {
-            document.getElementById('loading').innerHTML = 'Error loading globe library';
+            const loadingEl = document.getElementById('loading');
+            loadingEl.innerHTML = '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; font-size: 14px;">Error loading globe library</div>';
         } else {
             initGlobe();
         }
@@ -633,9 +717,9 @@
                 // Update footer
                 if (jsonData.metadata && jsonData.metadata.generated_at) {
                     const date = new Date(jsonData.metadata.generated_at);
-                    const utcDate = date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric' });
+                    const utcDate = date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric' });
                     const utcTime = date.toLocaleTimeString('en-US', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' });
-                    document.getElementById('lastUpdate').textContent = `${utcDate} ${utcTime} UTC`;
+                    document.getElementById('lastUpdate').textContent = `${utcDate}, ${utcTime} UTC`;
                 }
                 
                 // Load headlines
@@ -662,7 +746,8 @@
                 }
             } catch (error) {
                 console.error('Error loading country data:', error);
-                document.getElementById('loading').innerHTML = 'Error loading country data: ' + error.message;
+                const loadingEl = document.getElementById('loading');
+                loadingEl.innerHTML = '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; font-size: 14px;">Error loading country data: ' + error.message + '</div>';
                 return;
             }
             
@@ -682,16 +767,7 @@
                     return '#ffffff';
                 })
                 .polygonSideColor(() => '#ffffff')
-                .polygonStrokeColor(({ properties: d }) => {
-                    const geoCountryName = d.ADMIN || d.NAME || d.name;
-                    const data = getCountryData(geoCountryName);
-                    if (data && data.grey_value !== undefined) {
-                        // Contrasting border: dark border for light countries, light for dark
-                        const brightness = data.grey_value > 0.5 ? 200 : 100;
-                        return `rgb(${brightness}, ${brightness}, ${brightness})`;
-                    }
-                    return '#cccccc';
-                })
+                .polygonStrokeColor(() => '#ffffff')
                 .polygonAltitude(0.001)
                 .polygonLabel(() => '')
                 .onPolygonClick(({ properties: d }) => {
@@ -731,96 +807,17 @@
                         const wordPercentage = countryData[countryName].word_percentage;
                         const greyValue = countryData[countryName].grey_value || 0.5;
                         
-                        let lat, lng, baseSize, size;
+                        // Look up coordinates from comprehensive database
+                        const coords = COUNTRY_COORDINATES[countryName];
+                        if (!coords) {
+                            console.warn(`No coordinates found for: ${countryName}`);
+                            return null;
+                        }
                         
-                        // [All the country positioning code - same as before, abbreviated here for brevity]
-                        if (countryName === 'United States') { lat = 39.8283; lng = -98.5795; baseSize = 0.9; }
-                        else if (countryName === 'Canada') { lat = 60; lng = -95; baseSize = 0.8; }
-                        else if (countryName === 'United Kingdom') { lat = 54; lng = -2; baseSize = 0.35; }
-                        else if (countryName === 'Germany') { lat = 51.1657; lng = 10.4515; baseSize = 0.4; }
-                        else if (countryName === 'France') { lat = 46.2276; lng = 2.2137; baseSize = 0.35; }
-                        else if (countryName === 'Japan') { lat = 36.2048; lng = 138.2529; baseSize = 0.35; }
-                        else if (countryName === 'Australia') { lat = -25.2744; lng = 133.7751; baseSize = 0.6; }
-                        else if (countryName === 'Brazil') { lat = -10; lng = -55; baseSize = 0.5; }
-                        else if (countryName === 'India') { lat = 20.5937; lng = 78.9629; baseSize = 0.4; }
-                        else if (countryName === 'South Korea') { lat = 37; lng = 127.7669; baseSize = 0.3; }
-                        else if (countryName === 'Russia') { lat = 61; lng = 105; baseSize = 1.2; }
-                        else if (countryName === 'China') { lat = 35; lng = 105; baseSize = 0.7; }
-                        else if (countryName === 'Spain') { lat = 40.4637; lng = -3.7492; baseSize = 0.4; }
-                        else if (countryName === 'Nigeria') { lat = 9.082; lng = 8.6753; baseSize = 0.45; }
-                        else if (countryName === 'Ukraine') { lat = 48.3794; lng = 31.1656; baseSize = 0.5; }
-                        else if (countryName === 'Sweden') { lat = 60.1282; lng = 18.6435; baseSize = 0.4; }
-                        else if (countryName === 'Norway') { lat = 60.472; lng = 8.4689; baseSize = 0.4; }
-                        else if (countryName === 'Denmark') { lat = 56.2639; lng = 9.5018; baseSize = 0.3; }
-                        else if (countryName === 'Portugal') { lat = 39.3999; lng = -8.2245; baseSize = 0.35; }
-                        else if (countryName === 'Netherlands') { lat = 52.1326; lng = 5.2913; baseSize = 0.3; }
-                        else if (countryName === 'Mexico') { lat = 23.6345; lng = -102.5528; baseSize = 0.6; }
-                        else if (countryName === 'Argentina') { lat = -38.4161; lng = -63.6167; baseSize = 0.6; }
-                        else if (countryName === 'South Africa') { lat = -30.5595; lng = 22.9375; baseSize = 0.6; }
-                        else if (countryName === 'Egypt') { lat = 26.8206; lng = 30.8025; baseSize = 0.5; }
-                        else if (countryName === 'Turkey') { lat = 38.9637; lng = 35.2433; baseSize = 0.6; }
-                        else if (countryName === 'Italy') { lat = 41.8719; lng = 12.5674; baseSize = 0.5; }
-                        else if (countryName === 'Poland') { lat = 51.9194; lng = 19.1451; baseSize = 0.5; }
-                        else if (countryName === 'Thailand') { lat = 15.8700; lng = 100.9925; baseSize = 0.5; }
-                        else if (countryName === 'Indonesia') { lat = -0.7893; lng = 113.9213; baseSize = 0.7; }
-                        else if (countryName === 'Pakistan') { lat = 30.3753; lng = 69.3451; baseSize = 0.5; }
-                        else if (countryName === 'Iran') { lat = 32.4279; lng = 53.6880; baseSize = 0.6; }
-                        else if (countryName === 'Saudi Arabia') { lat = 23.8859; lng = 45.0792; baseSize = 0.7; }
-                        else if (countryName === 'Malaysia') { lat = 4.2105; lng = 101.9758; baseSize = 0.5; }
-                        else if (countryName === 'Philippines') { lat = 12.8797; lng = 121.774; baseSize = 0.4; }
-                        else if (countryName === 'Vietnam') { lat = 14.0583; lng = 108.2772; baseSize = 0.5; }
-                        else if (countryName === 'Bangladesh') { lat = 23.6850; lng = 90.3563; baseSize = 0.4; }
-                        else if (countryName === 'Colombia') { lat = 4.5709; lng = -74.2973; baseSize = 0.4; }
-                        else if (countryName === 'Peru') { lat = -9.19; lng = -75.0152; baseSize = 0.45; }
-                        else if (countryName === 'Chile') { lat = -35.6751; lng = -71.543; baseSize = 0.4; }
-                        else if (countryName === 'Iraq') { lat = 33.2232; lng = 43.6793; baseSize = 0.5; }
-                        else if (countryName === 'Afghanistan') { lat = 33.9391; lng = 67.7100; baseSize = 0.4; }
-                        else if (countryName === 'Kenya') { lat = -0.0236; lng = 37.9062; baseSize = 0.45; }
-                        else if (countryName === 'Morocco') { lat = 31.7917; lng = -7.0926; baseSize = 0.4; }
-                        else if (countryName === 'Algeria') { lat = 28.0339; lng = 1.6596; baseSize = 0.6; }
-                        else if (countryName === 'Ethiopia') { lat = 9.1450; lng = 40.4897; baseSize = 0.5; }
-                        else if (countryName === 'New Zealand') { lat = -40.9006; lng = 174.8860; baseSize = 0.5; }
-                        else if (countryName === 'Venezuela') { lat = 6.4238; lng = -66.5897; baseSize = 0.5; }
-                        else if (countryName === 'Israel') { lat = 31.0461; lng = 34.8516; baseSize = 0.3; }
-                        else if (countryName === 'Greece') { lat = 39.0742; lng = 21.8243; baseSize = 0.4; }
-                        else if (countryName === 'Czech') { lat = 49.8175; lng = 15.4730; baseSize = 0.35; }
-                        else if (countryName === 'Romania') { lat = 45.9432; lng = 24.9668; baseSize = 0.4; }
-                        else if (countryName === 'Belgium') { lat = 50.5039; lng = 4.4699; baseSize = 0.3; }
-                        else if (countryName === 'Hungary') { lat = 47.1625; lng = 19.5033; baseSize = 0.35; }
-                        else if (countryName === 'Austria') { lat = 47.5162; lng = 14.5501; baseSize = 0.3; }
-                        else if (countryName === 'Switzerland') { lat = 46.8182; lng = 8.2275; baseSize = 0.35; }
-                        else if (countryName === 'Bulgaria') { lat = 42.7339; lng = 25.4858; baseSize = 0.35; }
-                        else if (countryName === 'Serbia') { lat = 44.0165; lng = 21.0059; baseSize = 0.3; }
-                        else if (countryName === 'Finland') { lat = 61.9241; lng = 25.7482; baseSize = 0.5; }
-                        else if (countryName === 'Slovakia') { lat = 48.669; lng = 19.699; baseSize = 0.3; }
-                        else if (countryName === 'Croatia') { lat = 45.1; lng = 15.2; baseSize = 0.3; }
-                        else if (countryName === 'Ireland') { lat = 53.4129; lng = -8.2439; baseSize = 0.35; }
-                        else if (countryName === 'Lithuania') { lat = 55.1694; lng = 23.8813; baseSize = 0.35; }
-                        else if (countryName === 'Latvia') { lat = 56.8796; lng = 24.6032; baseSize = 0.3; }
-                        else if (countryName === 'Estonia') { lat = 58.5953; lng = 25.0136; baseSize = 0.3; }
-                        else if (countryName === 'Singapore') { lat = 1.3521; lng = 103.8198; baseSize = 0.2; }
-                        else if (countryName === 'Kazakhstan') { lat = 48.0196; lng = 66.9237; baseSize = 0.7; }
-                        else if (countryName === 'Belarus') { lat = 53.7098; lng = 27.9534; baseSize = 0.4; }
-                        else if (countryName === 'Qatar') { lat = 25.3548; lng = 51.1839; baseSize = 0.3; }
-                        else if (countryName === 'United Arab Emirates') { lat = 23.4241; lng = 53.8478; baseSize = 0.35; }
-                        else if (countryName === 'Kuwait') { lat = 29.3117; lng = 47.4818; baseSize = 0.3; }
-                        else if (countryName === 'Lebanon') { lat = 33.8547; lng = 35.8623; baseSize = 0.3; }
-                        else if (countryName === 'Jordan') { lat = 30.5852; lng = 36.2384; baseSize = 0.35; }
-                        else if (countryName === 'Ecuador') { lat = -1.8312; lng = -78.1834; baseSize = 0.35; }
-                        else if (countryName === 'Guatemala') { lat = 15.7835; lng = -90.2308; baseSize = 0.3; }
-                        else if (countryName === 'Bolivia') { lat = -16.2902; lng = -63.5887; baseSize = 0.45; }
-                        else if (countryName === 'Honduras') { lat = 15.2000; lng = -86.2419; baseSize = 0.35; }
-                        else if (countryName === 'Nicaragua') { lat = 12.8654; lng = -85.2072; baseSize = 0.35; }
-                        else if (countryName === 'El Salvador') { lat = 13.7942; lng = -88.8965; baseSize = 0.25; }
-                        else if (countryName === 'Costa Rica') { lat = 9.7489; lng = -83.7534; baseSize = 0.3; }
-                        else if (countryName === 'Panama') { lat = 8.538; lng = -80.7821; baseSize = 0.3; }
-                        else if (countryName === 'Dominican Republic') { lat = 18.7357; lng = -70.1627; baseSize = 0.3; }
-                        else if (countryName === 'Cuba') { lat = 21.5218; lng = -77.7812; baseSize = 0.4; }
-                        else if (countryName === 'Uruguay') { lat = -32.5228; lng = -55.7658; baseSize = 0.4; }
-                        else if (countryName === 'Paraguay') { lat = -23.4425; lng = -58.4438; baseSize = 0.4; }
-                        else { return null; }
-                        
-                        if (!lat || !lng || !baseSize) return null;
+                        const lat = coords.lat;
+                        const lng = coords.lng;
+                        const baseSize = coords.size;
+                        let size;
                         
                         size = baseSize * (8 / Math.max(wordLength, 4));
                         size = Math.max(size, 0.25);
@@ -894,19 +891,13 @@
                             }
                         });
                     
-                    const loadingEl = document.getElementById('loading');
-                    loadingEl.style.opacity = '0';
-                    setTimeout(() => {
-                        loadingEl.style.display = 'none';
-                    }, 1000);
-                    
-                    setTimeout(() => {
-                        document.getElementById('globeViz').style.opacity = '1';
-                    }, 500);
+                    // Labels are now set up, but wait for animation to start before showing globe
+                    // The animation starts after this callback completes
                 })
                 .catch(err => {
                     console.error('Error loading country data:', err);
-                    document.getElementById('loading').innerHTML = 'Error loading map data';
+                    const loadingEl = document.getElementById('loading');
+                    loadingEl.innerHTML = '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; font-size: 14px;">Error loading map data</div>';
                 });
 
             globe.controls().enableDamping = true;
@@ -948,7 +939,8 @@
                 const easedMarginRatio = sigmoid(marginRatio);
                 const topMargin = 50 * easedMarginRatio;
                 
-                globeViz.style.top = `${topMargin}px`;
+                // Set to 0 when zoomed in to avoid white line at top
+                globeViz.style.top = altitude <= 1.4 ? '0px' : `${topMargin}px`;
             }
             
             globe.controls().addEventListener('change', updateUIBasedOnZoom);
@@ -971,6 +963,30 @@
                 requestAnimationFrame(animate);
             }
             animate(0);
+            
+            // Wait for animation to start and globe to be spinning before showing
+            // Use multiple frames to ensure rotation is visible
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        // Wait a bit more to ensure rotation is clearly visible
+                        setTimeout(() => {
+                            // Show globe and hide loading simultaneously - no gap
+                            const globeEl = document.getElementById('globeViz');
+                            const loadingEl = document.getElementById('loading');
+                            
+                            // Start both transitions at the exact same time
+                            globeEl.style.opacity = '1';
+                            loadingEl.style.opacity = '0';
+                            
+                            // Hide loading element after fade completes
+                            setTimeout(() => {
+                                loadingEl.style.display = 'none';
+                            }, 1500);
+                        }, 300); // Delay to ensure rotation is clearly visible
+                    });
+                });
+            });
             
             const controls = globe.controls();
             const stopRotation = () => {
