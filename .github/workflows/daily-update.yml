@@ -6,6 +6,10 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
     # Allows manual trigger from GitHub UI
+  push:
+    # Runs automatically when code is pushed to main branch
+    branches:
+      - main
 
 permissions:
   contents: write  # Allow workflow to push changes
