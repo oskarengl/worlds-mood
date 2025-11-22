@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,7 @@
             transform: translateZ(0);
             backface-visibility: hidden;
         }
-        
+
         #globeViz canvas {
             display: block;
             width: 100% !important;
@@ -52,7 +53,7 @@
             opacity: 1;
             transition: opacity 1.5s ease-out;
         }
-        
+
         .loading-ring {
             position: absolute;
             top: 0;
@@ -61,7 +62,7 @@
             height: 100%;
             border-radius: 50%;
         }
-        
+
         .loading-ring::before {
             content: '';
             position: absolute;
@@ -71,48 +72,56 @@
             height: 100%;
             border-radius: 50%;
             /* Conic gradient for length-wise fade (around the circle) */
-            background: conic-gradient(
-                from 0deg,
-                transparent 0deg,
-                transparent 15deg,
-                var(--ring-color) 40deg,
-                var(--ring-color) 140deg,
-                transparent 165deg,
-                transparent 180deg,
-                transparent 195deg,
-                var(--ring-color) 220deg,
-                var(--ring-color) 320deg,
-                transparent 345deg,
-                transparent 360deg
-            );
+            background: conic-gradient(from 0deg,
+                    transparent 0deg,
+                    transparent 15deg,
+                    var(--ring-color) 40deg,
+                    var(--ring-color) 140deg,
+                    transparent 165deg,
+                    transparent 180deg,
+                    transparent 195deg,
+                    var(--ring-color) 220deg,
+                    var(--ring-color) 320deg,
+                    transparent 345deg,
+                    transparent 360deg);
             /* Mask to create 2px ring shape */
             mask: radial-gradient(circle, transparent calc(50% - 1px), black calc(50% - 1px), black calc(50% + 1px), transparent calc(50% + 1px));
             -webkit-mask: radial-gradient(circle, transparent calc(50% - 1px), black calc(50% - 1px), black calc(50% + 1px), transparent calc(50% + 1px));
         }
-        
+
         .loading-ring-1 {
             --ring-color: rgba(200, 200, 200, 0.5);
             animation: spin-forward 3s linear infinite;
         }
-        
+
         .loading-ring-2 {
             --ring-color: rgba(200, 200, 200, 0.5);
             animation: spin-backward 4s linear infinite;
         }
-        
+
         .loading-ring-3 {
             --ring-color: rgba(200, 200, 200, 0.4);
             animation: spin-forward 5s linear infinite;
         }
-        
+
         @keyframes spin-forward {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
-        
+
         @keyframes spin-backward {
-            0% { transform: rotate(360deg); }
-            100% { transform: rotate(0deg); }
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
         }
 
         #header {
@@ -124,7 +133,7 @@
             z-index: 100;
             pointer-events: none;
         }
-        
+
         #header h1 {
             margin: 0;
             font-size: 36px;
@@ -132,7 +141,7 @@
             letter-spacing: 3px;
             color: #000;
         }
-        
+
         #header p {
             margin: 8px 0 0 0;
             font-size: 13px;
@@ -151,7 +160,7 @@
             z-index: 100;
             pointer-events: none;
         }
-        
+
         #helpButton {
             position: fixed;
             top: 20px;
@@ -170,20 +179,20 @@
             justify-content: center;
             z-index: 1000;
             transition: all 0.2s;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         #helpButton:hover {
             background: rgba(255, 255, 255, 1);
             color: #000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
-        
+
         #helpButton.hidden {
             opacity: 0;
             pointer-events: none;
         }
-        
+
         #helpPanel {
             position: fixed;
             top: 0;
@@ -195,13 +204,13 @@
             z-index: 999;
             overflow-y: auto;
             transition: right 0.4s ease;
-            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         #helpPanel.open {
             right: 0;
         }
-        
+
         #helpPanel .close-arrow {
             position: fixed;
             top: 50%;
@@ -220,15 +229,15 @@
             pointer-events: none;
             transition: opacity 0.4s ease, right 0.4s ease;
             z-index: 1000;
-            text-shadow: 0 0 3px rgba(0,0,0,0.5), 0 0 6px rgba(0,0,0,0.3);
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 6px rgba(0, 0, 0, 0.3);
         }
-        
+
         #helpPanel.open .close-arrow {
             right: 400px;
             opacity: 1;
             pointer-events: auto;
         }
-        
+
         #helpPanel .close-btn {
             position: absolute;
             top: 20px;
@@ -243,17 +252,17 @@
             height: 32px;
             line-height: 28px;
         }
-        
+
         #helpPanel .close-btn:hover {
             color: #000;
         }
-        
+
         #helpPanel h2 {
             font-size: 24px;
             font-weight: 400;
             margin-bottom: 20px;
         }
-        
+
         #helpPanel h3 {
             font-size: 16px;
             font-weight: 400;
@@ -261,19 +270,20 @@
             margin-bottom: 12px;
             color: #333;
         }
-        
-        #helpPanel p, #helpPanel ul {
+
+        #helpPanel p,
+        #helpPanel ul {
             font-size: 13px;
             font-weight: 300;
             line-height: 1.6;
             margin-bottom: 12px;
             color: #555;
         }
-        
+
         #helpPanel ul {
             margin-left: 20px;
         }
-        
+
         #helpPanel .stat-line {
             font-size: 14px;
             margin: 4px 0;
@@ -295,21 +305,21 @@
             align-items: center;
             justify-content: center;
             z-index: 1000;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
             transition: transform 0.1s;
             filter: grayscale(100%);
             opacity: 1;
         }
-        
+
         #timeTravelBtn:hover {
             opacity: 1;
         }
-        
+
         #timeTravelBtn:active {
             transform: translateY(2px);
-            box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
         }
-        
+
         #settingsBtn {
             position: fixed;
             bottom: 20px;
@@ -325,21 +335,21 @@
             align-items: center;
             justify-content: center;
             z-index: 1000;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
             transition: transform 0.1s;
             filter: grayscale(100%);
             opacity: 1;
         }
-        
+
         #settingsBtn:hover {
             opacity: 1;
         }
-        
+
         #settingsBtn:active {
             transform: translateY(2px);
-            box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
         }
-        
+
         #settingsPanel {
             position: fixed;
             bottom: 80px;
@@ -347,16 +357,16 @@
             background: white;
             padding: 16px 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
             z-index: 1001;
             display: none;
             min-width: 200px;
         }
-        
+
         #settingsPanel.open {
             display: block;
         }
-        
+
         #settingsPanel label {
             display: flex;
             align-items: center;
@@ -366,13 +376,13 @@
             cursor: pointer;
             user-select: none;
         }
-        
+
         #settingsPanel input[type="checkbox"] {
             width: 16px;
             height: 16px;
             cursor: pointer;
         }
-        
+
         .headline-link {
             font-size: 13px;
             line-height: 1.5;
@@ -382,15 +392,15 @@
             display: block;
             transition: color 0.2s, opacity 0.2s;
         }
-        
+
         .headline-link:hover {
             color: #0066cc;
         }
-        
+
         .headline-link.dimmed {
             opacity: 0.7;
         }
-        
+
         .headline-link.dimmed:hover {
             opacity: 1;
         }
@@ -403,8 +413,35 @@
             border-radius: 4px;
             background: #fafafa;
         }
+
+        /* Legend dots for help menu */
+        .legend-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            /* Subtle border for white/light colors */
+        }
+
+        .dot-white {
+            background-color: #ffffff;
+        }
+
+        .dot-grey {
+            background-color: #808080;
+            border: none;
+        }
+
+        .dot-black {
+            background-color: #000000;
+            border: none;
+        }
     </style>
 </head>
+
 <body>
     <div id="header">
         <h1>WORLD'S MOOD</h1>
@@ -417,43 +454,49 @@
     </div>
     <div id="globeViz"></div>
     <div id="footer">Updated: <span id="lastUpdate">Loading...</span></div>
-    
+
     <div id="helpButton" onclick="toggleHelp()">?</div>
-    
+
     <div id="helpPanel">
         <button class="close-arrow" onclick="toggleHelp()">›</button>
         <button class="close-btn" onclick="toggleHelp()">&times;</button>
         <h2>World's Mood</h2>
-        
+
         <h3>Global Sentiment</h3>
         <div class="stat-line">Good: <strong id="globalGood">--</strong></div>
         <div class="stat-line">Bad: <strong id="globalBad">--</strong></div>
         <div class="stat-line">Neutral: <strong id="globalNeutral">--</strong></div>
-        
+
         <canvas id="sentimentGraph"></canvas>
-        
+
         <h3>Color Coding</h3>
         <p>Countries are shaded based on <strong>sentiment balance</strong> (Good% - Bad%):</p>
-        <p>⚪ White = Very positive news<br>
-        🔘 Grey = Balanced or low data<br>
-        ⚫ Black = Very negative news</p>
-        <p style="font-size: 12px; color: #888;">*Countries with fewer than 10 articles show as grey (low confidence)</p>
-        
+        <p><span class="legend-dot dot-white"></span> White = Very positive news<br>
+            <span class="legend-dot dot-grey"></span> Grey = Balanced or low data<br>
+            <span class="legend-dot dot-black"></span> Black = Very negative news
+        </p>
+        <p style="font-size: 12px; color: #888;">*Countries with fewer than 10 articles show as grey (low confidence)
+        </p>
+
         <h3>How It Works</h3>
-        <p><strong>DistilBERT AI Model</strong> analyzes each headline's sentiment by understanding context and meaning, not just keywords. It's a state-of-the-art transformer model fine-tuned for sentiment analysis.</p>
-        <p>Headlines are classified as positive (98%+ confidence), negative (98%+ confidence), or neutral. The country's color reflects the balance between good and bad news.</p>
-        
+        <p><strong>DistilBERT AI Model</strong> analyzes each headline's sentiment by understanding context and meaning,
+            not just keywords. It's a state-of-the-art transformer model fine-tuned for sentiment analysis.</p>
+        <p>Headlines are classified as positive (98%+ confidence), negative (98%+ confidence), or neutral. The country's
+            color reflects the balance between good and bad news.</p>
+
         <h3>Interactions</h3>
         <p><strong>Click a country:</strong> View sentiment breakdown and top word<br>
-        <strong>Radio icon (📻):</strong> Listen to local radio<br>
-        <strong>See Headlines:</strong> Read the actual news</p>
-        
-        <p style="margin-top: 30px; font-size: 11px; color: #999;">Data: GDELT Project • 180+ countries • Updates every 6 hours</p>
+            <strong>Radio icon (📻):</strong> Listen to local radio<br>
+            <strong>See Headlines:</strong> Read the actual news
+        </p>
+
+        <p style="margin-top: 30px; font-size: 11px; color: #999;">Data: GDELT Project • 180+ countries • Updates every
+            6 hours</p>
     </div>
 
     <button id="timeTravelBtn" title="View historical data">🕒</button>
     <button id="settingsBtn" title="Settings" onclick="toggleSettings()">⚙️</button>
-    
+
     <div id="settingsPanel">
         <label>
             <input type="checkbox" id="colorblindToggle" onchange="toggleColorblindMode()">
@@ -461,9 +504,10 @@
         </label>
     </div>
 
+    <script src="//unpkg.com/three"></script>
     <script src="https://unpkg.com/globe.gl"></script>
     <script src="country_coordinates.js"></script>
-    
+
     <script>
         let countryData = {};
         let headlinesData = {};
@@ -471,20 +515,20 @@
         let classifiedHeadlines = {};
         let globe;
         let historicalData = [];
-        
+
         // Colorblind mode setting
         window.colorblindMode = localStorage.getItem('colorblindMode') === 'true' || false;
-        
+
         function toggleSettings() {
             const panel = document.getElementById('settingsPanel');
             panel.classList.toggle('open');
         }
-        
+
         function toggleColorblindMode() {
             window.colorblindMode = document.getElementById('colorblindToggle').checked;
             localStorage.setItem('colorblindMode', window.colorblindMode);
         }
-        
+
         // Initialize colorblind toggle on load
         window.addEventListener('DOMContentLoaded', () => {
             document.getElementById('colorblindToggle').checked = window.colorblindMode;
@@ -535,6 +579,7 @@
 
         // Country name mapping
         const countryNameMap = {
+            'eSwatini': 'Eswatini',
             'Russia': 'Russia', 'Russian Federation': 'Russia',
             'United States of America': 'United States', 'United Kingdom': 'United Kingdom',
             'Brazil': 'Brazil', 'Nigeria': 'Nigeria', 'Germany': 'Germany', 'Spain': 'Spain',
@@ -602,25 +647,25 @@
         function saveToHistory(globalSentiment) {
             const today = new Date().toISOString().split('T')[0];
             const existingIndex = historicalData.findIndex(d => d.date === today);
-            
+
             const dataPoint = {
                 date: today,
                 good: globalSentiment.good_percentage,
                 bad: globalSentiment.bad_percentage,
                 neutral: globalSentiment.neutral_percentage
             };
-            
+
             if (existingIndex >= 0) {
                 historicalData[existingIndex] = dataPoint;
             } else {
                 historicalData.push(dataPoint);
             }
-            
+
             // Keep last 30 days
             if (historicalData.length > 30) {
                 historicalData = historicalData.slice(-30);
             }
-            
+
             localStorage.setItem('worldsMoodHistory', JSON.stringify(historicalData));
             drawSentimentGraph();
         }
@@ -631,9 +676,9 @@
             const ctx = canvas.getContext('2d');
             const width = canvas.width = canvas.offsetWidth;
             const height = canvas.height = canvas.offsetHeight;
-            
+
             ctx.clearRect(0, 0, width, height);
-            
+
             if (historicalData.length < 2) {
                 ctx.fillStyle = '#999';
                 ctx.font = '12px "Times New Roman"';
@@ -641,12 +686,12 @@
                 ctx.fillText('Collecting data...', width / 2, height / 2);
                 return;
             }
-            
+
             // Draw graph
             const padding = 30;
             const graphWidth = width - padding * 2;
             const graphHeight = height - padding * 2;
-            
+
             // Draw axes
             ctx.strokeStyle = '#ddd';
             ctx.lineWidth = 1;
@@ -655,25 +700,25 @@
             ctx.lineTo(padding, height - padding);
             ctx.lineTo(width - padding, height - padding);
             ctx.stroke();
-            
+
             // Draw good news line
             ctx.strokeStyle = '#4CAF50';
             ctx.lineWidth = 2;
             ctx.beginPath();
-            
+
             historicalData.forEach((d, i) => {
                 const x = padding + (i / (historicalData.length - 1)) * graphWidth;
                 const y = height - padding - (d.good / 100) * graphHeight;
-                
+
                 if (i === 0) {
                     ctx.moveTo(x, y);
                 } else {
                     ctx.lineTo(x, y);
                 }
             });
-            
+
             ctx.stroke();
-            
+
             // Labels
             ctx.fillStyle = '#666';
             ctx.font = '10px "Times New Roman"';
@@ -690,21 +735,21 @@
 
         async function initGlobe() {
             loadHistoricalData();
-            
+
             try {
                 console.log('Fetching country_data.json...');
                 const dataResponse = await fetch('country_data.json');
                 console.log('Response status:', dataResponse.status);
-                
+
                 if (!dataResponse.ok) {
                     throw new Error(`HTTP error! status: ${dataResponse.status}`);
                 }
-                
+
                 const jsonData = await dataResponse.json();
                 console.log('JSON parsed:', jsonData);
                 countryData = jsonData.countries || jsonData;
                 console.log('Loaded data for', Object.keys(countryData).length, 'countries');
-                
+
                 // Update global stats
                 if (jsonData.metadata && jsonData.metadata.global_sentiment) {
                     const gs = jsonData.metadata.global_sentiment;
@@ -713,7 +758,7 @@
                     document.getElementById('globalNeutral').textContent = gs.neutral_percentage.toFixed(1) + '%';
                     saveToHistory(gs);
                 }
-                
+
                 // Update footer
                 if (jsonData.metadata && jsonData.metadata.generated_at) {
                     const date = new Date(jsonData.metadata.generated_at);
@@ -721,7 +766,7 @@
                     const utcTime = date.toLocaleTimeString('en-US', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' });
                     document.getElementById('lastUpdate').textContent = `${utcDate}, ${utcTime} UTC`;
                 }
-                
+
                 // Load headlines
                 try {
                     const headlinesResponse = await fetch('headlines_data.json');
@@ -732,7 +777,7 @@
                 } catch (headlinesError) {
                     console.warn('Headlines data not available:', headlinesError);
                 }
-                
+
                 // Load sentiment classifications
                 try {
                     const sentimentResponse = await fetch('sentiment_analysis.json');
@@ -750,7 +795,7 @@
                 loadingEl.innerHTML = '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; font-size: 14px;">Error loading country data: ' + error.message + '</div>';
                 return;
             }
-            
+
             globe = Globe()
                 (document.getElementById('globeViz'))
                 .backgroundColor('#ffffff')
@@ -773,14 +818,14 @@
                 .onPolygonClick(({ properties: d }) => {
                     const geoCountryName = d.ADMIN || d.NAME || d.name;
                     const data = getCountryData(geoCountryName);
-                    
+
                     if (data) {
-                        const articlesWithWord = headlinesData[geoCountryName] ? 
-                            headlinesData[geoCountryName].with_word.length : 
+                        const articlesWithWord = headlinesData[geoCountryName] ?
+                            headlinesData[geoCountryName].with_word.length :
                             Math.round(data.num_articles * data.word_percentage / 100);
-                        
+
                         const displayName = countryNameMap[geoCountryName] || geoCountryName;
-                        
+
                         showTooltip(
                             displayName,
                             data.prevalent_word,
@@ -800,38 +845,38 @@
                 .then(countries => {
                     const { features } = topojson.feature(countries, countries.objects.countries);
                     globe.polygonsData(features);
-                    
+
                     const labels = Object.keys(countryData).map(countryName => {
                         const word = '"' + countryData[countryName].prevalent_word + '"';
                         const wordLength = word.length;
                         const wordPercentage = countryData[countryName].word_percentage;
                         const greyValue = countryData[countryName].grey_value || 0.5;
-                        
+
                         // Look up coordinates from comprehensive database
                         const coords = COUNTRY_COORDINATES[countryName];
                         if (!coords) {
                             console.warn(`No coordinates found for: ${countryName}`);
                             return null;
                         }
-                        
+
                         const lat = coords.lat;
                         const lng = coords.lng;
                         const baseSize = coords.size;
                         let size;
-                        
+
                         size = baseSize * (8 / Math.max(wordLength, 4));
-                        size = Math.max(size, 0.25);
-                        size = Math.min(size, 0.8);
-                        
+                        size = Math.max(size, 0.3);
+                        size = Math.min(size, 0.6);
+
                         const numArticles = countryData[countryName].num_articles;
                         let opacity;
-                        
+
                         if (numArticles <= 4) {
                             opacity = 0.5;
                         } else {
                             const minPct = 2;
                             const maxPct = 50;
-                            
+
                             if (wordPercentage <= minPct) {
                                 opacity = 0.15;
                             } else if (wordPercentage >= maxPct) {
@@ -841,14 +886,14 @@
                                 opacity = 0.15 + normalized * 0.85;
                             }
                         }
-                        
+
                         // High contrast text: pure black or pure white based on background
                         // If greyValue < 0.5 (light country) → use black text
                         // If greyValue >= 0.5 (dark country) → use white text
                         // Always use full opacity (1.0) for text - no transparency!
                         const textBrightness = greyValue < 0.5 ? 0 : 255;
                         const color = `rgba(${textBrightness}, ${textBrightness}, ${textBrightness}, 1.0)`;
-                        
+
                         return {
                             lat: lat,
                             lng: lng,
@@ -858,10 +903,27 @@
                             countryName: countryName
                         };
                     }).filter(label => label !== null);
-                    
+
+                    const displayLabels = [];
+                    labels.forEach(label => {
+                        const countryName = label.countryName;
+                        const data = countryData[countryName];
+                        // Default to 0.5 if missing
+                        const greyValue = data && data.grey_value !== undefined ? data.grey_value : 0.5;
+
+                        // If country is bright (low grey value < 0.5), use Black text for contrast
+                        // If country is dark (high grey value >= 0.5), use Almost White text
+                        const color = greyValue < 0.5 ? '#000000' : '#f0f0f0';
+
+                        displayLabels.push({
+                            ...label,
+                            color: color
+                        });
+                    });
+
                     console.log('Showing labels for', labels.length, 'countries');
-                    
-                    globe.labelsData(labels)
+
+                    globe.labelsData(displayLabels)
                         .labelLat('lat')
                         .labelLng('lng')
                         .labelText('text')
@@ -873,12 +935,12 @@
                         .onLabelClick(label => {
                             const countryName = label.countryName;
                             const data = countryData[countryName];
-                            
+
                             if (data) {
-                                const articlesWithWord = headlinesData[countryName] ? 
-                                    headlinesData[countryName].with_word.length : 
+                                const articlesWithWord = headlinesData[countryName] ?
+                                    headlinesData[countryName].with_word.length :
                                     Math.round(data.num_articles * data.word_percentage / 100);
-                                
+
                                 showTooltip(
                                     countryName,
                                     data.prevalent_word,
@@ -886,11 +948,11 @@
                                     data.num_articles,
                                     data.sentiment
                                 );
-                                
+
                                 globe.controls().autoRotate = false;
                             }
                         });
-                    
+
                     // Labels are now set up, but wait for animation to start before showing globe
                     // The animation starts after this callback completes
                 })
@@ -903,108 +965,147 @@
             globe.controls().enableDamping = true;
             globe.controls().dampingFactor = 0.05;
             globe.controls().rotateSpeed = 1.0;
-            
+
+            // Use built-in auto-rotate for smoother performance
+            globe.controls().autoRotate = true;
+            globe.controls().autoRotateSpeed = 0.35;
+
             function updateUIBasedOnZoom() {
                 const pov = globe.pointOfView();
                 const altitude = pov.altitude;
-                
+
                 const header = document.getElementById('header');
                 const footer = document.getElementById('footer');
                 const globeViz = document.getElementById('globeViz');
-                
+
                 const maxAltitude = 2.0;
                 const minAltitude = 1.0;
-                
+
                 const zoomRatio = Math.max(0, Math.min(1, (altitude - minAltitude) / (maxAltitude - minAltitude)));
-                
+
                 const headerOffset = -400 * Math.pow(1 - zoomRatio, 1.65);
                 header.style.transform = `translateX(-50%) translateY(${headerOffset}px)`;
                 header.style.opacity = 1;
-                
+
                 const footerOffset = 200 * Math.pow(1 - zoomRatio, 2);
                 footer.style.transform = `translateX(-50%) translateY(${footerOffset}px)`;
                 footer.style.opacity = 1;
-                
+
                 const marginStartAltitude = 2.4;
                 const marginEndAltitude = 1.4;
-                
+
                 let marginRatio = (altitude - marginEndAltitude) / (marginStartAltitude - marginEndAltitude);
                 marginRatio = Math.max(0, Math.min(1, marginRatio));
-                
+
                 const sigmoid = (x) => {
                     const centered = (x - 0.5) * 6;
                     return 1 / (1 + Math.exp(-centered));
                 };
-                
+
                 const easedMarginRatio = sigmoid(marginRatio);
                 const topMargin = 50 * easedMarginRatio;
-                
+
                 // Set to 0 when zoomed in to avoid white line at top
                 globeViz.style.top = altitude <= 1.4 ? '0px' : `${topMargin}px`;
             }
-            
+
             globe.controls().addEventListener('change', updateUIBasedOnZoom);
-            
+
             globe.pointOfView({ lat: 0, lng: 0, altitude: 2.0 });
-            
+
             updateUIBasedOnZoom();
-            
-            let autoRotate = true;
-            let rotationAngle = 0;
-            let lastFrameTime = 0;
-            const frameDelay = 1000 / 60;
-            
-            function animate(currentTime) {
-                if (autoRotate && (currentTime - lastFrameTime >= frameDelay)) {
-                    rotationAngle += 0.025;
-                    globe.pointOfView({ lat: 0, lng: rotationAngle, altitude: 2.0 }, 0);
-                    lastFrameTime = currentTime;
-                }
-                requestAnimationFrame(animate);
-            }
-            animate(0);
-            
-            // Wait for animation to start and globe to be spinning before showing
-            // Use multiple frames to ensure rotation is visible
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    requestAnimationFrame(() => {
-                        // Wait a bit more to ensure rotation is clearly visible
-                        setTimeout(() => {
-                            // Show globe and hide loading simultaneously - no gap
-                            const globeEl = document.getElementById('globeViz');
-                            const loadingEl = document.getElementById('loading');
-                            
-                            // Start both transitions at the exact same time
-                            globeEl.style.opacity = '1';
-                            loadingEl.style.opacity = '0';
-                            
-                            // Hide loading element after fade completes
-                            setTimeout(() => {
-                                loadingEl.style.display = 'none';
-                            }, 1500);
-                        }, 300); // Delay to ensure rotation is clearly visible
-                    });
-                });
-            });
-            
+
+            // Show globe after a short delay to ensure it's ready
+            setTimeout(() => {
+                const globeEl = document.getElementById('globeViz');
+                const loadingEl = document.getElementById('loading');
+
+                globeEl.style.opacity = '1';
+                loadingEl.style.opacity = '0';
+
+                setTimeout(() => {
+                    loadingEl.style.display = 'none';
+                }, 1500);
+            }, 500);
+
             const controls = globe.controls();
             const stopRotation = () => {
-                autoRotate = false;
+                controls.autoRotate = false;
             };
-            
+
             controls.addEventListener('start', stopRotation);
             controls.addEventListener('wheel', stopRotation);
+
+            // --- Performance Monitor ---
+            (function () {
+                const perfDiv = document.createElement('div');
+                perfDiv.style.cssText = 'position: fixed; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #0f0; font-family: monospace; font-size: 10px; padding: 5px; z-index: 10000; pointer-events: none; border-radius: 4px;';
+                perfDiv.innerHTML = 'FPS: <span id="fpsVal">--</span> (Avg: <span id="fpsAvg">--</span>)<br><canvas id="fpsGraph" width="100" height="30" style="background: #111; margin-top: 3px;"></canvas><br><span style="color: #aaa">Min: <span id="fpsMin">--</span> Max: <span id="fpsMax">--</span></span>';
+                document.body.appendChild(perfDiv);
+
+                const fpsValEl = document.getElementById('fpsVal');
+                const fpsAvgEl = document.getElementById('fpsAvg');
+                const fpsMinEl = document.getElementById('fpsMin');
+                const fpsMaxEl = document.getElementById('fpsMax');
+                const canvas = document.getElementById('fpsGraph');
+                const ctx = canvas.getContext('2d');
+
+                let lastTime = performance.now();
+                let frames = 0;
+                let fpsHistory = [];
+                const maxHistory = 100;
+                let minFps = Infinity;
+                let maxFps = 0;
+                let totalFps = 0;
+                let countFps = 0;
+
+                function updatePerf() {
+                    const now = performance.now();
+                    frames++;
+
+                    if (now >= lastTime + 1000) {
+                        const fps = Math.round((frames * 1000) / (now - lastTime));
+                        fpsHistory.push(fps);
+                        if (fpsHistory.length > maxHistory) fpsHistory.shift();
+
+                        minFps = Math.min(minFps, fps);
+                        maxFps = Math.max(maxFps, fps);
+                        totalFps += fps;
+                        countFps++;
+                        const avg = Math.round(totalFps / countFps);
+
+                        fpsValEl.innerText = fps;
+                        fpsAvgEl.innerText = avg;
+                        fpsMinEl.innerText = minFps;
+                        fpsMaxEl.innerText = maxFps;
+
+                        // Draw graph
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        ctx.fillStyle = '#0f0';
+                        ctx.beginPath();
+                        const barWidth = canvas.width / maxHistory;
+                        for (let i = 0; i < fpsHistory.length; i++) {
+                            const h = (fpsHistory[i] / 60) * canvas.height;
+                            ctx.fillRect(i * barWidth, canvas.height - h, barWidth, h);
+                        }
+
+                        frames = 0;
+                        lastTime = now;
+                    }
+                    requestAnimationFrame(updatePerf);
+                }
+                requestAnimationFrame(updatePerf);
+            })();
         }
 
         let tooltipDiv = null;
         let headlinesDiv = null;
-        
+
         function showTooltip(country, word, articlesWithWord, totalArticles, sentiment) {
             if (tooltipDiv) {
                 tooltipDiv.remove();
             }
-            
+
             tooltipDiv = document.createElement('div');
             tooltipDiv.style.cssText = `
                 position: fixed;
@@ -1019,7 +1120,7 @@
                 z-index: 1000;
                 box-shadow: 0 4px 20px rgba(0,0,0,0.15);
             `;
-            
+
             if (totalArticles === 0 && word === 'No news data yet') {
                 tooltipDiv.innerHTML = `
                     <button onclick="if(tooltipDiv){tooltipDiv.remove();tooltipDiv=null;}" style="position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 20px; color: #999; cursor: pointer; padding: 0; width: 24px; height: 24px; line-height: 20px; transition: color 0.2s; z-index: 10;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#999'">&times;</button>
@@ -1029,7 +1130,7 @@
             } else {
                 const hasHeadlines = headlinesData[country] && (headlinesData[country].with_word.length > 0 || headlinesData[country].without_word.length > 0);
                 const radioUrl = getRadioGardenUrl(country);
-                
+
                 let sentimentHTML = '';
                 if (sentiment) {
                     const goodColor = window.colorblindMode ? '#0077BB' : '#4CAF50';
@@ -1042,7 +1143,7 @@
                         </div>
                     `;
                 }
-                
+
                 tooltipDiv.innerHTML = `
                     <button onclick="if(tooltipDiv){tooltipDiv.remove();tooltipDiv=null;}" style="position: absolute; top: 12px; right: 12px; background: none; border: none; font-size: 20px; color: #999; cursor: pointer; padding: 0; width: 24px; height: 24px; line-height: 20px; transition: color 0.2s; z-index: 10;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#999'">&times;</button>
                     <div style="font-weight: 400; margin-bottom: 6px; font-size: 15px; padding-right: 30px;">
@@ -1055,9 +1156,9 @@
                     <a href="${radioUrl}" target="_blank" style="position: absolute; bottom: 16px; right: 16px; text-decoration: none; font-size: 18px; filter: grayscale(100%); opacity: 0.7; transition: opacity 0.2s;" title="Listen to local radio" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">📻</a>
                 `;
             }
-            
+
             document.body.appendChild(tooltipDiv);
-            
+
             setTimeout(() => {
                 document.addEventListener('click', function closeTooltip() {
                     if (tooltipDiv) {
@@ -1068,20 +1169,20 @@
                 }, 100);
             }, 100);
         }
-        
+
         function toggleHelp() {
             const helpPanel = document.getElementById('helpPanel');
             const helpButton = document.getElementById('helpButton');
             helpPanel.classList.toggle('open');
             helpButton.classList.toggle('hidden');
         }
-        
+
         function getHeadlineSentiment(country, headline) {
             // Use DistilBERT classifier results
             if (!classifiedHeadlines[country]) return 'neutral';
-            
+
             const countryClassifications = classifiedHeadlines[country];
-            
+
             // Check which category this headline is in
             if (countryClassifications.good && countryClassifications.good.includes(headline)) {
                 return 'good';
@@ -1092,10 +1193,10 @@
             if (countryClassifications.neutral && countryClassifications.neutral.includes(headline)) {
                 return 'neutral';
             }
-            
+
             return 'neutral'; // Default fallback
         }
-        
+
         function showHeadlines(country) {
             if (tooltipDiv) {
                 tooltipDiv.remove();
@@ -1104,19 +1205,19 @@
             if (headlinesDiv) {
                 headlinesDiv.remove();
             }
-            
+
             const headlines = headlinesData[country];
             if (!headlines) {
                 console.warn('No headlines data for', country);
                 return;
             }
-            
+
             const data = countryData[country];
             const word = data ? data.prevalent_word : '';
-            
+
             const goodColor = window.colorblindMode ? '#0077BB' : '#4CAF50';
             const badColor = window.colorblindMode ? '#EE7733' : '#F44336';
-            
+
             headlinesDiv = document.createElement('div');
             headlinesDiv.style.cssText = `
                 position: fixed;
@@ -1136,16 +1237,16 @@
                 display: flex;
                 flex-direction: column;
             `;
-            
+
             let headlinesHTML = `
                 <div style="font-weight: 400; margin-bottom: 16px; font-size: 16px; display: flex; justify-content: space-between; align-items: center;">
                     <span>${country}</span>
                     <button onclick="headlinesDiv.remove(); headlinesDiv = null;" style="background: none; border: none; font-size: 20px; cursor: pointer; padding: 0; width: 24px; height: 24px; line-height: 20px; color: #666;">&times;</button>
                 </div>
             `;
-            
+
             headlinesHTML += `<div style="overflow-y: auto; overflow-x: hidden; flex: 1; margin: -4px -8px; padding: 4px 8px;">`;
-            
+
             if (headlines.with_word && headlines.with_word.length > 0) {
                 headlinesHTML += `
                     <div style="margin-bottom: 16px;">
@@ -1158,7 +1259,7 @@
                     if (sentiment === 'good') color = goodColor;
                     else if (sentiment === 'bad') color = badColor;
                     else color = '#999';
-                    
+
                     headlinesHTML += `
                         <div style="padding: 8px 0; border-bottom: 1px solid #eee;">
                             <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="headline-link" style="color: ${color};">
@@ -1169,7 +1270,7 @@
                 });
                 headlinesHTML += `</div>`;
             }
-            
+
             if (headlines.without_word && headlines.without_word.length > 0) {
                 headlinesHTML += `
                     <div>
@@ -1182,7 +1283,7 @@
                     if (sentiment === 'good') color = goodColor;
                     else if (sentiment === 'bad') color = badColor;
                     else color = '#999';
-                    
+
                     headlinesHTML += `
                         <div style="padding: 8px 0; border-bottom: 1px solid #eee;">
                             <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="headline-link" style="color: ${color}; opacity: 0.8;">
@@ -1193,12 +1294,12 @@
                 });
                 headlinesHTML += `</div>`;
             }
-            
+
             headlinesHTML += `</div>`;
-            
+
             headlinesDiv.innerHTML = headlinesHTML;
             document.body.appendChild(headlinesDiv);
-            
+
             setTimeout(() => {
                 document.addEventListener('click', function closeHeadlines(e) {
                     if (headlinesDiv && !headlinesDiv.contains(e.target)) {
@@ -1210,7 +1311,8 @@
             }, 100);
         }
     </script>
-    
+
     <script src="https://unpkg.com/topojson-client@3"></script>
 </body>
+
 </html>
