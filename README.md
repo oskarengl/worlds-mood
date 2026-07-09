@@ -1,4 +1,6 @@
-# World's Mood 🌍
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/b61d5a43-c2f1-4ff5-87a2-e2167cb99b80" />
+
+# World's Mood 
 
 An interactive 3D globe visualizing sentiment and news trends from 180+ countries, powered by AI sentiment analysis.
 
